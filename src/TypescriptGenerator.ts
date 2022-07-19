@@ -243,6 +243,19 @@ export class TypescriptGenerator {
     }
   }
   outputJsonFile(outputDir: string, fileName: string, data: any): void {
+    const getCircularReplacer = () => {
+      const seen = new WeakSet();
+      return (key, value) => {
+        if (typeof value === "object" && value !== null) {
+          if (seen.has(value)) {
+            return;
+          }
+          seen.add(value);
+        }
+        return value;
+      };
+    };
+
     const outputRoot = this.getOutputRoot();
 
     // Create output directory
@@ -252,7 +265,7 @@ export class TypescriptGenerator {
     let output = "";
     try {
       console.log("Generating: " + outFile);
-      output = JSON.stringify(data, null, "/t");
+      output = JSON.stringify(data, getCircularReplacer(), "/t");
     } catch (ex) {
       output = ex.message;
       console.error(ex.message);
