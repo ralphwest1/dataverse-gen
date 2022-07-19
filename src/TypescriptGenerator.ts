@@ -49,7 +49,7 @@ export class TypescriptGenerator {
       return this.getWebApiMetadata(logicalName);
     });
     await schema.generate();
-    console.log(schema);
+    // console.log(schema);
     // console.log(JSON.stringify(schema, null, 2));
     this.outputJsonFile("dev", "SchemaGenerator", schema.getData());
     this.outputEntities(schema);

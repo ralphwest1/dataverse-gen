@@ -21,7 +21,7 @@ import { AttributeRequiredLevel } from "./dataverse-gen/enums/AttributeRequiredL
 export class SchemaGenerator {
   getData() {
     const {
-      options,
+      options: { referencedTypes, ...options },
       EntityTypes,
       EntitySet,
       ComplexTypes,
