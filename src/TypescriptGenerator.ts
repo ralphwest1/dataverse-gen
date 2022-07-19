@@ -49,6 +49,9 @@ export class TypescriptGenerator {
       return this.getWebApiMetadata(logicalName);
     });
     await schema.generate();
+    console.log(schema);
+    // console.log(JSON.stringify(schema, null, 2));
+    this.outputJsonFile("dev", "SchemaGenerator", schema.getData());
     this.outputEntities(schema);
     this.outputEnums(schema);
     this.outputActions(schema);
@@ -238,5 +241,22 @@ export class TypescriptGenerator {
       }
       fs.writeFileSync(outFile, output);
     }
+  }
+  outputJsonFile(outputDir: string, fileName: string, data: any): void {
+    const outputRoot = this.getOutputRoot();
+
+    // Create output directory
+    const outputRootPath = path.join(outputRoot, outputDir);
+    this.createDir(outputRootPath);
+    const outFile = path.join(outputRootPath, `${fileName}.json`);
+    let output = "";
+    try {
+      console.log("Generating: " + outFile);
+      output = JSON.stringify(data, null, "/t");
+    } catch (ex) {
+      output = ex.message;
+      console.error(ex.message);
+    }
+    fs.writeFileSync(outFile, output);
   }
 }

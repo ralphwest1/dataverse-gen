@@ -19,6 +19,36 @@ import { ComplexEntityMetadata } from "./dataverse-gen/complextypes/ComplexEntit
 import { AttributeRequiredLevel } from "./dataverse-gen/enums/AttributeRequiredLevel";
 
 export class SchemaGenerator {
+  getData() {
+    const {
+      options,
+      EntityTypes,
+      EntitySet,
+      ComplexTypes,
+      Association,
+      EnumTypes,
+      Functions,
+      Actions,
+      Metadata,
+      _entityTypeIndex,
+      _enums,
+      _metadataJson,
+    } = this;
+    return {
+      options,
+      EntityTypes,
+      EntitySet,
+      ComplexTypes,
+      Association,
+      EnumTypes,
+      Functions,
+      Actions,
+      Metadata,
+      _entityTypeIndex,
+      _enums,
+      _metadataJson,
+    };
+  }
   options: DataverseGenOptions = {};
   EntityTypes: EntityType[] = [];
   EntitySet: EntitySet[] = [];
