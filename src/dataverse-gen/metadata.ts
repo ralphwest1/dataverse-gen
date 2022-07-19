@@ -1,4 +1,5 @@
 /* eslint-disable*/
+import { RetrieveMetadataChangesMetadata } from "./functions/RetrieveMetadataChanges";
 
 export const Entities = {
 };
@@ -9,5 +10,6 @@ export const metadataCache = {
   entities: {
   },
   actions: {
+    RetrieveMetadataChanges: RetrieveMetadataChangesMetadata,
   }
 };

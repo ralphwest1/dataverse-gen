@@ -1,7 +1,9 @@
 {
     "entities": [],
     "actions": [],
-    "functions": [],
+    "functions": [
+        "RetrieveMetadataChanges"
+    ],
     "output": {
         "outputRoot": "./src/dataverse-gen",
         "useCache": "true"
