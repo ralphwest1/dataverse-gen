@@ -1,5 +1,7 @@
 {
-    "entities": [],
+    "entities": [
+        "dt_order"
+    ],
     "actions": [],
     "functions": [
         "RetrieveMetadataChanges"
