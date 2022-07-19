@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "tsc & node lib/index.js -s org.crm11.dynamics.com",
-    "start-ts": "ts-node src/index",
+    "start-ts": "ts-node -T src/index",
     "start-help": "tsc & node lib/index.js help",
     "start-init": "tsc & node lib/index.js init",
     "start-eject": "tsc & node lib/index.js eject",

@@ -43,10 +43,10 @@ export class SchemaGenerator {
       EnumTypes,
       Functions,
       Actions,
-      Metadata,
-      _entityTypeIndex,
-      _enums,
-      _metadataJson,
+      // Metadata,
+      // _entityTypeIndex,
+      // _enums,
+      // _metadataJson,
     };
   }
   options: DataverseGenOptions = {};
