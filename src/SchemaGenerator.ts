@@ -37,7 +37,7 @@ export class SchemaGenerator {
     return {
       options,
       EntityTypes,
-      EntitySet,
+      // EntitySet,
       ComplexTypes,
       Association,
       EnumTypes,
