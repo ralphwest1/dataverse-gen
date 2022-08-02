@@ -1,0 +1,29 @@
+{
+	"Name": "dt_priceadjustmenttype",
+	"Members": [
+		{
+			"Name": "None",
+			"Value": "0"
+		},
+		{
+			"Name": "Samples",
+			"Value": "1"
+		},
+		{
+			"Name": "ManualAdjustment",
+			"Value": "3"
+		},
+		{
+			"Name": "PricePerUnitOverride",
+			"Value": "4"
+		},
+		{
+			"Name": "TotalPriceOverride",
+			"Value": "5"
+		},
+		{
+			"Name": "NoCharge",
+			"Value": "6"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"Name": "dt_pricingtype",
+	"Members": [
+		{
+			"Name": "Wholesale",
+			"Value": "3200"
+		},
+		{
+			"Name": "Resale",
+			"Value": "3211"
+		},
+		{
+			"Name": "Distributor",
+			"Value": "3221"
+		}
+	]
+}

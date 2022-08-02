@@ -1,0 +1,73 @@
+{
+	"Name": "dt_order_dt_order_statuscode",
+	"Members": [
+		{
+			"Name": "NotSubmitted",
+			"Value": "1"
+		},
+		{
+			"Name": "_01CSR",
+			"Value": "206500001"
+		},
+		{
+			"Name": "_01aCustInfo",
+			"Value": "206500002"
+		},
+		{
+			"Name": "_02Art",
+			"Value": "206500003"
+		},
+		{
+			"Name": "_03aSendProof",
+			"Value": "206500004"
+		},
+		{
+			"Name": "_03bCustAppr",
+			"Value": "206500005"
+		},
+		{
+			"Name": "_03cCSRAppr",
+			"Value": "206500006"
+		},
+		{
+			"Name": "_04Print",
+			"Value": "206500007"
+		},
+		{
+			"Name": "_05Cut",
+			"Value": "206500008"
+		},
+		{
+			"Name": "_06Dome",
+			"Value": "206500009"
+		},
+		{
+			"Name": "_06aCure",
+			"Value": "206500014"
+		},
+		{
+			"Name": "_07Inspect",
+			"Value": "206500010"
+		},
+		{
+			"Name": "_08Ship",
+			"Value": "206500013"
+		},
+		{
+			"Name": "_09Acct",
+			"Value": "206500011"
+		},
+		{
+			"Name": "OnHold",
+			"Value": "206500012"
+		},
+		{
+			"Name": "Fulfilled",
+			"Value": "2"
+		},
+		{
+			"Name": "Canceled",
+			"Value": "206500000"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"Name": "dt_orderpriority",
+	"Members": [
+		{
+			"Name": "CanShipEarly",
+			"Value": "206500000"
+		},
+		{
+			"Name": "DoNotShipEarly",
+			"Value": "206500001"
+		},
+		{
+			"Name": "ShipASAP",
+			"Value": "206500002"
+		},
+		{
+			"Name": "RushFeePaid",
+			"Value": "206500003"
+		}
+	]
+}

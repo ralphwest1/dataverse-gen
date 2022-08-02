@@ -1,0 +1,21 @@
+{
+	"Name": "dt_commissioncategory",
+	"Members": [
+		{
+			"Name": "AfterFirstYear",
+			"Value": "206500000"
+		},
+		{
+			"Name": "WithinFirstYear",
+			"Value": "206500001"
+		},
+		{
+			"Name": "FirstOrder",
+			"Value": "206500002"
+		},
+		{
+			"Name": "PriorToFirstOrder",
+			"Value": "206500003"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"Name": "dt_paymentterms",
+	"Members": [
+		{
+			"Name": "Prepaid",
+			"Value": "206500001"
+		},
+		{
+			"Name": "Net30",
+			"Value": "206500000"
+		},
+		{
+			"Name": "Net10",
+			"Value": "206500003"
+		},
+		{
+			"Name": "Net15",
+			"Value": "206500004"
+		},
+		{
+			"Name": "Net45",
+			"Value": "206500005"
+		},
+		{
+			"Name": "Net60",
+			"Value": "206500006"
+		},
+		{
+			"Name": "PayonReceipt",
+			"Value": "206500002"
+		},
+		{
+			"Name": "NoCharge",
+			"Value": "206500007"
+		},
+		{
+			"Name": "_5050PPN30",
+			"Value": "206500009"
+		}
+	]
+}

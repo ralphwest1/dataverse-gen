@@ -1,0 +1,13 @@
+{
+	"Name": "dt_order_dt_order_statecode",
+	"Members": [
+		{
+			"Name": "Active",
+			"Value": "0"
+		},
+		{
+			"Name": "Inactive",
+			"Value": "1"
+		}
+	]
+}

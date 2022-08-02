@@ -1,0 +1,13 @@
+{
+	"Name": "dt_artrequired",
+	"Members": [
+		{
+			"Name": "Yes",
+			"Value": "206500000"
+		},
+		{
+			"Name": "No",
+			"Value": "206500001"
+		}
+	]
+}

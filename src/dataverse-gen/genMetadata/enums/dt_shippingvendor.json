@@ -1,0 +1,29 @@
+{
+	"Name": "dt_shippingvendor",
+	"Members": [
+		{
+			"Name": "UPS",
+			"Value": "206500000"
+		},
+		{
+			"Name": "FedEx",
+			"Value": "206500001"
+		},
+		{
+			"Name": "PostalService",
+			"Value": "206500002"
+		},
+		{
+			"Name": "DHL",
+			"Value": "206500003"
+		},
+		{
+			"Name": "Freight",
+			"Value": "206500004"
+		},
+		{
+			"Name": "Other",
+			"Value": "206500007"
+		}
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"Name": "dt_ordertype2",
+	"Members": [
+		{
+			"Name": "Standard",
+			"Value": "206500000"
+		},
+		{
+			"Name": "Samples",
+			"Value": "206500001"
+		}
+	]
+}

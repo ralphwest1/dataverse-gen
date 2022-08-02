@@ -1,0 +1,13 @@
+{
+	"Name": "dt_yesnoblank",
+	"Members": [
+		{
+			"Name": "Yes",
+			"Value": "1"
+		},
+		{
+			"Name": "No",
+			"Value": "0"
+		}
+	]
+}

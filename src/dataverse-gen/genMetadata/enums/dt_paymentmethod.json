@@ -1,0 +1,25 @@
+{
+	"Name": "dt_paymentmethod",
+	"Members": [
+		{
+			"Name": "CreditCard",
+			"Value": "206500000"
+		},
+		{
+			"Name": "Check",
+			"Value": "206500001"
+		},
+		{
+			"Name": "EFT",
+			"Value": "206500002"
+		},
+		{
+			"Name": "PayPal",
+			"Value": "206500003"
+		},
+		{
+			"Name": "NA",
+			"Value": "206500004"
+		}
+	]
+}
