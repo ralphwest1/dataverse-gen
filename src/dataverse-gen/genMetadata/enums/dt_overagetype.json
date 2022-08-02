@@ -1,0 +1,13 @@
+{
+	"Name": "dt_overagetype",
+	"Members": [
+		{
+			"Name": "Exact",
+			"Value": "3300"
+		},
+		{
+			"Name": "_10",
+			"Value": "3301"
+		}
+	]
+}

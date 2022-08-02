@@ -1,0 +1,61 @@
+{
+	"Name": "dt_ordertasktype2",
+	"Members": [
+		{
+			"Name": "Art",
+			"Value": "206500101"
+		},
+		{
+			"Name": "Print",
+			"Value": "206500201"
+		},
+		{
+			"Name": "RIP",
+			"Value": "206500202"
+		},
+		{
+			"Name": "Cut",
+			"Value": "206500301"
+		},
+		{
+			"Name": "Weed",
+			"Value": "206500302"
+		},
+		{
+			"Name": "PostCut",
+			"Value": "206500303"
+		},
+		{
+			"Name": "Dome",
+			"Value": "206500401"
+		},
+		{
+			"Name": "Catch",
+			"Value": "206500402"
+		},
+		{
+			"Name": "Board",
+			"Value": "206500403"
+		},
+		{
+			"Name": "Inspect",
+			"Value": "206500501"
+		},
+		{
+			"Name": "Harvest",
+			"Value": "206500502"
+		},
+		{
+			"Name": "PostWork",
+			"Value": "206500503"
+		},
+		{
+			"Name": "Package",
+			"Value": "206500601"
+		},
+		{
+			"Name": "Other",
+			"Value": "206500901"
+		}
+	]
+}

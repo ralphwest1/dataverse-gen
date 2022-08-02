@@ -1,6 +1,7 @@
 {
 	"entities": [
-		"dt_order"
+		"dt_order",
+		"dt_orderline"
 	],
 	"actions": [],
 	"functions": [

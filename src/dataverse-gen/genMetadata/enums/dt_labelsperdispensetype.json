@@ -1,0 +1,29 @@
+{
+	"Name": "dt_labelsperdispensetype",
+	"Members": [
+		{
+			"Name": "Single",
+			"Value": "206500000"
+		},
+		{
+			"Name": "Double",
+			"Value": "206500001"
+		},
+		{
+			"Name": "Row",
+			"Value": "206500003"
+		},
+		{
+			"Name": "Column",
+			"Value": "206500004"
+		},
+		{
+			"Name": "Sheet",
+			"Value": "206500005"
+		},
+		{
+			"Name": "Custom",
+			"Value": "206500006"
+		}
+	]
+}

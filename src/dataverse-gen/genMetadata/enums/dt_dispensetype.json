@@ -1,0 +1,17 @@
+{
+	"Name": "dt_dispensetype",
+	"Members": [
+		{
+			"Name": "Automated",
+			"Value": "206500000"
+		},
+		{
+			"Name": "Manual",
+			"Value": "206500001"
+		},
+		{
+			"Name": "AutomatedNoRegistration",
+			"Value": "206500002"
+		}
+	]
+}

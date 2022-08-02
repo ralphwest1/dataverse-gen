@@ -1,0 +1,21 @@
+{
+	"Name": "dt_orderlinetype",
+	"Members": [
+		{
+			"Name": "Reorder",
+			"Value": "206500000"
+		},
+		{
+			"Name": "FirstOrder",
+			"Value": "206500001"
+		},
+		{
+			"Name": "Sample",
+			"Value": "206500002"
+		},
+		{
+			"Name": "Art",
+			"Value": "206500003"
+		}
+	]
+}
