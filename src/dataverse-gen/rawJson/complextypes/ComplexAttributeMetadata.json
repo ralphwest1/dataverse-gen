@@ -1,0 +1,1515 @@
+{
+	"options": {
+		"entities": [
+			"dt_order"
+		],
+		"actions": [],
+		"functions": [
+			"RetrieveMetadataChanges"
+		],
+		"referencedTypes": {
+			"Object": {
+				"name": "ObjectValue"
+			},
+			"Guid": {
+				"name": "Guid",
+				"import": "dataverse-ify"
+			},
+			"Entity": {
+				"name": "IEntity",
+				"import": "dataverse-ify"
+			},
+			"EntityReference": {
+				"name": "EntityReference",
+				"import": "dataverse-ify"
+			},
+			"WebApiExecuteRequest": {
+				"name": "WebApiExecuteRequest",
+				"import": "dataverse-ify"
+			},
+			"StructuralProperty": {
+				"name": "StructuralProperty",
+				"import": "dataverse-ify"
+			},
+			"OperationType": {
+				"name": "OperationType",
+				"import": "dataverse-ify"
+			},
+			"ActivityParty": {
+				"name": "ActivityParty",
+				"import": "dataverse-ify"
+			},
+			"enums": {
+				"import": "../enums/"
+			},
+			"complexTypes": {
+				"import": "../complextypes/"
+			},
+			"entityTypes": {
+				"import": "../entities/"
+			}
+		},
+		"output": {
+			"useCache": "true",
+			"outputRoot": "./src/dataverse-gen",
+			"templateRoot": "./_templates",
+			"fileSuffix": ".ts"
+		}
+	},
+	"item": {
+		"Name": "ComplexAttributeMetadata",
+		"ReferencedBy": [],
+		"ReferencedByRoot": [
+			{
+				"Name": "ComplexEntityMetadata",
+				"ReferencedBy": [],
+				"ReferencedByRoot": [
+					{
+						"Name": "RetrieveMetadataChangesResponse",
+						"ReferencedBy": [
+							{
+								"Name": "RetrieveMetadataChanges",
+								"IsBound": false,
+								"ReturnType": "mscrm.RetrieveMetadataChangesResponse",
+								"ReferencedBy": [],
+								"ReferencedByRoot": [],
+								"Parameters": [
+									{
+										"Name": "Query",
+										"Type": "mscrm.EntityQueryExpression",
+										"Nullable": true,
+										"structuralTypeName": "EntityType",
+										"TypescriptTypes": [
+											{
+												"name": "EntityQueryExpression",
+												"outputType": 2,
+												"importLocation": "../complextypes/EntityQueryExpression"
+											}
+										]
+									},
+									{
+										"Name": "DeletedMetadataFilters",
+										"Type": "mscrm.DeletedMetadataFilters",
+										"Nullable": true,
+										"structuralTypeName": "EnumerationType",
+										"TypescriptTypes": [
+											{
+												"name": "DeletedMetadataFilters",
+												"outputType": 0,
+												"importLocation": "../enums/DeletedMetadataFilters"
+											}
+										]
+									},
+									{
+										"Name": "ClientVersionStamp",
+										"Type": "Edm.String",
+										"Nullable": true,
+										"structuralTypeName": "PrimitiveType",
+										"TypescriptTypes": [
+											{
+												"name": "string",
+												"outputType": 3
+											}
+										]
+									},
+									{
+										"Name": "AppModuleId",
+										"Type": "Edm.Guid",
+										"Nullable": true,
+										"structuralTypeName": "PrimitiveType",
+										"TypescriptTypes": [
+											{
+												"name": "Guid",
+												"outputType": 3,
+												"importLocation": "dataverse-ify"
+											}
+										]
+									},
+									{
+										"Name": "RetrieveAllSettings",
+										"Type": "Edm.Boolean",
+										"Nullable": true,
+										"structuralTypeName": "PrimitiveType",
+										"TypescriptTypes": [
+											{
+												"name": "boolean",
+												"outputType": 3
+											}
+										]
+									}
+								],
+								"Properties": [],
+								"NavigationProperties": []
+							}
+						],
+						"ReferencedByRoot": [],
+						"NavigationProperties": [],
+						"Properties": [
+							{
+								"Name": "ServerVersionStamp",
+								"Type": "Edm.String",
+								"TypescriptType": {
+									"name": "string",
+									"outputType": 3
+								}
+							},
+							{
+								"Name": "EntityMetadata",
+								"Type": "Collection(mscrm.ComplexEntityMetadata)",
+								"TypescriptType": {
+									"name": "ComplexEntityMetadata[]",
+									"outputType": 2,
+									"importLocation": "../complextypes/ComplexEntityMetadata"
+								}
+							},
+							{
+								"Name": "DeletedMetadata",
+								"Type": "mscrm.DeletedMetadataCollection",
+								"TypescriptType": {
+									"name": "DeletedMetadataCollection",
+									"outputType": 2,
+									"importLocation": "../complextypes/DeletedMetadataCollection"
+								}
+							}
+						]
+					}
+				],
+				"NavigationProperties": [],
+				"Properties": [
+					{
+						"Name": "UsesBusinessDataLabelTable",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "SyncToExternalSearchIndex",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "Settings",
+						"Type": "Collection(mscrm.EntitySetting)",
+						"TypescriptType": {
+							"name": "EntitySetting[]",
+							"outputType": 2,
+							"importLocation": "../complextypes/EntitySetting"
+						}
+					},
+					{
+						"Name": "SettingOf",
+						"Type": "Edm.String",
+						"TypescriptType": {
+							"name": "string",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "SchemaName",
+						"Type": "Edm.String",
+						"TypescriptType": {
+							"name": "string",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "ReportViewName",
+						"Type": "Edm.String",
+						"TypescriptType": {
+							"name": "string",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "RecurrenceBaseEntityLogicalName",
+						"Type": "Edm.String",
+						"TypescriptType": {
+							"name": "string",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "Privileges",
+						"Type": "Collection(mscrm.SecurityPrivilegeMetadata)",
+						"TypescriptType": {
+							"name": "SecurityPrivilegeMetadata[]",
+							"outputType": 2,
+							"importLocation": "../complextypes/SecurityPrivilegeMetadata"
+						}
+					},
+					{
+						"Name": "PrimaryNameAttribute",
+						"Type": "Edm.String",
+						"TypescriptType": {
+							"name": "string",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "PrimaryImageAttribute",
+						"Type": "Edm.String",
+						"TypescriptType": {
+							"name": "string",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "PrimaryIdAttribute",
+						"Type": "Edm.String",
+						"TypescriptType": {
+							"name": "string",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "OwningBusinessUnit",
+						"Type": "Edm.Guid",
+						"TypescriptType": {
+							"name": "Guid",
+							"outputType": 3,
+							"importLocation": "dataverse-ify"
+						}
+					},
+					{
+						"Name": "OwnershipType",
+						"Type": "mscrm.OwnershipTypes",
+						"IsEnum": true,
+						"TypescriptType": {
+							"name": "OwnershipTypes",
+							"outputType": 0,
+							"importLocation": "../enums/OwnershipTypes"
+						}
+					},
+					{
+						"Name": "OwnerIdType",
+						"Type": "Edm.Int32",
+						"TypescriptType": {
+							"name": "number",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "OwnerId",
+						"Type": "Edm.Guid",
+						"TypescriptType": {
+							"name": "Guid",
+							"outputType": 3,
+							"importLocation": "dataverse-ify"
+						}
+					},
+					{
+						"Name": "OneToManyRelationships",
+						"Type": "Collection(mscrm.ComplexOneToManyRelationshipMetadata)",
+						"TypescriptType": {
+							"name": "ComplexOneToManyRelationshipMetadata[]",
+							"outputType": 2,
+							"importLocation": "../complextypes/ComplexOneToManyRelationshipMetadata"
+						}
+					},
+					{
+						"Name": "ObjectTypeCode",
+						"Type": "Edm.Int32",
+						"TypescriptType": {
+							"name": "number",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "ModifiedOn",
+						"Type": "Edm.DateTimeOffset",
+						"TypescriptType": {
+							"name": "Date",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "MobileOfflineFilters",
+						"Type": "Edm.String",
+						"TypescriptType": {
+							"name": "string",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "MetadataId",
+						"Type": "Edm.Guid",
+						"TypescriptType": {
+							"name": "Guid",
+							"outputType": 3,
+							"importLocation": "dataverse-ify"
+						}
+					},
+					{
+						"Name": "ManyToOneRelationships",
+						"Type": "Collection(mscrm.ComplexOneToManyRelationshipMetadata)",
+						"TypescriptType": {
+							"name": "ComplexOneToManyRelationshipMetadata[]",
+							"outputType": 2,
+							"importLocation": "../complextypes/ComplexOneToManyRelationshipMetadata"
+						}
+					},
+					{
+						"Name": "ManyToManyRelationships",
+						"Type": "Collection(mscrm.ComplexManyToManyRelationshipMetadata)",
+						"TypescriptType": {
+							"name": "ComplexManyToManyRelationshipMetadata[]",
+							"outputType": 2,
+							"importLocation": "../complextypes/ComplexManyToManyRelationshipMetadata"
+						}
+					},
+					{
+						"Name": "LogicalName",
+						"Type": "Edm.String",
+						"TypescriptType": {
+							"name": "string",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "LogicalCollectionName",
+						"Type": "Edm.String",
+						"TypescriptType": {
+							"name": "string",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "Keys",
+						"Type": "Collection(mscrm.ComplexEntityKeyMetadata)",
+						"TypescriptType": {
+							"name": "ComplexEntityKeyMetadata[]",
+							"outputType": 2,
+							"importLocation": "../complextypes/ComplexEntityKeyMetadata"
+						}
+					},
+					{
+						"Name": "IsVisibleInMobileClient",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "IsVisibleInMobile",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "IsValidForQueue",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "IsValidForAdvancedFind",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsStateModelAware",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsSolutionAware",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsSLAEnabled",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsRetrieveMultipleAuditEnabled",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsRetrieveAuditEnabled",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsRenameable",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "IsReadingPaneEnabled",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsReadOnlyInMobileClient",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "IsQuickCreateEnabled",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsPrivate",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsOptimisticConcurrencyEnabled",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsOneNoteIntegrationEnabled",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsOfflineInMobileClient",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "IsMappable",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "IsManaged",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsMailMergeEnabled",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "IsMSTeamsIntegrationEnabled",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsLogicalEntity",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsKnowledgeManagementEnabled",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsIntersect",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsInteractionCentricEnabled",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsImportable",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsEnabledForTrace",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsEnabledForExternalChannels",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsEnabledForCharts",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsDuplicateDetectionEnabled",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "IsDocumentRecommendationsEnabled",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsDocumentManagementEnabled",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsCustomizable",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "IsCustomEntity",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsConnectionsEnabled",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "IsChildEntity",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsBusinessProcessEnabled",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsBPFEntity",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsAvailableOffline",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsAuditEnabled",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "IsActivityParty",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsActivity",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IsAIRUpdated",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IntroducedVersion",
+						"Type": "Edm.String",
+						"TypescriptType": {
+							"name": "string",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IconVectorName",
+						"Type": "Edm.String",
+						"TypescriptType": {
+							"name": "string",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IconSmallName",
+						"Type": "Edm.String",
+						"TypescriptType": {
+							"name": "string",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IconMediumName",
+						"Type": "Edm.String",
+						"TypescriptType": {
+							"name": "string",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "IconLargeName",
+						"Type": "Edm.String",
+						"TypescriptType": {
+							"name": "string",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "HasNotes",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "HasFeedback",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "HasEmailAddresses",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "HasChanged",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "HasActivities",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "ExternalName",
+						"Type": "Edm.String",
+						"TypescriptType": {
+							"name": "string",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "ExternalCollectionName",
+						"Type": "Edm.String",
+						"TypescriptType": {
+							"name": "string",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "EntitySetName",
+						"Type": "Edm.String",
+						"TypescriptType": {
+							"name": "string",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "EntityHelpUrlEnabled",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "EntityHelpUrl",
+						"Type": "Edm.String",
+						"TypescriptType": {
+							"name": "string",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "EntityColor",
+						"Type": "Edm.String",
+						"TypescriptType": {
+							"name": "string",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "EnforceStateTransitions",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "DisplayName",
+						"Type": "mscrm.Label",
+						"TypescriptType": {
+							"name": "Label",
+							"outputType": 2,
+							"importLocation": "../complextypes/Label"
+						}
+					},
+					{
+						"Name": "DisplayCollectionName",
+						"Type": "mscrm.Label",
+						"TypescriptType": {
+							"name": "Label",
+							"outputType": 2,
+							"importLocation": "../complextypes/Label"
+						}
+					},
+					{
+						"Name": "Description",
+						"Type": "mscrm.Label",
+						"TypescriptType": {
+							"name": "Label",
+							"outputType": 2,
+							"importLocation": "../complextypes/Label"
+						}
+					},
+					{
+						"Name": "DaysSinceRecordLastModified",
+						"Type": "Edm.Int32",
+						"TypescriptType": {
+							"name": "number",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "DataSourceId",
+						"Type": "Edm.Guid",
+						"TypescriptType": {
+							"name": "Guid",
+							"outputType": 3,
+							"importLocation": "dataverse-ify"
+						}
+					},
+					{
+						"Name": "DataProviderId",
+						"Type": "Edm.Guid",
+						"TypescriptType": {
+							"name": "Guid",
+							"outputType": 3,
+							"importLocation": "dataverse-ify"
+						}
+					},
+					{
+						"Name": "CreatedOn",
+						"Type": "Edm.DateTimeOffset",
+						"TypescriptType": {
+							"name": "Date",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "CollectionSchemaName",
+						"Type": "Edm.String",
+						"TypescriptType": {
+							"name": "string",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "ChangeTrackingEnabled",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "CanTriggerWorkflow",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "CanModifyAdditionalSettings",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "CanEnableSyncToExternalSearchIndex",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "CanCreateViews",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "CanCreateForms",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "CanCreateCharts",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "CanCreateAttributes",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "CanChangeTrackingBeEnabled",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "CanChangeHierarchicalRelationship",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "CanBeRelatedEntityInRelationship",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "CanBePrimaryEntityInRelationship",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "CanBeInManyToMany",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "CanBeInCustomEntityAssociation",
+						"Type": "mscrm.BooleanManagedProperty",
+						"TypescriptType": {
+							"name": "BooleanManagedProperty",
+							"outputType": 2,
+							"importLocation": "../complextypes/BooleanManagedProperty"
+						}
+					},
+					{
+						"Name": "AutoRouteToOwnerQueue",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "AutoCreateAccessTeams",
+						"Type": "Edm.Boolean",
+						"TypescriptType": {
+							"name": "boolean",
+							"outputType": 3
+						}
+					},
+					{
+						"Name": "Attributes",
+						"Type": "Collection(mscrm.ComplexAttributeMetadata)",
+						"TypescriptType": {
+							"name": "ComplexAttributeMetadata[]",
+							"outputType": 2,
+							"importLocation": "../complextypes/ComplexAttributeMetadata"
+						}
+					},
+					{
+						"Name": "ActivityTypeMask",
+						"Type": "Edm.Int32",
+						"TypescriptType": {
+							"name": "number",
+							"outputType": 3
+						}
+					}
+				]
+			}
+		],
+		"NavigationProperties": [],
+		"Properties": [
+			{
+				"Name": "SourceType",
+				"Type": "Edm.Int32",
+				"TypescriptType": {
+					"name": "number",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "Settings",
+				"Type": "Collection(mscrm.EntitySetting)",
+				"TypescriptType": {
+					"name": "EntitySetting[]",
+					"outputType": 2,
+					"importLocation": "../complextypes/EntitySetting"
+				}
+			},
+			{
+				"Name": "SchemaName",
+				"Type": "Edm.String",
+				"TypescriptType": {
+					"name": "string",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "RequiredLevel",
+				"Type": "mscrm.AttributeRequiredLevelManagedProperty",
+				"TypescriptType": {
+					"name": "AttributeRequiredLevelManagedProperty",
+					"outputType": 2,
+					"importLocation": "../complextypes/AttributeRequiredLevelManagedProperty"
+				}
+			},
+			{
+				"Name": "ModifiedOn",
+				"Type": "Edm.DateTimeOffset",
+				"TypescriptType": {
+					"name": "Date",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "MetadataId",
+				"Type": "Edm.Guid",
+				"TypescriptType": {
+					"name": "Guid",
+					"outputType": 3,
+					"importLocation": "dataverse-ify"
+				}
+			},
+			{
+				"Name": "LogicalName",
+				"Type": "Edm.String",
+				"TypescriptType": {
+					"name": "string",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "LinkedAttributeId",
+				"Type": "Edm.Guid",
+				"TypescriptType": {
+					"name": "Guid",
+					"outputType": 3,
+					"importLocation": "dataverse-ify"
+				}
+			},
+			{
+				"Name": "IsValidForUpdate",
+				"Type": "Edm.Boolean",
+				"TypescriptType": {
+					"name": "boolean",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "IsValidForRead",
+				"Type": "Edm.Boolean",
+				"TypescriptType": {
+					"name": "boolean",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "IsValidForGrid",
+				"Type": "Edm.Boolean",
+				"TypescriptType": {
+					"name": "boolean",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "IsValidForForm",
+				"Type": "Edm.Boolean",
+				"TypescriptType": {
+					"name": "boolean",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "IsValidForCreate",
+				"Type": "Edm.Boolean",
+				"TypescriptType": {
+					"name": "boolean",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "IsValidForAdvancedFind",
+				"Type": "mscrm.BooleanManagedProperty",
+				"TypescriptType": {
+					"name": "BooleanManagedProperty",
+					"outputType": 2,
+					"importLocation": "../complextypes/BooleanManagedProperty"
+				}
+			},
+			{
+				"Name": "IsSortableEnabled",
+				"Type": "mscrm.BooleanManagedProperty",
+				"TypescriptType": {
+					"name": "BooleanManagedProperty",
+					"outputType": 2,
+					"importLocation": "../complextypes/BooleanManagedProperty"
+				}
+			},
+			{
+				"Name": "IsSecured",
+				"Type": "Edm.Boolean",
+				"TypescriptType": {
+					"name": "boolean",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "IsSearchable",
+				"Type": "Edm.Boolean",
+				"TypescriptType": {
+					"name": "boolean",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "IsRetrievable",
+				"Type": "Edm.Boolean",
+				"TypescriptType": {
+					"name": "boolean",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "IsRequiredForForm",
+				"Type": "Edm.Boolean",
+				"TypescriptType": {
+					"name": "boolean",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "IsRenameable",
+				"Type": "mscrm.BooleanManagedProperty",
+				"TypescriptType": {
+					"name": "BooleanManagedProperty",
+					"outputType": 2,
+					"importLocation": "../complextypes/BooleanManagedProperty"
+				}
+			},
+			{
+				"Name": "IsPrimaryName",
+				"Type": "Edm.Boolean",
+				"TypescriptType": {
+					"name": "boolean",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "IsPrimaryId",
+				"Type": "Edm.Boolean",
+				"TypescriptType": {
+					"name": "boolean",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "IsManaged",
+				"Type": "Edm.Boolean",
+				"TypescriptType": {
+					"name": "boolean",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "IsLogical",
+				"Type": "Edm.Boolean",
+				"TypescriptType": {
+					"name": "boolean",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "IsGlobalFilterEnabled",
+				"Type": "mscrm.BooleanManagedProperty",
+				"TypescriptType": {
+					"name": "BooleanManagedProperty",
+					"outputType": 2,
+					"importLocation": "../complextypes/BooleanManagedProperty"
+				}
+			},
+			{
+				"Name": "IsFilterable",
+				"Type": "Edm.Boolean",
+				"TypescriptType": {
+					"name": "boolean",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "IsDataSourceSecret",
+				"Type": "Edm.Boolean",
+				"TypescriptType": {
+					"name": "boolean",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "IsCustomizable",
+				"Type": "mscrm.BooleanManagedProperty",
+				"TypescriptType": {
+					"name": "BooleanManagedProperty",
+					"outputType": 2,
+					"importLocation": "../complextypes/BooleanManagedProperty"
+				}
+			},
+			{
+				"Name": "IsCustomAttribute",
+				"Type": "Edm.Boolean",
+				"TypescriptType": {
+					"name": "boolean",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "IsAuditEnabled",
+				"Type": "mscrm.BooleanManagedProperty",
+				"TypescriptType": {
+					"name": "BooleanManagedProperty",
+					"outputType": 2,
+					"importLocation": "../complextypes/BooleanManagedProperty"
+				}
+			},
+			{
+				"Name": "IntroducedVersion",
+				"Type": "Edm.String",
+				"TypescriptType": {
+					"name": "string",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "InheritsFrom",
+				"Type": "Edm.String",
+				"TypescriptType": {
+					"name": "string",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "HasChanged",
+				"Type": "Edm.Boolean",
+				"TypescriptType": {
+					"name": "boolean",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "ExternalName",
+				"Type": "Edm.String",
+				"TypescriptType": {
+					"name": "string",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "EntityLogicalName",
+				"Type": "Edm.String",
+				"TypescriptType": {
+					"name": "string",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "DisplayName",
+				"Type": "mscrm.Label",
+				"TypescriptType": {
+					"name": "Label",
+					"outputType": 2,
+					"importLocation": "../complextypes/Label"
+				}
+			},
+			{
+				"Name": "Description",
+				"Type": "mscrm.Label",
+				"TypescriptType": {
+					"name": "Label",
+					"outputType": 2,
+					"importLocation": "../complextypes/Label"
+				}
+			},
+			{
+				"Name": "DeprecatedVersion",
+				"Type": "Edm.String",
+				"TypescriptType": {
+					"name": "string",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "CreatedOn",
+				"Type": "Edm.DateTimeOffset",
+				"TypescriptType": {
+					"name": "Date",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "ColumnNumber",
+				"Type": "Edm.Int32",
+				"TypescriptType": {
+					"name": "number",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "CanModifyAdditionalSettings",
+				"Type": "mscrm.BooleanManagedProperty",
+				"TypescriptType": {
+					"name": "BooleanManagedProperty",
+					"outputType": 2,
+					"importLocation": "../complextypes/BooleanManagedProperty"
+				}
+			},
+			{
+				"Name": "CanBeSecuredForUpdate",
+				"Type": "Edm.Boolean",
+				"TypescriptType": {
+					"name": "boolean",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "CanBeSecuredForRead",
+				"Type": "Edm.Boolean",
+				"TypescriptType": {
+					"name": "boolean",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "CanBeSecuredForCreate",
+				"Type": "Edm.Boolean",
+				"TypescriptType": {
+					"name": "boolean",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "AutoNumberFormat",
+				"Type": "Edm.String",
+				"TypescriptType": {
+					"name": "string",
+					"outputType": 3
+				}
+			},
+			{
+				"Name": "AttributeTypeName",
+				"Type": "mscrm.AttributeTypeDisplayName",
+				"TypescriptType": {
+					"name": "AttributeTypeDisplayName",
+					"outputType": 2,
+					"importLocation": "../complextypes/AttributeTypeDisplayName"
+				}
+			},
+			{
+				"Name": "AttributeType",
+				"Type": "mscrm.AttributeTypeCode",
+				"IsEnum": true,
+				"TypescriptType": {
+					"name": "AttributeTypeCode",
+					"outputType": 0,
+					"importLocation": "../enums/AttributeTypeCode"
+				}
+			},
+			{
+				"Name": "AttributeOf",
+				"Type": "Edm.String",
+				"TypescriptType": {
+					"name": "string",
+					"outputType": 3
+				}
+			}
+		]
+	}
+}

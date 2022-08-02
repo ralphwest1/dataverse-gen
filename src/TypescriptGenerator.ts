@@ -38,6 +38,13 @@ export class TypescriptGenerator {
 
     // Check output folder exists
     this.createDir(this.getOutputRoot());
+    const genMetadataDir = path.join(this.projectDir, "genMetadata");
+    this.createDir(genMetadataDir);
+    fs.writeFileSync(
+      path.join(genMetadataDir, "options.json"),
+      // JSON.stringify(this.options, getCircularReplacer(), "\t"),
+      JSON.stringify(this.options, null, "\t"),
+    );
 
     // Set Metadata
     setMetadataCache(metadataCache);
@@ -51,7 +58,7 @@ export class TypescriptGenerator {
     await schema.generate();
     // console.log(schema);
     // console.log(JSON.stringify(schema, null, 2));
-    this.outputJsonFile("dev", "SchemaGenerator", schema.getData());
+    // this.outputJsonFile("dev", "SchemaGenerator", schema.getData());
     this.outputEntities(schema);
     this.outputEnums(schema);
     this.outputActions(schema);
@@ -212,8 +219,9 @@ export class TypescriptGenerator {
 
     // Create output directory
     const enumRootPath = path.join(outputRoot, outputDir);
-    const generatorMetadataPath = path.join(outputRoot, "generatorMetadata", outputDir);
     this.createDir(enumRootPath);
+    const genMetadataDir = path.join(outputRoot, "genMetadata", outputDir);
+    this.createDir(genMetadataDir);
 
     // Read template from the current project if it exists
     const projectTemplatePath = path.join(
@@ -232,7 +240,7 @@ export class TypescriptGenerator {
     for (const item of itemArray) {
       const fileName = getFileName(item);
       const outFile = path.join(enumRootPath, `${fileName}${this.options.output?.fileSuffix}`);
-      const outFileRaw = path.join(generatorMetadataPath, `${fileName}.json`);
+      const outFileGenMetadata = path.join(genMetadataDir, `${fileName}.json`);
       let output = "";
       try {
         console.log("Generating: " + outFile);
@@ -243,7 +251,10 @@ export class TypescriptGenerator {
       }
       fs.writeFileSync(outFile, output);
       // eslint-disable-next-line @typescript-eslint/no-use-before-define
-      fs.writeFileSync(outFileRaw, JSON.stringify({ options: this.options, item }, getCircularReplacer(), "\t"));
+      fs.writeFileSync(
+        outFileGenMetadata,
+        JSON.stringify({ options: this.options, item }, getCircularReplacer(), "\t"),
+      );
     }
   }
   outputJsonFile(outputDir: string, fileName: string, data: any): void {
