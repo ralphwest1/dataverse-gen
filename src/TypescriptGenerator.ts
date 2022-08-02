@@ -212,6 +212,7 @@ export class TypescriptGenerator {
 
     // Create output directory
     const enumRootPath = path.join(outputRoot, outputDir);
+    const generatorMetadataPath = path.join(outputRoot, "generatorMetadata", outputDir);
     this.createDir(enumRootPath);
 
     // Read template from the current project if it exists
@@ -231,7 +232,7 @@ export class TypescriptGenerator {
     for (const item of itemArray) {
       const fileName = getFileName(item);
       const outFile = path.join(enumRootPath, `${fileName}${this.options.output?.fileSuffix}`);
-      const outFileRaw = path.join(enumRootPath, `${fileName}_data${this.options.output?.fileSuffix}`);
+      const outFileRaw = path.join(generatorMetadataPath, `${fileName}.json`);
       let output = "";
       try {
         console.log("Generating: " + outFile);
