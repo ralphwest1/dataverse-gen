@@ -27,6 +27,12 @@ export const <%- Name %>Metadata = {
   },
 };
 
+export const <%- Name %>Collections = {
+  <%_ NavigationProperties.filter(n=>n.IsCollection).forEach(function(navProp){ _%>
+  <%-navProp.Name%>: [<%-navProp.Type.split(",").map(function(a){return '"' + a + '"'}).join(",")%>],
+  <%_})_%>
+},
+
 // Attribute constants
 export const enum <%- locals.SchemaName %>Attributes {
 <%locals.Properties && locals.Properties.forEach(function(property){ _%>
