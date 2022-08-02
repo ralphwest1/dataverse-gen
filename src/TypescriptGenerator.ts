@@ -231,6 +231,7 @@ export class TypescriptGenerator {
     for (const item of itemArray) {
       const fileName = getFileName(item);
       const outFile = path.join(enumRootPath, `${fileName}${this.options.output?.fileSuffix}`);
+      const outFileRaw = path.join(enumRootPath, `${fileName}_data${this.options.output?.fileSuffix}`);
       let output = "";
       try {
         console.log("Generating: " + outFile);
@@ -240,6 +241,8 @@ export class TypescriptGenerator {
         console.error(ex.message);
       }
       fs.writeFileSync(outFile, output);
+      // eslint-disable-next-line @typescript-eslint/no-use-before-define
+      fs.writeFileSync(outFileRaw, JSON.stringify({ options: this.options, item }, getCircularReplacer(), "\t"));
     }
   }
   outputJsonFile(outputDir: string, fileName: string, data: any): void {
@@ -273,3 +276,17 @@ export class TypescriptGenerator {
     fs.writeFileSync(outFile, output);
   }
 }
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const getCircularReplacer = (): any => {
+  const seen = new WeakSet();
+  return (key, value) => {
+    if (typeof value === "object" && value !== null) {
+      if (seen.has(value)) {
+        return;
+      }
+      seen.add(value);
+    }
+    return value;
+  };
+};
