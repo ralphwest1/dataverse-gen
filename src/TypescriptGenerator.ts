@@ -38,7 +38,7 @@ export class TypescriptGenerator {
 
     // Check output folder exists
     this.createDir(this.getOutputRoot());
-    const genMetadataDir = path.join(this.projectDir, "genMetadata");
+    const genMetadataDir = path.join(this.getOutputRoot(), "genMetadata");
     this.createDir(genMetadataDir);
     fs.writeFileSync(
       path.join(genMetadataDir, "options.json"),
@@ -250,10 +250,10 @@ export class TypescriptGenerator {
         console.error(ex.message);
       }
       fs.writeFileSync(outFile, output);
-      // eslint-disable-next-line @typescript-eslint/no-use-before-define
       fs.writeFileSync(
         outFileGenMetadata,
-        JSON.stringify({ options: this.options, item }, getCircularReplacer(), "\t"),
+        // eslint-disable-next-line @typescript-eslint/no-use-before-define
+        JSON.stringify(item, getCircularReplacer(), "\t"),
       );
     }
   }
