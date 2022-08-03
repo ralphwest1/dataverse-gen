@@ -1,0 +1,17 @@
+{
+	"Name": "dt_dsn_print",
+	"Members": [
+		{
+			"Name": "FullColor",
+			"Value": "1400"
+		},
+		{
+			"Name": "FullColorandWhite",
+			"Value": "1411"
+		},
+		{
+			"Name": "NoPrint",
+			"Value": "1481"
+		}
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"Name": "dt_qbaccount_dt_qbaccount_statecode",
+	"Members": [
+		{
+			"Name": "Active",
+			"Value": "0"
+		},
+		{
+			"Name": "Inactive",
+			"Value": "1"
+		}
+	]
+}

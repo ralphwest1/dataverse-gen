@@ -1,0 +1,13 @@
+{
+	"Name": "dt_transfertape",
+	"Members": [
+		{
+			"Name": "No",
+			"Value": "2300"
+		},
+		{
+			"Name": "TransferTape",
+			"Value": "2301"
+		}
+	]
+}

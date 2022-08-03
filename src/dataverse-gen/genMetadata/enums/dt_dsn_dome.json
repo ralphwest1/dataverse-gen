@@ -1,0 +1,17 @@
+{
+	"Name": "dt_dsn_dome",
+	"Members": [
+		{
+			"Name": "Flexible",
+			"Value": "1500"
+		},
+		{
+			"Name": "ExtraFlexible",
+			"Value": "1511"
+		},
+		{
+			"Name": "NoDome",
+			"Value": "1581"
+		}
+	]
+}

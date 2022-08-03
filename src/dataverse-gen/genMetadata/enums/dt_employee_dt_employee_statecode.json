@@ -1,0 +1,13 @@
+{
+	"Name": "dt_employee_dt_employee_statecode",
+	"Members": [
+		{
+			"Name": "Active",
+			"Value": "0"
+		},
+		{
+			"Name": "Inactive",
+			"Value": "1"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"Name": "dt_dsn_adhesive",
+	"Members": [
+		{
+			"Name": "Permanent",
+			"Value": "1300"
+		},
+		{
+			"Name": "ElephantSnot",
+			"Value": "1311"
+		},
+		{
+			"Name": "Removable",
+			"Value": "1321"
+		},
+		{
+			"Name": "Scrim",
+			"Value": "1331"
+		},
+		{
+			"Name": "Textile",
+			"Value": "1333"
+		},
+		{
+			"Name": "Foam",
+			"Value": "1332"
+		},
+		{
+			"Name": "NoAdhesive",
+			"Value": "1381"
+		},
+		{
+			"Name": "OtherAdhesive",
+			"Value": "1399"
+		}
+	]
+}

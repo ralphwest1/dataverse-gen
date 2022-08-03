@@ -1,0 +1,13 @@
+{
+	"Name": "dt_design_dt_design_statuscode",
+	"Members": [
+		{
+			"Name": "Active",
+			"Value": "1"
+		},
+		{
+			"Name": "Inactive",
+			"Value": "2"
+		}
+	]
+}

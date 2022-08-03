@@ -1,0 +1,17 @@
+{
+	"Name": "dt_domeheight",
+	"Members": [
+		{
+			"Name": "Standard",
+			"Value": "2700"
+		},
+		{
+			"Name": "Thin",
+			"Value": "2711"
+		},
+		{
+			"Name": "Thick",
+			"Value": "2721"
+		}
+	]
+}

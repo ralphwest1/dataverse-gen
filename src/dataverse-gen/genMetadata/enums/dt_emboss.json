@@ -1,0 +1,13 @@
+{
+	"Name": "dt_emboss",
+	"Members": [
+		{
+			"Name": "No",
+			"Value": "2400"
+		},
+		{
+			"Name": "Emboss",
+			"Value": "2401"
+		}
+	]
+}

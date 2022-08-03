@@ -1,0 +1,765 @@
+{
+	"Name": "dt_dometaglog",
+	"BaseType": "mscrm.crmbaseentity",
+	"Key": {
+		"PropertyRef": {
+			"_attributes": {
+				"Name": "dt_dometaglogid"
+			}
+		}
+	},
+	"KeyName": "dt_dometaglogid",
+	"Abstract": false,
+	"Properties": [
+		{
+			"Type": "LookupType",
+			"Name": "createdby",
+			"SchemaName": "CreatedBy",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the user who created the record.",
+			"DisplayName": "Created By",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_createdby_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "createdbyname",
+			"SchemaName": "CreatedByName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "createdbyname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "createdbyyominame",
+			"SchemaName": "CreatedByYomiName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "createdbyyominame",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "createdon",
+			"SchemaName": "CreatedOn",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Date and time when the record was created.",
+			"DisplayName": "Created On",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "createdon",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "createdonbehalfby",
+			"SchemaName": "CreatedOnBehalfBy",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the delegate user who created the record.",
+			"DisplayName": "Created By (Delegate)",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_createdonbehalfby_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "createdonbehalfbyname",
+			"SchemaName": "CreatedOnBehalfByName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "createdonbehalfbyname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "createdonbehalfbyyominame",
+			"SchemaName": "CreatedOnBehalfByYomiName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "createdonbehalfbyyominame",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "MemoType",
+			"Name": "dt_data",
+			"SchemaName": "dt_Data",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Data",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_data",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "UniqueidentifierType",
+			"Name": "dt_dometaglogid",
+			"SchemaName": "dt_DomeTagLogId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier for entity instances",
+			"DisplayName": "DomeTagLog",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Guid",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "dt_dometaglogid",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "dt_endtime",
+			"SchemaName": "dt_EndTime",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "EndTime",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_endtime",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_group",
+			"SchemaName": "dt_Group",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Group",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_group",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_name",
+			"SchemaName": "dt_Name",
+			"IsRequired": true,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Name",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_name",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_recordnumber",
+			"SchemaName": "dt_RecordNumber",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "RecordNumber",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_recordnumber",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "dt_starttime",
+			"SchemaName": "dt_StartTime",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "StartTime",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_starttime",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_status",
+			"SchemaName": "dt_Status",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Status",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_status",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "importsequencenumber",
+			"SchemaName": "ImportSequenceNumber",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Sequence number of the import that created this record.",
+			"DisplayName": "Import Sequence Number",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "importsequencenumber",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "modifiedby",
+			"SchemaName": "ModifiedBy",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the user who modified the record.",
+			"DisplayName": "Modified By",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_modifiedby_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "modifiedbyname",
+			"SchemaName": "ModifiedByName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "modifiedbyname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "modifiedbyyominame",
+			"SchemaName": "ModifiedByYomiName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "modifiedbyyominame",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "modifiedon",
+			"SchemaName": "ModifiedOn",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Date and time when the record was modified.",
+			"DisplayName": "Modified On",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "modifiedon",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "modifiedonbehalfby",
+			"SchemaName": "ModifiedOnBehalfBy",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the delegate user who modified the record.",
+			"DisplayName": "Modified By (Delegate)",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_modifiedonbehalfby_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "modifiedonbehalfbyname",
+			"SchemaName": "ModifiedOnBehalfByName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "modifiedonbehalfbyname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "modifiedonbehalfbyyominame",
+			"SchemaName": "ModifiedOnBehalfByYomiName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "modifiedonbehalfbyyominame",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "organizationid",
+			"SchemaName": "OrganizationId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier for the organization",
+			"DisplayName": "Organization Id",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_organizationid_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "organizationidname",
+			"SchemaName": "OrganizationIdName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "organizationidname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "overriddencreatedon",
+			"SchemaName": "OverriddenCreatedOn",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Date and time that the record was migrated.",
+			"DisplayName": "Record Created On",
+			"Format": "DateOnly:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "overriddencreatedon",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "dt_dometaglog_dt_dometaglog_statecode",
+			"Name": "statecode",
+			"SchemaName": "statecode",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "Status of the DomeTagLog",
+			"DisplayName": "Status",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "dt_dometaglog_dt_dometaglog_statecode",
+				"outputType": 0,
+				"importLocation": "../enums/dt_dometaglog_dt_dometaglog_statecode"
+			},
+			"ApiType": {
+				"propertyName": "statecode",
+				"propertyType": "dt_dometaglog_dt_dometaglog_statecode",
+				"importLocation": "../enums/dt_dometaglog_dt_dometaglog_statecode",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "dt_dometaglog_dt_dometaglog_statuscode",
+			"Name": "statuscode",
+			"SchemaName": "statuscode",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "Reason for the status of the DomeTagLog",
+			"DisplayName": "Status Reason",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "dt_dometaglog_dt_dometaglog_statuscode",
+				"outputType": 0,
+				"importLocation": "../enums/dt_dometaglog_dt_dometaglog_statuscode"
+			},
+			"ApiType": {
+				"propertyName": "statuscode",
+				"propertyType": "dt_dometaglog_dt_dometaglog_statuscode",
+				"importLocation": "../enums/dt_dometaglog_dt_dometaglog_statuscode",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "timezoneruleversionnumber",
+			"SchemaName": "TimeZoneRuleVersionNumber",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "For internal use only.",
+			"DisplayName": "Time Zone Rule Version Number",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "timezoneruleversionnumber",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "utcconversiontimezonecode",
+			"SchemaName": "UTCConversionTimeZoneCode",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Time zone code that was in use when the record was created.",
+			"DisplayName": "UTC Conversion Time Zone Code",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "utcconversiontimezonecode",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "BigIntType",
+			"Name": "versionnumber",
+			"SchemaName": "VersionNumber",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Version Number",
+			"DisplayName": "Version Number",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "versionnumber",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		}
+	],
+	"OpenType": false,
+	"NavigationProperties": [
+		{
+			"Name": "organizationid",
+			"FullName": "organizationid",
+			"IsCollection": false,
+			"Type": "mscrm.organization",
+			"ReferencedProperty": "organizationid",
+			"ReferentialConstraint": "_organizationid_value",
+			"LogicalName": "organization"
+		},
+		{
+			"Name": "modifiedonbehalfby",
+			"FullName": "modifiedonbehalfby",
+			"IsCollection": false,
+			"Type": "mscrm.systemuser",
+			"ReferencedProperty": "systemuserid",
+			"ReferentialConstraint": "_modifiedonbehalfby_value",
+			"LogicalName": "systemuser"
+		},
+		{
+			"Name": "modifiedby",
+			"FullName": "modifiedby",
+			"IsCollection": false,
+			"Type": "mscrm.systemuser",
+			"ReferencedProperty": "systemuserid",
+			"ReferentialConstraint": "_modifiedby_value",
+			"LogicalName": "systemuser"
+		},
+		{
+			"Name": "dt_dometaglog_SyncErrors",
+			"FullName": "dt_dometaglog_SyncErrors",
+			"IsCollection": true,
+			"Type": "mscrm.syncerror",
+			"LogicalName": "syncerror"
+		},
+		{
+			"Name": "dt_dometaglog_ProcessSession",
+			"FullName": "dt_dometaglog_ProcessSession",
+			"IsCollection": true,
+			"Type": "mscrm.processsession",
+			"LogicalName": "processsession"
+		},
+		{
+			"Name": "dt_dometaglog_PrincipalObjectAttributeAccesses",
+			"FullName": "dt_dometaglog_PrincipalObjectAttributeAccesses",
+			"IsCollection": true,
+			"Type": "mscrm.principalobjectattributeaccess",
+			"LogicalName": "principalobjectattributeaccess"
+		},
+		{
+			"Name": "dt_dometaglog_MailboxTrackingFolders",
+			"FullName": "dt_dometaglog_MailboxTrackingFolders",
+			"IsCollection": true,
+			"Type": "mscrm.mailboxtrackingfolder",
+			"LogicalName": "mailboxtrackingfolder"
+		},
+		{
+			"Name": "dt_dometaglog_BulkDeleteFailures",
+			"FullName": "dt_dometaglog_BulkDeleteFailures",
+			"IsCollection": true,
+			"Type": "mscrm.bulkdeletefailure",
+			"LogicalName": "bulkdeletefailure"
+		},
+		{
+			"Name": "dt_dometaglog_AsyncOperations",
+			"FullName": "dt_dometaglog_AsyncOperations",
+			"IsCollection": true,
+			"Type": "mscrm.asyncoperation",
+			"LogicalName": "asyncoperation"
+		},
+		{
+			"Name": "createdonbehalfby",
+			"FullName": "createdonbehalfby",
+			"IsCollection": false,
+			"Type": "mscrm.systemuser",
+			"ReferencedProperty": "systemuserid",
+			"ReferentialConstraint": "_createdonbehalfby_value",
+			"LogicalName": "systemuser"
+		},
+		{
+			"Name": "createdby",
+			"FullName": "createdby",
+			"IsCollection": false,
+			"Type": "mscrm.systemuser",
+			"ReferencedProperty": "systemuserid",
+			"ReferentialConstraint": "_createdby_value",
+			"LogicalName": "systemuser"
+		}
+	],
+	"ReferencedBy": [],
+	"EntitySetName": "dt_dometaglogs",
+	"SchemaName": "dt_DomeTagLog"
+}

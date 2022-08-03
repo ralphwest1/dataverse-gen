@@ -1,0 +1,13 @@
+{
+	"Name": "dt_orderingoptions_design",
+	"Members": [
+		{
+			"Name": "BlindProof",
+			"Value": "206500001"
+		},
+		{
+			"Name": "BlindPrint",
+			"Value": "206500002"
+		}
+	]
+}

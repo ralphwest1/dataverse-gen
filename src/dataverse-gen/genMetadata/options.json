@@ -1,7 +1,13 @@
 {
 	"entities": [
 		"dt_order",
-		"dt_orderline"
+		"dt_orderline",
+		"dt_design",
+		"dt_dometagconfig",
+		"dt_dometaglog",
+		"dt_order",
+		"dt_employee",
+		"dt_qbaccount"
 	],
 	"actions": [],
 	"functions": [

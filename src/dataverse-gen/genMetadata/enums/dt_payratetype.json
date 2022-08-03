@@ -1,0 +1,13 @@
+{
+	"Name": "dt_payratetype",
+	"Members": [
+		{
+			"Name": "Hourly",
+			"Value": "206500000"
+		},
+		{
+			"Name": "Salary",
+			"Value": "206500001"
+		}
+	]
+}

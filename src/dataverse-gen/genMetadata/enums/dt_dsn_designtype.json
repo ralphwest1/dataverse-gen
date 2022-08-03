@@ -1,0 +1,13 @@
+{
+	"Name": "dt_dsn_designtype",
+	"Members": [
+		{
+			"Name": "PrintandDome",
+			"Value": "3100"
+		},
+		{
+			"Name": "DomeOnly",
+			"Value": "3111"
+		}
+	]
+}

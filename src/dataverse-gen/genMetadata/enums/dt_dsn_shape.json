@@ -1,0 +1,33 @@
+{
+	"Name": "dt_dsn_shape",
+	"Members": [
+		{
+			"Name": "Circle",
+			"Value": "1100"
+		},
+		{
+			"Name": "Oval",
+			"Value": "1111"
+		},
+		{
+			"Name": "Square",
+			"Value": "1121"
+		},
+		{
+			"Name": "Rectangle",
+			"Value": "1131"
+		},
+		{
+			"Name": "CustomSimple",
+			"Value": "1141"
+		},
+		{
+			"Name": "CustomComplex",
+			"Value": "1151"
+		},
+		{
+			"Name": "Scripted",
+			"Value": "1161"
+		}
+	]
+}

@@ -1,0 +1,69 @@
+{
+	"Name": "dt_printmaterial",
+	"Members": [
+		{
+			"Name": "WhitePermanent",
+			"Value": "1610"
+		},
+		{
+			"Name": "WhiteElephantSnot",
+			"Value": "1612"
+		},
+		{
+			"Name": "BrightSilverPermanent",
+			"Value": "1621"
+		},
+		{
+			"Name": "BrightSilverElephantSnot",
+			"Value": "1622"
+		},
+		{
+			"Name": "BrushedSilverPermanent",
+			"Value": "1631"
+		},
+		{
+			"Name": "BrushedSilverElephantSnot",
+			"Value": "1632"
+		},
+		{
+			"Name": "ClearElephantSnot",
+			"Value": "1641"
+		},
+		{
+			"Name": "ClearPolyLinerPermanent",
+			"Value": "1642"
+		},
+		{
+			"Name": "HolographicShimsElephantSnot",
+			"Value": "1661"
+		},
+		{
+			"Name": "HolographicNoShimsElephantSnot",
+			"Value": "1662"
+		},
+		{
+			"Name": "ReflectiveElephantSnot",
+			"Value": "1671"
+		},
+		{
+			"Name": "MatteSilverBrightPermanent",
+			"Value": "1672"
+		},
+		{
+			"Name": "MatteSilverDullElephantSnot",
+			"Value": "1673"
+		},
+		{
+			"Name": "WhiteRemovable",
+			"Value": "1613"
+		},
+		{
+			"Name": "WhiteNoAdhesive",
+			"Value": "1615"
+		},
+		{
+			"Name": "OtherPrintMaterial",
+			"Value": "1699"
+		}
+	]
+}

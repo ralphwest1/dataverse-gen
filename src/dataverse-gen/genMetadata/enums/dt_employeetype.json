@@ -1,0 +1,13 @@
+{
+	"Name": "dt_employeetype",
+	"Members": [
+		{
+			"Name": "Employee",
+			"Value": "206500000"
+		},
+		{
+			"Name": "Temp",
+			"Value": "206500001"
+		}
+	]
+}

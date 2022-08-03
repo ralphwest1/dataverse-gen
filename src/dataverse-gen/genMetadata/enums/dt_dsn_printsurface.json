@@ -1,0 +1,49 @@
+{
+	"Name": "dt_dsn_printsurface",
+	"Members": [
+		{
+			"Name": "White",
+			"Value": "1200"
+		},
+		{
+			"Name": "BrightSilver",
+			"Value": "1211"
+		},
+		{
+			"Name": "BrushedSilver",
+			"Value": "1221"
+		},
+		{
+			"Name": "Clear",
+			"Value": "1241"
+		},
+		{
+			"Name": "MatteSilverBright",
+			"Value": "1231"
+		},
+		{
+			"Name": "MatteSilverDull",
+			"Value": "1232"
+		},
+		{
+			"Name": "Reflective",
+			"Value": "1261"
+		},
+		{
+			"Name": "HolographicShims",
+			"Value": "1251"
+		},
+		{
+			"Name": "HolographicNoShims",
+			"Value": "1252"
+		},
+		{
+			"Name": "ClearPolyLiner",
+			"Value": "1242"
+		},
+		{
+			"Name": "OtherPrintSurface",
+			"Value": "1299"
+		}
+	]
+}

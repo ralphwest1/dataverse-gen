@@ -1,0 +1,21 @@
+{
+	"Name": "dt_layoutfor",
+	"Members": [
+		{
+			"Name": "Sheets",
+			"Value": "2100"
+		},
+		{
+			"Name": "Sets",
+			"Value": "2111"
+		},
+		{
+			"Name": "Singles",
+			"Value": "2121"
+		},
+		{
+			"Name": "Rolls",
+			"Value": "2131"
+		}
+	]
+}

@@ -1,0 +1,2553 @@
+{
+	"Name": "dt_design",
+	"BaseType": "mscrm.crmbaseentity",
+	"Key": {
+		"PropertyRef": {
+			"_attributes": {
+				"Name": "dt_designid"
+			}
+		}
+	},
+	"KeyName": "dt_designid",
+	"Abstract": false,
+	"Properties": [
+		{
+			"Type": "LookupType",
+			"Name": "createdby",
+			"SchemaName": "CreatedBy",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the user who created the record.",
+			"DisplayName": "Created By",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_createdby_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "createdbyname",
+			"SchemaName": "CreatedByName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "createdbyname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "createdbyyominame",
+			"SchemaName": "CreatedByYomiName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "createdbyyominame",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "createdon",
+			"SchemaName": "CreatedOn",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Date and time when the record was created.",
+			"DisplayName": "Created On",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "createdon",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "createdonbehalfby",
+			"SchemaName": "CreatedOnBehalfBy",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the delegate user who created the record.",
+			"DisplayName": "Created By (Delegate)",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_createdonbehalfby_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "createdonbehalfbyname",
+			"SchemaName": "CreatedOnBehalfByName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "createdonbehalfbyname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "createdonbehalfbyyominame",
+			"SchemaName": "CreatedOnBehalfByYomiName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "createdonbehalfbyyominame",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "dnbs_overriddencreatedon",
+			"SchemaName": "dnbs_overriddencreatedon",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "overriddencreatedon",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dnbs_overriddencreatedon",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "dt_account",
+			"SchemaName": "dt_Account",
+			"IsRequired": true,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Account",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_dt_account_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_accountname",
+			"SchemaName": "dt_AccountName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_accountname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_accountyominame",
+			"SchemaName": "dt_AccountYomiName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_accountyominame",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "dt_dsn_adhesive",
+			"Name": "dt_adhesive",
+			"SchemaName": "dt_Adhesive",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "",
+			"DisplayName": "Adhesive",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "dt_dsn_adhesive",
+				"outputType": 0,
+				"importLocation": "../enums/dt_dsn_adhesive"
+			},
+			"ApiType": {
+				"propertyName": "dt_adhesive",
+				"propertyType": "dt_dsn_adhesive",
+				"importLocation": "../enums/dt_dsn_adhesive",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "dt_adhesivelaminate",
+			"Name": "dt_adhesivelaminate",
+			"SchemaName": "dt_AdhesiveLaminate",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "",
+			"DisplayName": "Other Adhesive",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "dt_adhesivelaminate",
+				"outputType": 0,
+				"importLocation": "../enums/dt_adhesivelaminate"
+			},
+			"ApiType": {
+				"propertyName": "dt_adhesivelaminate",
+				"propertyType": "dt_adhesivelaminate",
+				"importLocation": "../enums/dt_adhesivelaminate",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_autonumber",
+			"SchemaName": "dt_AutoNumber",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Auto Number",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_autonumber",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_autonumber_prefixed",
+			"SchemaName": "dt_AutoNumber_Prefixed",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Auto Number - Prefixed",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_autonumber_prefixed",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "MemoType",
+			"Name": "dt_colornotes",
+			"SchemaName": "dt_ColorNotes",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Color Notes",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_colornotes",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_cornerradius",
+			"SchemaName": "dt_CornerRadius",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Corner Radius",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_cornerradius",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "dt_createdbyexternalparty",
+			"SchemaName": "dt_CreatedByExternalParty",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Created By (External Party)",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_createdbyexternalparty",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_customerpartnumber",
+			"SchemaName": "dt_CustomerPartNumber",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Customer Part Number",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_customerpartnumber",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "dt_defaultlayout",
+			"SchemaName": "dt_DefaultLayout",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Default Layout",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_dt_defaultlayout_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_defaultlayoutname",
+			"SchemaName": "dt_DefaultLayoutName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_defaultlayoutname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "MemoType",
+			"Name": "dt_description",
+			"SchemaName": "dt_Description",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Description",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_description",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_design_summary",
+			"SchemaName": "dt_Design_Summary",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Design - Summary",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_design_summary",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "UniqueidentifierType",
+			"Name": "dt_designid",
+			"SchemaName": "dt_DesignId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier for entity instances",
+			"DisplayName": "Design GUID",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Guid",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "dt_designid",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_designname",
+			"SchemaName": "dt_DesignName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Design Name",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_designname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_designotherspecifications_summary",
+			"SchemaName": "dt_DesignOtherSpecifications_Summary",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Design Other Specifications - Summary",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_designotherspecifications_summary",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_designspecifications_summary",
+			"SchemaName": "dt_DesignSpecifications_Summary",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Design Specifications - Summary",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_designspecifications_summary",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "dt_dsn_designtype",
+			"Name": "dt_designtype",
+			"SchemaName": "dt_DesignType",
+			"IsRequired": true,
+			"IsEnum": true,
+			"Description": "",
+			"DisplayName": "Design Type",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "dt_dsn_designtype",
+				"outputType": 0,
+				"importLocation": "../enums/dt_dsn_designtype"
+			},
+			"ApiType": {
+				"propertyName": "dt_designtype",
+				"propertyType": "dt_dsn_designtype",
+				"importLocation": "../enums/dt_dsn_designtype",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "dt_dsn_dome",
+			"Name": "dt_dome",
+			"SchemaName": "dt_Dome",
+			"IsRequired": true,
+			"IsEnum": true,
+			"Description": "",
+			"DisplayName": "Dome",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "dt_dsn_dome",
+				"outputType": 0,
+				"importLocation": "../enums/dt_dsn_dome"
+			},
+			"ApiType": {
+				"propertyName": "dt_dome",
+				"propertyType": "dt_dsn_dome",
+				"importLocation": "../enums/dt_dsn_dome",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "dt_domeheight",
+			"Name": "dt_domeheight",
+			"SchemaName": "dt_DomeHeight",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "",
+			"DisplayName": "Dome Height",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "dt_domeheight",
+				"outputType": 0,
+				"importLocation": "../enums/dt_domeheight"
+			},
+			"ApiType": {
+				"propertyName": "dt_domeheight",
+				"propertyType": "dt_domeheight",
+				"importLocation": "../enums/dt_domeheight",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "dt_emboss",
+			"Name": "dt_emboss",
+			"SchemaName": "dt_Emboss",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "",
+			"DisplayName": "Emboss",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "dt_emboss",
+				"outputType": 0,
+				"importLocation": "../enums/dt_emboss"
+			},
+			"ApiType": {
+				"propertyName": "dt_emboss",
+				"propertyType": "dt_emboss",
+				"importLocation": "../enums/dt_emboss",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "dt_foilstamp",
+			"Name": "dt_foilstamp",
+			"SchemaName": "dt_FoilStamp",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "",
+			"DisplayName": "Foil Stamp",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "dt_foilstamp",
+				"outputType": 0,
+				"importLocation": "../enums/dt_foilstamp"
+			},
+			"ApiType": {
+				"propertyName": "dt_foilstamp",
+				"propertyType": "dt_foilstamp",
+				"importLocation": "../enums/dt_foilstamp",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "BooleanType",
+			"Name": "dt_hasdocuments",
+			"SchemaName": "dt_hasDocuments",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "hasDocuments",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "boolean",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_hasdocuments",
+				"propertyType": "boolean",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_id",
+			"SchemaName": "dt_ID",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Design ID",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_id",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_imagemetadata",
+			"SchemaName": "dt_ImageMetaData",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "ImageMetaData",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_imagemetadata",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "DecimalType",
+			"Name": "dt_labelheight",
+			"SchemaName": "dt_LabelHeight",
+			"IsRequired": true,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Height",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_labelheight",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DecimalType",
+			"Name": "dt_labelwidth",
+			"SchemaName": "dt_LabelWidth",
+			"IsRequired": true,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Width",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_labelwidth",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "dt_lastorder_rollup",
+			"SchemaName": "dt_LastOrder_Rollup",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Last Order",
+			"Format": "DateOnly:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_lastorder_rollup",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "dt_lastorder_rollup_date",
+			"SchemaName": "dt_LastOrder_Rollup_Date",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Last Updated time of rollup field Last Order.",
+			"DisplayName": "Last Order (Last Updated On)",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_lastorder_rollup_date",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "dt_lastorder_rollup_state",
+			"SchemaName": "dt_LastOrder_Rollup_State",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "State of rollup field Last Order.",
+			"DisplayName": "Last Order (State)",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_lastorder_rollup_state",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "dt_layoutfor",
+			"Name": "dt_layoutfor",
+			"SchemaName": "dt_LayoutFor",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "",
+			"DisplayName": "Layout For",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "dt_layoutfor",
+				"outputType": 0,
+				"importLocation": "../enums/dt_layoutfor"
+			},
+			"ApiType": {
+				"propertyName": "dt_layoutfor",
+				"propertyType": "dt_layoutfor",
+				"importLocation": "../enums/dt_layoutfor",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "dt_orderingoptions_design",
+			"Name": "dt_orderingoptions",
+			"SchemaName": "dt_OrderingOptions",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "",
+			"DisplayName": "Ordering Options",
+			"Format": "",
+			"IsMultiSelect": true,
+			"TypescriptType": {
+				"name": "dt_orderingoptions_design[]",
+				"outputType": 0,
+				"importLocation": "../enums/dt_orderingoptions_design"
+			},
+			"ApiType": {
+				"propertyName": "dt_orderingoptions",
+				"propertyType": "dt_orderingoptions_design[]",
+				"importLocation": "../enums/dt_orderingoptions_design",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "dt_orders_rollup",
+			"SchemaName": "dt_Orders_Rollup",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Orders",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_orders_rollup",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "dt_orders_rollup_date",
+			"SchemaName": "dt_Orders_Rollup_Date",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Last Updated time of rollup field Orders.",
+			"DisplayName": "Orders (Last Updated On)",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_orders_rollup_date",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "dt_orders_rollup_state",
+			"SchemaName": "dt_Orders_Rollup_State",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "State of rollup field Orders.",
+			"DisplayName": "Orders (State)",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_orders_rollup_state",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DecimalType",
+			"Name": "dt_perimeterinchesperlabel",
+			"SchemaName": "dt_PerimeterInchesPerLabel",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Perimeter Inches Per Label",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_perimeterinchesperlabel",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DecimalType",
+			"Name": "dt_perimeterinchesperlabel_calculated",
+			"SchemaName": "dt_PerimeterInchesPerLabel_Calculated",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Perimeter Inches Per Label - Calculated",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_perimeterinchesperlabel_calculated",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DecimalType",
+			"Name": "dt_perimeterinchesperlabel_exact",
+			"SchemaName": "dt_PerimeterInchesPerLabel_Exact",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Perimeter Inches Per Label - Exact",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_perimeterinchesperlabel_exact",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_pid",
+			"SchemaName": "dt_PID",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Required name field",
+			"DisplayName": "Design",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_pid",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_pid0",
+			"SchemaName": "dt_PID0",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Design PID",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_pid0",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "ImageType",
+			"Name": "dt_primaryimage",
+			"SchemaName": "dt_PrimaryImage",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Primary Image",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_primaryimage",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "BigIntType",
+			"Name": "dt_primaryimage_timestamp",
+			"SchemaName": "dt_PrimaryImage_Timestamp",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_primaryimage_timestamp",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_primaryimage_url",
+			"SchemaName": "dt_PrimaryImage_URL",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_primaryimage_url",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "UniqueidentifierType",
+			"Name": "dt_primaryimageid",
+			"SchemaName": "dt_PrimaryImageId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Guid",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "dt_primaryimageid",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "dt_dsn_print",
+			"Name": "dt_print",
+			"SchemaName": "dt_Print",
+			"IsRequired": true,
+			"IsEnum": true,
+			"Description": "",
+			"DisplayName": "Print",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "dt_dsn_print",
+				"outputType": 0,
+				"importLocation": "../enums/dt_dsn_print"
+			},
+			"ApiType": {
+				"propertyName": "dt_print",
+				"propertyType": "dt_dsn_print",
+				"importLocation": "../enums/dt_dsn_print",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "dt_printmaterial",
+			"Name": "dt_printmaterial",
+			"SchemaName": "dt_PrintMaterial",
+			"IsRequired": true,
+			"IsEnum": true,
+			"Description": "",
+			"DisplayName": "Print Material",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "dt_printmaterial",
+				"outputType": 0,
+				"importLocation": "../enums/dt_printmaterial"
+			},
+			"ApiType": {
+				"propertyName": "dt_printmaterial",
+				"propertyType": "dt_printmaterial",
+				"importLocation": "../enums/dt_printmaterial",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_printmaterial_text",
+			"SchemaName": "dt_PrintMaterial_Text",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Print Material Text",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_printmaterial_text",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "dt_dsn_printsurface",
+			"Name": "dt_printsurface",
+			"SchemaName": "dt_PrintSurface",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "",
+			"DisplayName": "Print Surface",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "dt_dsn_printsurface",
+				"outputType": 0,
+				"importLocation": "../enums/dt_dsn_printsurface"
+			},
+			"ApiType": {
+				"propertyName": "dt_printsurface",
+				"propertyType": "dt_dsn_printsurface",
+				"importLocation": "../enums/dt_dsn_printsurface",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_prooffile",
+			"SchemaName": "dt_ProofFile",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Proof File",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_prooffile",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_prooflink",
+			"SchemaName": "dt_prooflink",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Proof Link",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_prooflink",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "DecimalType",
+			"Name": "dt_quantityordered_rollup",
+			"SchemaName": "dt_QuantityOrdered_Rollup",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Quantity Ordered",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_quantityordered_rollup",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "dt_quantityordered_rollup_date",
+			"SchemaName": "dt_QuantityOrdered_Rollup_Date",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Last Updated time of rollup field Quantity Ordered.",
+			"DisplayName": "Quantity Ordered (Last Updated On)",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_quantityordered_rollup_date",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "dt_quantityordered_rollup_state",
+			"SchemaName": "dt_QuantityOrdered_Rollup_State",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "State of rollup field Quantity Ordered.",
+			"DisplayName": "Quantity Ordered (State)",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_quantityordered_rollup_state",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "MoneyType",
+			"Name": "dt_revenue_rollup",
+			"SchemaName": "dt_Revenue_Rollup",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Revenue",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_revenue_rollup",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "MoneyType",
+			"Name": "dt_revenue_rollup_base",
+			"SchemaName": "dt_revenue_rollup_Base",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Value of the Revenue in base currency.",
+			"DisplayName": "Revenue (Base)",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_revenue_rollup_base",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "dt_revenue_rollup_date",
+			"SchemaName": "dt_Revenue_Rollup_Date",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Last Updated time of rollup field Revenue.",
+			"DisplayName": "Revenue (Last Updated On)",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_revenue_rollup_date",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "dt_revenue_rollup_state",
+			"SchemaName": "dt_Revenue_Rollup_State",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "State of rollup field Revenue.",
+			"DisplayName": "Revenue (State)",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_revenue_rollup_state",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "dt_dsn_shape",
+			"Name": "dt_shape",
+			"SchemaName": "dt_Shape",
+			"IsRequired": true,
+			"IsEnum": true,
+			"Description": "",
+			"DisplayName": "Shape",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "dt_dsn_shape",
+				"outputType": 0,
+				"importLocation": "../enums/dt_dsn_shape"
+			},
+			"ApiType": {
+				"propertyName": "dt_shape",
+				"propertyType": "dt_dsn_shape",
+				"importLocation": "../enums/dt_dsn_shape",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "BooleanType",
+			"Name": "dt_sharepointfolder",
+			"SchemaName": "dt_SharePointFolder",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Share Point Folder",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "boolean",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_sharepointfolder",
+				"propertyType": "boolean",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DecimalType",
+			"Name": "dt_squareinchesperlabel",
+			"SchemaName": "dt_SquareInchesPerLabel",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Square Inches Per Label",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_squareinchesperlabel",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DecimalType",
+			"Name": "dt_squareinchesperlabel_calculated",
+			"SchemaName": "dt_SquareInchesPerLabel_Calculated",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Square Inches Per Label - Calculated",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_squareinchesperlabel_calculated",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DecimalType",
+			"Name": "dt_squareinchesperlabel_exact",
+			"SchemaName": "dt_SquareInchesPerLabel_Exact",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Square Inches Per Label - Exact",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_squareinchesperlabel_exact",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "dt_transfertape",
+			"Name": "dt_transfertape",
+			"SchemaName": "dt_TransferTape",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "",
+			"DisplayName": "Transfer Tape",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "dt_transfertape",
+				"outputType": 0,
+				"importLocation": "../enums/dt_transfertape"
+			},
+			"ApiType": {
+				"propertyName": "dt_transfertape",
+				"propertyType": "dt_transfertape",
+				"importLocation": "../enums/dt_transfertape",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "dt_dsn_variabledata",
+			"Name": "dt_variabledata",
+			"SchemaName": "dt_VariableData",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "",
+			"DisplayName": "Variable  Data",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "dt_dsn_variabledata",
+				"outputType": 0,
+				"importLocation": "../enums/dt_dsn_variabledata"
+			},
+			"ApiType": {
+				"propertyName": "dt_variabledata",
+				"propertyType": "dt_dsn_variabledata",
+				"importLocation": "../enums/dt_dsn_variabledata",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DecimalType",
+			"Name": "exchangerate",
+			"SchemaName": "ExchangeRate",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Exchange rate for the currency associated with the entity with respect to the base currency.",
+			"DisplayName": "Exchange Rate",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "exchangerate",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "importsequencenumber",
+			"SchemaName": "ImportSequenceNumber",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Sequence number of the import that created this record.",
+			"DisplayName": "Import Sequence Number",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "importsequencenumber",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "modifiedby",
+			"SchemaName": "ModifiedBy",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the user who modified the record.",
+			"DisplayName": "Modified By",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_modifiedby_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "modifiedbyname",
+			"SchemaName": "ModifiedByName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "modifiedbyname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "modifiedbyyominame",
+			"SchemaName": "ModifiedByYomiName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "modifiedbyyominame",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "modifiedon",
+			"SchemaName": "ModifiedOn",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Date and time when the record was modified.",
+			"DisplayName": "Modified On",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "modifiedon",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "modifiedonbehalfby",
+			"SchemaName": "ModifiedOnBehalfBy",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the delegate user who modified the record.",
+			"DisplayName": "Modified By (Delegate)",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_modifiedonbehalfby_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "modifiedonbehalfbyname",
+			"SchemaName": "ModifiedOnBehalfByName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "modifiedonbehalfbyname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "modifiedonbehalfbyyominame",
+			"SchemaName": "ModifiedOnBehalfByYomiName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "modifiedonbehalfbyyominame",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "overriddencreatedon",
+			"SchemaName": "OverriddenCreatedOn",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Date and time that the record was migrated.",
+			"DisplayName": "Record Created On",
+			"Format": "DateOnly:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "overriddencreatedon",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "OwnerType",
+			"Name": "ownerid",
+			"SchemaName": "OwnerId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Owner Id",
+			"DisplayName": "Owner",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_ownerid_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "owneridname",
+			"SchemaName": "OwnerIdName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Name of the owner",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "owneridname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "EntityNameType",
+			"Name": "owneridtype",
+			"SchemaName": "OwnerIdType",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Owner Id Type",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "owneridtype",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "owneridyominame",
+			"SchemaName": "OwnerIdYomiName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Yomi name of the owner",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "owneridyominame",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "owningbusinessunit",
+			"SchemaName": "OwningBusinessUnit",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier for the business unit that owns the record",
+			"DisplayName": "Owning Business Unit",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_owningbusinessunit_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "owningbusinessunitname",
+			"SchemaName": "OwningBusinessUnitName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "owningbusinessunitname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "owningteam",
+			"SchemaName": "OwningTeam",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier for the team that owns the record.",
+			"DisplayName": "Owning Team",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_owningteam_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@Microsoft.Dynamics.CRM.lookuplogicalname"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "owninguser",
+			"SchemaName": "OwningUser",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier for the user that owns the record.",
+			"DisplayName": "Owning User",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_owninguser_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@Microsoft.Dynamics.CRM.lookuplogicalname"
+				]
+			}
+		},
+		{
+			"Type": "dt_design_dt_design_statecode",
+			"Name": "statecode",
+			"SchemaName": "statecode",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "Status of the Design",
+			"DisplayName": "Status",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "dt_design_dt_design_statecode",
+				"outputType": 0,
+				"importLocation": "../enums/dt_design_dt_design_statecode"
+			},
+			"ApiType": {
+				"propertyName": "statecode",
+				"propertyType": "dt_design_dt_design_statecode",
+				"importLocation": "../enums/dt_design_dt_design_statecode",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "dt_design_dt_design_statuscode",
+			"Name": "statuscode",
+			"SchemaName": "statuscode",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "Reason for the status of the Design",
+			"DisplayName": "Status Reason",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "dt_design_dt_design_statuscode",
+				"outputType": 0,
+				"importLocation": "../enums/dt_design_dt_design_statuscode"
+			},
+			"ApiType": {
+				"propertyName": "statuscode",
+				"propertyType": "dt_design_dt_design_statuscode",
+				"importLocation": "../enums/dt_design_dt_design_statuscode",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "timezoneruleversionnumber",
+			"SchemaName": "TimeZoneRuleVersionNumber",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "For internal use only.",
+			"DisplayName": "Time Zone Rule Version Number",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "timezoneruleversionnumber",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "transactioncurrencyid",
+			"SchemaName": "TransactionCurrencyId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the currency associated with the entity.",
+			"DisplayName": "Currency",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_transactioncurrencyid_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "transactioncurrencyidname",
+			"SchemaName": "TransactionCurrencyIdName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "transactioncurrencyidname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "utcconversiontimezonecode",
+			"SchemaName": "UTCConversionTimeZoneCode",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Time zone code that was in use when the record was created.",
+			"DisplayName": "UTC Conversion Time Zone Code",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "utcconversiontimezonecode",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "BigIntType",
+			"Name": "versionnumber",
+			"SchemaName": "VersionNumber",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Version Number",
+			"DisplayName": "Version Number",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "versionnumber",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		}
+	],
+	"OpenType": false,
+	"NavigationProperties": [
+		{
+			"Name": "transactioncurrencyid",
+			"FullName": "transactioncurrencyid",
+			"IsCollection": false,
+			"Type": "mscrm.transactioncurrency",
+			"ReferencedProperty": "transactioncurrencyid",
+			"ReferentialConstraint": "_transactioncurrencyid_value",
+			"LogicalName": "transactioncurrency"
+		},
+		{
+			"Name": "owninguser",
+			"FullName": "owninguser",
+			"IsCollection": false,
+			"Type": "mscrm.systemuser",
+			"ReferencedProperty": "systemuserid",
+			"ReferentialConstraint": "_owninguser_value",
+			"LogicalName": "systemuser"
+		},
+		{
+			"Name": "owningteam",
+			"FullName": "owningteam",
+			"IsCollection": false,
+			"Type": "mscrm.team",
+			"ReferencedProperty": "teamid",
+			"ReferentialConstraint": "_owningteam_value",
+			"LogicalName": "team"
+		},
+		{
+			"Name": "owningbusinessunit",
+			"FullName": "owningbusinessunit",
+			"IsCollection": false,
+			"Type": "mscrm.businessunit",
+			"ReferencedProperty": "businessunitid",
+			"ReferentialConstraint": "_owningbusinessunit_value",
+			"LogicalName": "businessunit"
+		},
+		{
+			"Name": "ownerid",
+			"FullName": "ownerid",
+			"IsCollection": false,
+			"Type": "mscrm.principal",
+			"ReferencedProperty": "ownerid",
+			"ReferentialConstraint": "_ownerid_value",
+			"LogicalName": "principal"
+		},
+		{
+			"Name": "modifiedonbehalfby",
+			"FullName": "modifiedonbehalfby",
+			"IsCollection": false,
+			"Type": "mscrm.systemuser",
+			"ReferencedProperty": "systemuserid",
+			"ReferentialConstraint": "_modifiedonbehalfby_value",
+			"LogicalName": "systemuser"
+		},
+		{
+			"Name": "modifiedby",
+			"FullName": "modifiedby",
+			"IsCollection": false,
+			"Type": "mscrm.systemuser",
+			"ReferencedProperty": "systemuserid",
+			"ReferentialConstraint": "_modifiedby_value",
+			"LogicalName": "systemuser"
+		},
+		{
+			"Name": "dt_design_rc_conversations",
+			"FullName": "dt_design_rc_conversations",
+			"IsCollection": true,
+			"Type": "mscrm.rc_conversation",
+			"LogicalName": "rc_conversation"
+		},
+		{
+			"Name": "dt_design_powf_webformactivities",
+			"FullName": "dt_design_powf_webformactivities",
+			"IsCollection": true,
+			"Type": "mscrm.powf_webformactivity",
+			"LogicalName": "powf_webformactivity"
+		},
+		{
+			"Name": "dt_design_po_creditcardtransactions",
+			"FullName": "dt_design_po_creditcardtransactions",
+			"IsCollection": true,
+			"Type": "mscrm.po_creditcardtransaction",
+			"LogicalName": "po_creditcardtransaction"
+		},
+		{
+			"Name": "dt_design_po_achtransactions",
+			"FullName": "dt_design_po_achtransactions",
+			"IsCollection": true,
+			"Type": "mscrm.po_achtransaction",
+			"LogicalName": "po_achtransaction"
+		},
+		{
+			"Name": "dt_design_msfp_surveyresponses",
+			"FullName": "dt_design_msfp_surveyresponses",
+			"IsCollection": true,
+			"Type": "mscrm.msfp_surveyresponse",
+			"LogicalName": "msfp_surveyresponse"
+		},
+		{
+			"Name": "dt_design_msfp_surveyinvites",
+			"FullName": "dt_design_msfp_surveyinvites",
+			"IsCollection": true,
+			"Type": "mscrm.msfp_surveyinvite",
+			"LogicalName": "msfp_surveyinvite"
+		},
+		{
+			"Name": "dt_design_msfp_alerts",
+			"FullName": "dt_design_msfp_alerts",
+			"IsCollection": true,
+			"Type": "mscrm.msfp_alert",
+			"LogicalName": "msfp_alert"
+		},
+		{
+			"Name": "dt_design_msdyn_ocsessions",
+			"FullName": "dt_design_msdyn_ocsessions",
+			"IsCollection": true,
+			"Type": "mscrm.msdyn_ocsession",
+			"LogicalName": "msdyn_ocsession"
+		},
+		{
+			"Name": "dt_design_msdyn_ocliveworkitems",
+			"FullName": "dt_design_msdyn_ocliveworkitems",
+			"IsCollection": true,
+			"Type": "mscrm.msdyn_ocliveworkitem",
+			"LogicalName": "msdyn_ocliveworkitem"
+		},
+		{
+			"Name": "dt_design_msdyn_bookingalerts",
+			"FullName": "dt_design_msdyn_bookingalerts",
+			"IsCollection": true,
+			"Type": "mscrm.msdyn_bookingalert",
+			"LogicalName": "msdyn_bookingalert"
+		},
+		{
+			"Name": "dt_design_li_pointdrivepresentationvieweds",
+			"FullName": "dt_design_li_pointdrivepresentationvieweds",
+			"IsCollection": true,
+			"Type": "mscrm.li_pointdrivepresentationviewed",
+			"LogicalName": "li_pointdrivepresentationviewed"
+		},
+		{
+			"Name": "dt_design_li_messages",
+			"FullName": "dt_design_li_messages",
+			"IsCollection": true,
+			"Type": "mscrm.li_message",
+			"LogicalName": "li_message"
+		},
+		{
+			"Name": "dt_design_li_inmails",
+			"FullName": "dt_design_li_inmails",
+			"IsCollection": true,
+			"Type": "mscrm.li_inmail",
+			"LogicalName": "li_inmail"
+		},
+		{
+			"Name": "dt_design_dt_WebFormActivities",
+			"FullName": "dt_design_dt_WebFormActivities",
+			"IsCollection": true,
+			"Type": "mscrm.dt_webformactivity",
+			"LogicalName": "dt_webformactivity"
+		},
+		{
+			"Name": "dt_design_dt_Updates",
+			"FullName": "dt_design_dt_Updates",
+			"IsCollection": true,
+			"Type": "mscrm.dt_update",
+			"LogicalName": "dt_update"
+		},
+		{
+			"Name": "dt_design_dt_Notes",
+			"FullName": "dt_design_dt_Notes",
+			"IsCollection": true,
+			"Type": "mscrm.dt_note",
+			"LogicalName": "dt_note"
+		},
+		{
+			"Name": "dt_design_dt_GenericSampleses",
+			"FullName": "dt_design_dt_GenericSampleses",
+			"IsCollection": true,
+			"Type": "mscrm.dt_genericsamples",
+			"LogicalName": "dt_genericsamples"
+		},
+		{
+			"Name": "dt_design_chats",
+			"FullName": "dt_design_chats",
+			"IsCollection": true,
+			"Type": "mscrm.chat",
+			"LogicalName": "chat"
+		},
+		{
+			"Name": "dt_design_Tasks",
+			"FullName": "dt_design_Tasks",
+			"IsCollection": true,
+			"Type": "mscrm.task",
+			"LogicalName": "task"
+		},
+		{
+			"Name": "dt_design_SyncErrors",
+			"FullName": "dt_design_SyncErrors",
+			"IsCollection": true,
+			"Type": "mscrm.syncerror",
+			"LogicalName": "syncerror"
+		},
+		{
+			"Name": "dt_design_SocialActivities",
+			"FullName": "dt_design_SocialActivities",
+			"IsCollection": true,
+			"Type": "mscrm.socialactivity",
+			"LogicalName": "socialactivity"
+		},
+		{
+			"Name": "dt_design_SharePointDocumentLocations",
+			"FullName": "dt_design_SharePointDocumentLocations",
+			"IsCollection": true,
+			"Type": "mscrm.sharepointdocumentlocation",
+			"LogicalName": "sharepointdocumentlocation"
+		},
+		{
+			"Name": "dt_design_ServiceAppointments",
+			"FullName": "dt_design_ServiceAppointments",
+			"IsCollection": true,
+			"Type": "mscrm.serviceappointment",
+			"LogicalName": "serviceappointment"
+		},
+		{
+			"Name": "dt_design_RecurringAppointmentMasters",
+			"FullName": "dt_design_RecurringAppointmentMasters",
+			"IsCollection": true,
+			"Type": "mscrm.recurringappointmentmaster",
+			"LogicalName": "recurringappointmentmaster"
+		},
+		{
+			"Name": "dt_design_ProcessSession",
+			"FullName": "dt_design_ProcessSession",
+			"IsCollection": true,
+			"Type": "mscrm.processsession",
+			"LogicalName": "processsession"
+		},
+		{
+			"Name": "dt_design_PrincipalObjectAttributeAccesses",
+			"FullName": "dt_design_PrincipalObjectAttributeAccesses",
+			"IsCollection": true,
+			"Type": "mscrm.principalobjectattributeaccess",
+			"LogicalName": "principalobjectattributeaccess"
+		},
+		{
+			"Name": "dt_design_PhoneCalls",
+			"FullName": "dt_design_PhoneCalls",
+			"IsCollection": true,
+			"Type": "mscrm.phonecall",
+			"LogicalName": "phonecall"
+		},
+		{
+			"Name": "dt_design_MailboxTrackingFolders",
+			"FullName": "dt_design_MailboxTrackingFolders",
+			"IsCollection": true,
+			"Type": "mscrm.mailboxtrackingfolder",
+			"LogicalName": "mailboxtrackingfolder"
+		},
+		{
+			"Name": "dt_design_Letters",
+			"FullName": "dt_design_Letters",
+			"IsCollection": true,
+			"Type": "mscrm.letter",
+			"LogicalName": "letter"
+		},
+		{
+			"Name": "dt_design_Faxes",
+			"FullName": "dt_design_Faxes",
+			"IsCollection": true,
+			"Type": "mscrm.fax",
+			"LogicalName": "fax"
+		},
+		{
+			"Name": "dt_design_Emails",
+			"FullName": "dt_design_Emails",
+			"IsCollection": true,
+			"Type": "mscrm.email",
+			"LogicalName": "email"
+		},
+		{
+			"Name": "dt_design_DuplicateMatchingRecord",
+			"FullName": "dt_design_DuplicateMatchingRecord",
+			"IsCollection": true,
+			"Type": "mscrm.duplicaterecord",
+			"LogicalName": "duplicaterecord"
+		},
+		{
+			"Name": "dt_design_DuplicateBaseRecord",
+			"FullName": "dt_design_DuplicateBaseRecord",
+			"IsCollection": true,
+			"Type": "mscrm.duplicaterecord",
+			"LogicalName": "duplicaterecord"
+		},
+		{
+			"Name": "dt_design_BulkDeleteFailures",
+			"FullName": "dt_design_BulkDeleteFailures",
+			"IsCollection": true,
+			"Type": "mscrm.bulkdeletefailure",
+			"LogicalName": "bulkdeletefailure"
+		},
+		{
+			"Name": "dt_design_AsyncOperations",
+			"FullName": "dt_design_AsyncOperations",
+			"IsCollection": true,
+			"Type": "mscrm.asyncoperation",
+			"LogicalName": "asyncoperation"
+		},
+		{
+			"Name": "dt_design_Appointments",
+			"FullName": "dt_design_Appointments",
+			"IsCollection": true,
+			"Type": "mscrm.appointment",
+			"LogicalName": "appointment"
+		},
+		{
+			"Name": "dt_design_ActivityPointers",
+			"FullName": "dt_design_ActivityPointers",
+			"IsCollection": true,
+			"Type": "mscrm.activitypointer",
+			"LogicalName": "activitypointer"
+		},
+		{
+			"Name": "dt_OrderLine_Design_dt_Design",
+			"FullName": "dt_OrderLine_Design_dt_Design",
+			"IsCollection": true,
+			"Type": "mscrm.dt_orderline",
+			"LogicalName": "dt_orderline"
+		},
+		{
+			"Name": "dt_Incident_Design_dt_Design",
+			"FullName": "dt_Incident_Design_dt_Design",
+			"IsCollection": true,
+			"Type": "mscrm.dt_incident",
+			"LogicalName": "dt_incident"
+		},
+		{
+			"Name": "dt_Design_MarketingPost",
+			"FullName": "dt_Design_MarketingPost",
+			"IsCollection": true,
+			"Type": "mscrm.dt_marketingpost",
+			"LogicalName": "dt_marketingpost"
+		},
+		{
+			"Name": "dt_DesignProof_Design_dt_Design",
+			"FullName": "dt_DesignProof_Design_dt_Design",
+			"IsCollection": true,
+			"Type": "mscrm.dt_designproof",
+			"LogicalName": "dt_designproof"
+		},
+		{
+			"Name": "dt_DesignLayout_Design_dt_Design",
+			"FullName": "dt_DesignLayout_Design_dt_Design",
+			"IsCollection": true,
+			"Type": "mscrm.dt_designlayout",
+			"LogicalName": "dt_designlayout"
+		},
+		{
+			"Name": "dt_DefaultLayout",
+			"FullName": "dt_DefaultLayout",
+			"IsCollection": false,
+			"Type": "mscrm.dt_designlayout",
+			"ReferencedProperty": "dt_designlayoutid",
+			"ReferentialConstraint": "_dt_defaultlayout_value",
+			"LogicalName": "dt_designlayout"
+		},
+		{
+			"Name": "dt_CartLine_Design",
+			"FullName": "dt_CartLine_Design",
+			"IsCollection": true,
+			"Type": "mscrm.dt_cartline",
+			"LogicalName": "dt_cartline"
+		},
+		{
+			"Name": "dt_Account",
+			"FullName": "dt_Account",
+			"IsCollection": false,
+			"Type": "mscrm.account",
+			"ReferencedProperty": "accountid",
+			"ReferentialConstraint": "_dt_account_value",
+			"LogicalName": "account"
+		},
+		{
+			"Name": "createdonbehalfby",
+			"FullName": "createdonbehalfby",
+			"IsCollection": false,
+			"Type": "mscrm.systemuser",
+			"ReferencedProperty": "systemuserid",
+			"ReferentialConstraint": "_createdonbehalfby_value",
+			"LogicalName": "systemuser"
+		},
+		{
+			"Name": "createdby",
+			"FullName": "createdby",
+			"IsCollection": false,
+			"Type": "mscrm.systemuser",
+			"ReferencedProperty": "systemuserid",
+			"ReferentialConstraint": "_createdby_value",
+			"LogicalName": "systemuser"
+		}
+	],
+	"ReferencedBy": [],
+	"EntitySetName": "dt_designs",
+	"SchemaName": "dt_Design"
+}

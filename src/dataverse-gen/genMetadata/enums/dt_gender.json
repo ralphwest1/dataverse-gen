@@ -1,0 +1,13 @@
+{
+	"Name": "dt_gender",
+	"Members": [
+		{
+			"Name": "Female",
+			"Value": "206500000"
+		},
+		{
+			"Name": "Male",
+			"Value": "206500001"
+		}
+	]
+}

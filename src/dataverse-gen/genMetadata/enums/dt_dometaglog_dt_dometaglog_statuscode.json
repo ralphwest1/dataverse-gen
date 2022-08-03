@@ -1,0 +1,13 @@
+{
+	"Name": "dt_dometaglog_dt_dometaglog_statuscode",
+	"Members": [
+		{
+			"Name": "Active",
+			"Value": "1"
+		},
+		{
+			"Name": "Inactive",
+			"Value": "2"
+		}
+	]
+}

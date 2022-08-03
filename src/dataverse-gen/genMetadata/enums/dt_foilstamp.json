@@ -1,0 +1,13 @@
+{
+	"Name": "dt_foilstamp",
+	"Members": [
+		{
+			"Name": "No",
+			"Value": "2500"
+		},
+		{
+			"Name": "FoilStamp",
+			"Value": "2501"
+		}
+	]
+}

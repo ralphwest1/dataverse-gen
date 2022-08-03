@@ -1,0 +1,17 @@
+{
+	"Name": "dt_adhesivelaminate",
+	"Members": [
+		{
+			"Name": "No",
+			"Value": "3500"
+		},
+		{
+			"Name": "Scrim",
+			"Value": "3501"
+		},
+		{
+			"Name": "Foam",
+			"Value": "3502"
+		}
+	]
+}
