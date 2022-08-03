@@ -31,7 +31,12 @@
 				"typeName": "LookupType",
 				"propertyName": "_createdby_value",
 				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify"
+				"importLocation": "dataverse-ify",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
 			}
 		},
 		{
@@ -94,7 +99,10 @@
 				"referencedType": "DateTimeType",
 				"typeName": "DateTimeType",
 				"propertyName": "createdon",
-				"propertyType": "Date"
+				"propertyType": "Date",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -117,7 +125,12 @@
 				"typeName": "LookupType",
 				"propertyName": "_createdonbehalfby_value",
 				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify"
+				"importLocation": "dataverse-ify",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
 			}
 		},
 		{
@@ -180,7 +193,10 @@
 				"referencedType": "DateTimeType",
 				"typeName": "DateTimeType",
 				"propertyName": "dnbs_overriddencreatedon",
-				"propertyType": "Date"
+				"propertyType": "Date",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -203,7 +219,12 @@
 				"typeName": "LookupType",
 				"propertyName": "_dt_account_value",
 				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify"
+				"importLocation": "dataverse-ify",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
 			}
 		},
 		{
@@ -247,7 +268,12 @@
 				"typeName": "LookupType",
 				"propertyName": "_dt_accountmanager_value",
 				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify"
+				"importLocation": "dataverse-ify",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
 			}
 		},
 		{
@@ -352,7 +378,10 @@
 				"referencedType": "BooleanType",
 				"typeName": "BooleanType",
 				"propertyName": "dt_action1",
-				"propertyType": "boolean"
+				"propertyType": "boolean",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -459,7 +488,10 @@
 				"referencedType": "BooleanType",
 				"typeName": "BooleanType",
 				"propertyName": "dt_bit",
-				"propertyType": "boolean"
+				"propertyType": "boolean",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -503,7 +535,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_boxes_estimate",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -549,7 +584,12 @@
 				"typeName": "LookupType",
 				"propertyName": "_dt_contact_value",
 				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify"
+				"importLocation": "dataverse-ify",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
 			}
 		},
 		{
@@ -612,7 +652,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_costperlabel",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -633,7 +676,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_costperlabel_base",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -654,7 +700,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_costperlabel_estimate",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -675,7 +724,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_costperlabel_estimate_base",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -696,7 +748,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_costpersquareinch",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -717,7 +772,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_costpersquareinch_base",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -738,7 +796,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_costpersquareinch_estimate",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -759,7 +820,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_costpersquareinch_estimate_base",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -780,7 +844,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_creditcardamount",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -801,7 +868,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_creditcardamount_base",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -822,7 +892,10 @@
 				"referencedType": "DateTimeType",
 				"typeName": "DateTimeType",
 				"propertyName": "dt_dateapproved",
-				"propertyType": "Date"
+				"propertyType": "Date",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -843,7 +916,10 @@
 				"referencedType": "DateTimeType",
 				"typeName": "DateTimeType",
 				"propertyName": "dt_datecustomerrequested",
-				"propertyType": "Date"
+				"propertyType": "Date",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -864,7 +940,10 @@
 				"referencedType": "DateTimeType",
 				"typeName": "DateTimeType",
 				"propertyName": "dt_dateemailedconfirmation",
-				"propertyType": "Date"
+				"propertyType": "Date",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -885,7 +964,10 @@
 				"referencedType": "DateTimeType",
 				"typeName": "DateTimeType",
 				"propertyName": "dt_dateemailedproof",
-				"propertyType": "Date"
+				"propertyType": "Date",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -906,7 +988,10 @@
 				"referencedType": "DateTimeType",
 				"typeName": "DateTimeType",
 				"propertyName": "dt_dateemailedtracking",
-				"propertyType": "Date"
+				"propertyType": "Date",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -927,7 +1012,10 @@
 				"referencedType": "DateTimeType",
 				"typeName": "DateTimeType",
 				"propertyName": "dt_datefulfilled",
-				"propertyType": "Date"
+				"propertyType": "Date",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -948,7 +1036,10 @@
 				"referencedType": "DateTimeType",
 				"typeName": "DateTimeType",
 				"propertyName": "dt_datesubmitted",
-				"propertyType": "Date"
+				"propertyType": "Date",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -969,7 +1060,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_defect_cost",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -990,7 +1084,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_defect_cost_base",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1011,7 +1108,10 @@
 				"referencedType": "IntegerType",
 				"typeName": "IntegerType",
 				"propertyName": "dt_defect_labels",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1032,7 +1132,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_defect_percent",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1053,7 +1156,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_defect_squareinches",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1074,7 +1180,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_defect_squareinchesinspected",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1095,7 +1204,10 @@
 				"referencedType": "DateTimeType",
 				"typeName": "DateTimeType",
 				"propertyName": "dt_duedate",
-				"propertyType": "Date"
+				"propertyType": "Date",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1116,7 +1228,10 @@
 				"referencedType": "BooleanType",
 				"typeName": "BooleanType",
 				"propertyName": "dt_hasdocuments",
-				"propertyType": "boolean"
+				"propertyType": "boolean",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1158,7 +1273,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_inkmillilitersperorder",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1179,7 +1297,10 @@
 				"referencedType": "DateTimeType",
 				"typeName": "DateTimeType",
 				"propertyName": "dt_laststagetime",
-				"propertyType": "Date"
+				"propertyType": "Date",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1200,7 +1321,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_leadtime_dateapproved",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1221,7 +1345,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_leadtime_datesubmitted",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1265,7 +1392,12 @@
 				"typeName": "LookupType",
 				"propertyName": "_dt_opportunity_value",
 				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify"
+				"importLocation": "dataverse-ify",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
 			}
 		},
 		{
@@ -1370,7 +1502,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_orderedlabels",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1391,7 +1526,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_orderedsheets",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1412,7 +1550,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_orderedsquareinches",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1456,7 +1597,10 @@
 				"referencedType": "IntegerType",
 				"typeName": "IntegerType",
 				"propertyName": "dt_orderlines_count",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1477,7 +1621,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_orderlines_priceadjustmentpercent",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1498,7 +1645,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_orderlines_priceadjustments",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1519,7 +1669,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_orderlines_priceadjustments_base",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1563,7 +1716,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_orderlines_totalprice",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1584,7 +1740,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_orderlines_totalprice_base",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1651,7 +1810,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_otherchargeamount",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1672,7 +1834,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_otherchargeamount_base",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1714,7 +1879,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_overagelabels",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1735,7 +1903,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_overagelabels_estimate",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1756,7 +1927,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_overagepercent",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1777,7 +1951,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_overagepercent_estimate",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1798,7 +1975,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_overagesheets",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1819,7 +1999,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_overagesheets_estimate",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1840,7 +2023,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_overagesquareinches",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1861,7 +2047,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_overagesquareinches_estimate",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1949,7 +2138,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_pricepersquareinch",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1970,7 +2162,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_pricepersquareinch_base",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -2121,7 +2316,10 @@
 				"referencedType": "BooleanType",
 				"typeName": "BooleanType",
 				"propertyName": "dt_redo",
-				"propertyType": "boolean"
+				"propertyType": "boolean",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -2165,7 +2363,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_setupamount",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -2186,7 +2387,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_setupamount_base",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -2207,7 +2411,10 @@
 				"referencedType": "BooleanType",
 				"typeName": "BooleanType",
 				"propertyName": "dt_sharepointfolder",
-				"propertyType": "boolean"
+				"propertyType": "boolean",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -2228,7 +2435,10 @@
 				"referencedType": "BooleanType",
 				"typeName": "BooleanType",
 				"propertyName": "dt_shipfrom",
-				"propertyType": "boolean"
+				"propertyType": "boolean",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -2482,7 +2692,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_shippingactualamount",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -2503,7 +2716,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_shippingactualamount_base",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -2524,7 +2740,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_shippingchargedamount",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -2545,7 +2764,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_shippingchargedamount_base",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -2566,7 +2788,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_shippingestimatedamount",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -2587,7 +2812,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_shippingestimatedamount_base",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -2908,7 +3136,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_substratemsiperorder",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -2929,7 +3160,10 @@
 				"referencedType": "IntegerType",
 				"typeName": "IntegerType",
 				"propertyName": "dt_taskminutes_actual",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -2950,7 +3184,10 @@
 				"referencedType": "IntegerType",
 				"typeName": "IntegerType",
 				"propertyName": "dt_taskminutes_estimate",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -2971,7 +3208,10 @@
 				"referencedType": "IntegerType",
 				"typeName": "IntegerType",
 				"propertyName": "dt_taskminutes_remaining",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3013,7 +3253,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_totalcost",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3034,7 +3277,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_totalcost_art",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3055,7 +3301,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_totalcost_art_base",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3076,7 +3325,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_totalcost_base",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3097,7 +3349,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_totalcost_estimate",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3118,7 +3373,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_totalcost_estimate_base",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3139,7 +3397,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_totalhours",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3160,7 +3421,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_totalhours_estimate",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3181,7 +3445,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_totallabels",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3202,7 +3469,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_totalmargin",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3223,7 +3493,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_totalmargin_base",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3244,7 +3517,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_totalmargin_estimate",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3265,7 +3541,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_totalmargin_estimate_base",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3286,7 +3565,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_totalmarginpercent",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3307,7 +3589,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_totalmarginpercent_estimate",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3328,7 +3613,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_totalprice",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3349,7 +3637,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_totalprice_base",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3370,7 +3661,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_totalpricewithshipping_calcfield",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3391,7 +3685,10 @@
 				"referencedType": "MoneyType",
 				"typeName": "MoneyType",
 				"propertyName": "dt_totalpricewithshipping_calcfield_base",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3412,7 +3709,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_totalsheets",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3433,7 +3733,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_totalsquareinches",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3454,7 +3757,10 @@
 				"referencedType": "IntegerType",
 				"typeName": "IntegerType",
 				"propertyName": "dt_totaltime",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3475,7 +3781,10 @@
 				"referencedType": "IntegerType",
 				"typeName": "IntegerType",
 				"propertyName": "dt_totaltime_art",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3496,7 +3805,10 @@
 				"referencedType": "IntegerType",
 				"typeName": "IntegerType",
 				"propertyName": "dt_totaltime_estimate",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3538,7 +3850,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_urethanelitersperorder",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3559,7 +3874,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "dt_weight_estimate",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3580,7 +3898,10 @@
 				"referencedType": "DecimalType",
 				"typeName": "DecimalType",
 				"propertyName": "exchangerate",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3601,7 +3922,10 @@
 				"referencedType": "IntegerType",
 				"typeName": "IntegerType",
 				"propertyName": "importsequencenumber",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3624,7 +3948,12 @@
 				"typeName": "LookupType",
 				"propertyName": "_modifiedby_value",
 				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify"
+				"importLocation": "dataverse-ify",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
 			}
 		},
 		{
@@ -3687,7 +4016,10 @@
 				"referencedType": "DateTimeType",
 				"typeName": "DateTimeType",
 				"propertyName": "modifiedon",
-				"propertyType": "Date"
+				"propertyType": "Date",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3710,7 +4042,12 @@
 				"typeName": "LookupType",
 				"propertyName": "_modifiedonbehalfby_value",
 				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify"
+				"importLocation": "dataverse-ify",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
 			}
 		},
 		{
@@ -3773,7 +4110,10 @@
 				"referencedType": "DateTimeType",
 				"typeName": "DateTimeType",
 				"propertyName": "overriddencreatedon",
-				"propertyType": "Date"
+				"propertyType": "Date",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3796,7 +4136,12 @@
 				"typeName": "OwnerType",
 				"propertyName": "_ownerid_value",
 				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify"
+				"importLocation": "dataverse-ify",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
 			}
 		},
 		{
@@ -3882,7 +4227,12 @@
 				"typeName": "LookupType",
 				"propertyName": "_owningbusinessunit_value",
 				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify"
+				"importLocation": "dataverse-ify",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
 			}
 		},
 		{
@@ -3926,7 +4276,12 @@
 				"typeName": "LookupType",
 				"propertyName": "_owningteam_value",
 				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify"
+				"importLocation": "dataverse-ify",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
 			}
 		},
 		{
@@ -3949,7 +4304,12 @@
 				"typeName": "LookupType",
 				"propertyName": "_owninguser_value",
 				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify"
+				"importLocation": "dataverse-ify",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
 			}
 		},
 		{
@@ -4062,7 +4422,10 @@
 				"referencedType": "IntegerType",
 				"typeName": "IntegerType",
 				"propertyName": "timezoneruleversionnumber",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -4085,7 +4448,12 @@
 				"typeName": "LookupType",
 				"propertyName": "_transactioncurrencyid_value",
 				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify"
+				"importLocation": "dataverse-ify",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
 			}
 		},
 		{
@@ -4148,7 +4516,10 @@
 				"referencedType": "IntegerType",
 				"typeName": "IntegerType",
 				"propertyName": "utcconversiontimezonecode",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -4169,7 +4540,10 @@
 				"referencedType": "BigIntType",
 				"typeName": "BigIntType",
 				"propertyName": "versionnumber",
-				"propertyType": "number"
+				"propertyType": "number",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		}
 	],

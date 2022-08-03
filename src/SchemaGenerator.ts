@@ -652,6 +652,7 @@ export class SchemaGenerator {
       propertyName,
       propertyType,
       importLocation: property.TypescriptType?.importLocation,
+      formatedValues: formatedValues.length > 0 ? formatedValues : undefined,
     } as TypeScriptType;
     return mappedType;
   }
