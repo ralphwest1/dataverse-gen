@@ -65,6 +65,7 @@ export interface ComplexEntityMetadata {
   IsBPFEntity?: boolean;
   IsAvailableOffline?: boolean;
   IsAuditEnabled?: import("../complextypes/BooleanManagedProperty").BooleanManagedProperty;
+  IsArchivalEnabled?: boolean;
   IsActivityParty?: boolean;
   IsActivity?: boolean;
   IsAIRUpdated?: boolean;

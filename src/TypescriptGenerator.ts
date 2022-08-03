@@ -188,7 +188,7 @@ export class TypescriptGenerator {
   }
 
   outputActions(schema: SchemaGenerator): void {
-    this.outputFiles("action.ejs", "actions", schema.Actions as unknown[], this.nameKey);
+    this.outputFiles("action.ejs", "actions", schema.Actions as unknown[], v => this.nameKey(v) + "_apitype");
   }
 
   outputFunctions(schema: SchemaGenerator): void {

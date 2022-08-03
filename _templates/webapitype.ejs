@@ -1,7 +1,7 @@
 /* eslint-disable*/
 
 // Early Bound Interface for WebApi
-export interface <%- locals.SchemaName ? locals.SchemaName : Name %>_D365Api {
+export interface <%- locals.SchemaName ? locals.SchemaName : Name %>_apitype {
 <%locals.Properties && locals.Properties.filter(v => v.ApiType).forEach(function(property){ _%>
   // <%- property.DisplayName ? property.DisplayName : "" %><%- property.IsRequired == true ? " [Required]" : "" %><%- property.Type ? (" " + property.Type) : "" %><%- property.Description ? (" " + property.Description) :"" %><%- property.Format ? (" " + property.Format) : "" %>
   <%- property.ApiType.propertyName %>?: <%-property.ApiType.importLocation && `import("${property.ApiType.importLocation}").`%><%- property.ApiType.propertyType %><%- property.IsRequired == true ? "" : " | null" %>;
