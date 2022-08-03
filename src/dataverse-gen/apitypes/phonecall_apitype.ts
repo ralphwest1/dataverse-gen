@@ -54,8 +54,7 @@ export interface PhoneCall_apitype {
   // Call Outcome dt_calloutcome
   dt_calloutcome?: import("../enums/dt_calloutcome").dt_calloutcome | null;
   "dt_calloutcome@OData.Community.Display.V1.FormattedValue"?: string | null;
-  // Call Type dt_calltype 
-Orignating Sales
+  // Call Type dt_calltype Orignating Sales
   * An orignating call to a customer or a prospect with the purpose of generating a sales
 Customer Service
   * A call dealing with order details

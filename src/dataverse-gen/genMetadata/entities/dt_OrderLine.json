@@ -329,7 +329,7 @@
 			"SchemaName": "dt_CostMessage",
 			"IsRequired": false,
 			"IsEnum": false,
-			"Description": "Options:\nmercuryfree;\ndeleteink;",
+			"Description": "Options:mercuryfree;\ndeleteink;",
 			"DisplayName": "Cost Message",
 			"Format": "",
 			"IsMultiSelect": false,

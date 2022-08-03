@@ -224,7 +224,7 @@ export class SchemaGenerator {
           IsRequired: attribute.RequiredLevel?.Value == AttributeRequiredLevel.ApplicationRequired,
           IsEnum: optionSetEnum != undefined,
           Description: attribute.Description?.UserLocalizedLabel?.Label
-            ? attribute.Description.UserLocalizedLabel.Label.replace("\n", "")
+            ? attribute.Description.UserLocalizedLabel.Label.replaceAll("\n", "")
             : "",
           DisplayName: attribute.DisplayName?.UserLocalizedLabel ? attribute.DisplayName.UserLocalizedLabel.Label : "",
           Format: dateFormat,

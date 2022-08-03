@@ -417,7 +417,7 @@
 			"SchemaName": "dt_CallType",
 			"IsRequired": false,
 			"IsEnum": true,
-			"Description": "\nOrignating Sales\n  * An orignating call to a customer or a prospect with the purpose of generating a sales\nCustomer Service\n  * A call dealing with order details\n  * clarifying order quantites or art",
+			"Description": "Orignating Sales\n  * An orignating call to a customer or a prospect with the purpose of generating a sales\nCustomer Service\n  * A call dealing with order details\n  * clarifying order quantites or art",
 			"DisplayName": "Call Type",
 			"Format": "",
 			"IsMultiSelect": false,

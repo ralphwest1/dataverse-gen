@@ -44,8 +44,7 @@ export interface dt_OrderLine_apitype {
   // Boxes - Estimate DecimalType
   dt_boxes_estimate?: number | null;
   "dt_boxes_estimate@OData.Community.Display.V1.FormattedValue"?: string | null;
-  // Cost Message StringType Options:
-mercuryfree;
+  // Cost Message StringType Options:mercuryfree;
 deleteink;
   dt_costmessage?: string | null;
   // Cost Per Label MoneyType

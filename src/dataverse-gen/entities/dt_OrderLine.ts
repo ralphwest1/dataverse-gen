@@ -379,8 +379,7 @@ export interface dt_OrderLine extends IEntity {
   dt_autonumber_prefixed?: string | null;
   // Boxes - Estimate DecimalType
   dt_boxes_estimate?: number | null;
-  // Cost Message StringType Options:
-mercuryfree;
+  // Cost Message StringType Options:mercuryfree;
 deleteink;
   dt_costmessage?: string | null;
   // Cost Per Label MoneyType
