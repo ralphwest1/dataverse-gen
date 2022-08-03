@@ -524,7 +524,7 @@ export class SchemaGenerator {
     const isMultiSelect = property.IsMultiSelect;
     const isCollection = this.isCollection(referencedType);
     const typeName = this.removeCollection(referencedType);
-    const formatedValues: string[] = [];
+    const formattedValues: string[] = [];
     let propertyName = property.Name;
     let propertyType = "any";
     /*
@@ -556,13 +556,13 @@ export class SchemaGenerator {
     switch (typeName) {
       case "MultiSelectPicklistType":
         propertyType = "number[]";
-        formatedValues.push("@OData.Community.Display.V1.FormattedValue");
+        formattedValues.push("@OData.Community.Display.V1.FormattedValue");
         break;
       case "PicklistType":
       case "StateType":
       case "StatusType":
         propertyType = "number";
-        formatedValues.push("@OData.Community.Display.V1.FormattedValue");
+        formattedValues.push("@OData.Community.Display.V1.FormattedValue");
         break;
       case "Edm.Guid":
       case "UniqueidentifierType":
@@ -588,17 +588,17 @@ export class SchemaGenerator {
       case "DecimalType":
       case "MoneyType":
         propertyType = "number";
-        formatedValues.push("@OData.Community.Display.V1.FormattedValue");
+        formattedValues.push("@OData.Community.Display.V1.FormattedValue");
         break;
       case "Edm.Boolean":
       case "BooleanType":
         propertyType = "boolean";
-        formatedValues.push("@OData.Community.Display.V1.FormattedValue");
+        formattedValues.push("@OData.Community.Display.V1.FormattedValue");
         break;
       case "Edm.DateTimeOffset":
       case "DateTimeType":
         propertyType = "string";
-        formatedValues.push("@OData.Community.Display.V1.FormattedValue");
+        formattedValues.push("@OData.Community.Display.V1.FormattedValue");
         break;
       case "LookupType":
       case "CustomerType":
@@ -606,11 +606,11 @@ export class SchemaGenerator {
         propertyType = "string";
         propertyName = `_${property.Name}_value`;
         if (property.Name === "owningteam" || property.Name === "owninguser") {
-          formatedValues.push("@Microsoft.Dynamics.CRM.lookuplogicalname");
+          formattedValues.push("@Microsoft.Dynamics.CRM.lookuplogicalname");
         } else {
-          formatedValues.push("@OData.Community.Display.V1.FormattedValue");
-          formatedValues.push("@Microsoft.Dynamics.CRM.lookuplogicalname");
-          formatedValues.push("@Microsoft.Dynamics.CRM.associatednavigationproperty");
+          formattedValues.push("@OData.Community.Display.V1.FormattedValue");
+          formattedValues.push("@Microsoft.Dynamics.CRM.lookuplogicalname");
+          formattedValues.push("@Microsoft.Dynamics.CRM.associatednavigationproperty");
         }
 
         break;
@@ -620,7 +620,7 @@ export class SchemaGenerator {
         break;
       case "ManagedPropertyType":
         propertyType = "number";
-        formatedValues.push("@OData.Community.Display.V1.FormattedValue");
+        formattedValues.push("@OData.Community.Display.V1.FormattedValue");
         break;
       default:
         {
@@ -634,7 +634,7 @@ export class SchemaGenerator {
       propertyType = propertyType + "[]";
     }
     if (property.IsEnum) {
-      formatedValues.push("@OData.Community.Display.V1.FormattedValue");
+      formattedValues.push("@OData.Community.Display.V1.FormattedValue");
     }
     const mappedType = {
       // referencedType,
@@ -642,7 +642,7 @@ export class SchemaGenerator {
       propertyName,
       propertyType,
       importLocation: property.IsEnum ? property.TypescriptType?.importLocation : undefined,
-      formatedValues: formatedValues.length > 0 ? formatedValues : undefined,
+      formattedValues: formattedValues.length > 0 ? formattedValues : undefined,
     };
     return mappedType;
   }

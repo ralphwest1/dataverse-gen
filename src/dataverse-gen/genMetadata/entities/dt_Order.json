@@ -29,7 +29,7 @@
 			"ApiType": {
 				"propertyName": "_createdby_value",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -91,7 +91,7 @@
 			"ApiType": {
 				"propertyName": "createdon",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -114,7 +114,7 @@
 			"ApiType": {
 				"propertyName": "_createdonbehalfby_value",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -176,7 +176,7 @@
 			"ApiType": {
 				"propertyName": "dnbs_overriddencreatedon",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -199,7 +199,7 @@
 			"ApiType": {
 				"propertyName": "_dt_account_value",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -243,7 +243,7 @@
 			"ApiType": {
 				"propertyName": "_dt_accountmanager_value",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -343,7 +343,7 @@
 			"ApiType": {
 				"propertyName": "dt_action1",
 				"propertyType": "boolean",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -367,7 +367,7 @@
 				"propertyName": "dt_artrequired",
 				"propertyType": "dt_artrequired",
 				"importLocation": "../enums/dt_artrequired",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -446,7 +446,7 @@
 			"ApiType": {
 				"propertyName": "dt_bit",
 				"propertyType": "boolean",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -470,7 +470,7 @@
 				"propertyName": "dt_blankoptionset",
 				"propertyType": "dt_blankoptionset",
 				"importLocation": "../enums/dt_blankoptionset",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -492,7 +492,7 @@
 			"ApiType": {
 				"propertyName": "dt_boxes_estimate",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -516,7 +516,7 @@
 				"propertyName": "dt_commissioncategory",
 				"propertyType": "dt_commissioncategory",
 				"importLocation": "../enums/dt_commissioncategory",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -539,7 +539,7 @@
 			"ApiType": {
 				"propertyName": "_dt_contact_value",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -601,7 +601,7 @@
 			"ApiType": {
 				"propertyName": "dt_costperlabel",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -623,7 +623,7 @@
 			"ApiType": {
 				"propertyName": "dt_costperlabel_base",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -645,7 +645,7 @@
 			"ApiType": {
 				"propertyName": "dt_costperlabel_estimate",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -667,7 +667,7 @@
 			"ApiType": {
 				"propertyName": "dt_costperlabel_estimate_base",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -689,7 +689,7 @@
 			"ApiType": {
 				"propertyName": "dt_costpersquareinch",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -711,7 +711,7 @@
 			"ApiType": {
 				"propertyName": "dt_costpersquareinch_base",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -733,7 +733,7 @@
 			"ApiType": {
 				"propertyName": "dt_costpersquareinch_estimate",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -755,7 +755,7 @@
 			"ApiType": {
 				"propertyName": "dt_costpersquareinch_estimate_base",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -777,7 +777,7 @@
 			"ApiType": {
 				"propertyName": "dt_creditcardamount",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -799,7 +799,7 @@
 			"ApiType": {
 				"propertyName": "dt_creditcardamount_base",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -821,7 +821,7 @@
 			"ApiType": {
 				"propertyName": "dt_dateapproved",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -843,7 +843,7 @@
 			"ApiType": {
 				"propertyName": "dt_datecustomerrequested",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -865,7 +865,7 @@
 			"ApiType": {
 				"propertyName": "dt_dateemailedconfirmation",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -887,7 +887,7 @@
 			"ApiType": {
 				"propertyName": "dt_dateemailedproof",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -909,7 +909,7 @@
 			"ApiType": {
 				"propertyName": "dt_dateemailedtracking",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -931,7 +931,7 @@
 			"ApiType": {
 				"propertyName": "dt_datefulfilled",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -953,7 +953,7 @@
 			"ApiType": {
 				"propertyName": "dt_datesubmitted",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -975,7 +975,7 @@
 			"ApiType": {
 				"propertyName": "dt_defect_cost",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -997,7 +997,7 @@
 			"ApiType": {
 				"propertyName": "dt_defect_cost_base",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1019,7 +1019,7 @@
 			"ApiType": {
 				"propertyName": "dt_defect_labels",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1041,7 +1041,7 @@
 			"ApiType": {
 				"propertyName": "dt_defect_percent",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1063,7 +1063,7 @@
 			"ApiType": {
 				"propertyName": "dt_defect_squareinches",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1085,7 +1085,7 @@
 			"ApiType": {
 				"propertyName": "dt_defect_squareinchesinspected",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1107,7 +1107,7 @@
 			"ApiType": {
 				"propertyName": "dt_duedate",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1129,7 +1129,7 @@
 			"ApiType": {
 				"propertyName": "dt_hasdocuments",
 				"propertyType": "boolean",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1170,7 +1170,7 @@
 			"ApiType": {
 				"propertyName": "dt_inkmillilitersperorder",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1192,7 +1192,7 @@
 			"ApiType": {
 				"propertyName": "dt_laststagetime",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1214,7 +1214,7 @@
 			"ApiType": {
 				"propertyName": "dt_leadtime_dateapproved",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1236,7 +1236,7 @@
 			"ApiType": {
 				"propertyName": "dt_leadtime_datesubmitted",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1278,7 +1278,7 @@
 			"ApiType": {
 				"propertyName": "_dt_opportunity_value",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -1378,7 +1378,7 @@
 			"ApiType": {
 				"propertyName": "dt_orderedlabels",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1400,7 +1400,7 @@
 			"ApiType": {
 				"propertyName": "dt_orderedsheets",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1422,7 +1422,7 @@
 			"ApiType": {
 				"propertyName": "dt_orderedsquareinches",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1464,7 +1464,7 @@
 			"ApiType": {
 				"propertyName": "dt_orderlines_count",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1486,7 +1486,7 @@
 			"ApiType": {
 				"propertyName": "dt_orderlines_priceadjustmentpercent",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1508,7 +1508,7 @@
 			"ApiType": {
 				"propertyName": "dt_orderlines_priceadjustments",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1530,7 +1530,7 @@
 			"ApiType": {
 				"propertyName": "dt_orderlines_priceadjustments_base",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1554,7 +1554,7 @@
 				"propertyName": "dt_orderlines_priceadjustmenttypes",
 				"propertyType": "dt_priceadjustmenttype[]",
 				"importLocation": "../enums/dt_priceadjustmenttype",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1576,7 +1576,7 @@
 			"ApiType": {
 				"propertyName": "dt_orderlines_totalprice",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1598,7 +1598,7 @@
 			"ApiType": {
 				"propertyName": "dt_orderlines_totalprice_base",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1622,7 +1622,7 @@
 				"propertyName": "dt_ordertype",
 				"propertyType": "dt_ordertype",
 				"importLocation": "../enums/dt_ordertype",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1646,7 +1646,7 @@
 				"propertyName": "dt_ordertype2",
 				"propertyType": "dt_ordertype2",
 				"importLocation": "../enums/dt_ordertype2",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1668,7 +1668,7 @@
 			"ApiType": {
 				"propertyName": "dt_otherchargeamount",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1690,7 +1690,7 @@
 			"ApiType": {
 				"propertyName": "dt_otherchargeamount_base",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1731,7 +1731,7 @@
 			"ApiType": {
 				"propertyName": "dt_overagelabels",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1753,7 +1753,7 @@
 			"ApiType": {
 				"propertyName": "dt_overagelabels_estimate",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1775,7 +1775,7 @@
 			"ApiType": {
 				"propertyName": "dt_overagepercent",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1797,7 +1797,7 @@
 			"ApiType": {
 				"propertyName": "dt_overagepercent_estimate",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1819,7 +1819,7 @@
 			"ApiType": {
 				"propertyName": "dt_overagesheets",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1841,7 +1841,7 @@
 			"ApiType": {
 				"propertyName": "dt_overagesheets_estimate",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1863,7 +1863,7 @@
 			"ApiType": {
 				"propertyName": "dt_overagesquareinches",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1885,7 +1885,7 @@
 			"ApiType": {
 				"propertyName": "dt_overagesquareinches_estimate",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1909,7 +1909,7 @@
 				"propertyName": "dt_paymentmethod",
 				"propertyType": "dt_paymentmethod",
 				"importLocation": "../enums/dt_paymentmethod",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1933,7 +1933,7 @@
 				"propertyName": "dt_paymentterms",
 				"propertyType": "dt_paymentterms",
 				"importLocation": "../enums/dt_paymentterms",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1974,7 +1974,7 @@
 			"ApiType": {
 				"propertyName": "dt_pricepersquareinch",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -1996,7 +1996,7 @@
 			"ApiType": {
 				"propertyName": "dt_pricepersquareinch_base",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -2020,7 +2020,7 @@
 				"propertyName": "dt_pricingtype",
 				"propertyType": "dt_pricingtype",
 				"importLocation": "../enums/dt_pricingtype",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -2044,7 +2044,7 @@
 				"propertyName": "dt_priority",
 				"propertyType": "dt_orderpriority",
 				"importLocation": "../enums/dt_orderpriority",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -2142,7 +2142,7 @@
 			"ApiType": {
 				"propertyName": "dt_redo",
 				"propertyType": "boolean",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -2166,7 +2166,7 @@
 				"propertyName": "dt_setreorderreminder",
 				"propertyType": "dt_yesnoblank",
 				"importLocation": "../enums/dt_yesnoblank",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -2188,7 +2188,7 @@
 			"ApiType": {
 				"propertyName": "dt_setupamount",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -2210,7 +2210,7 @@
 			"ApiType": {
 				"propertyName": "dt_setupamount_base",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -2232,7 +2232,7 @@
 			"ApiType": {
 				"propertyName": "dt_sharepointfolder",
 				"propertyType": "boolean",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -2254,7 +2254,7 @@
 			"ApiType": {
 				"propertyName": "dt_shipfrom",
 				"propertyType": "boolean",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -2392,7 +2392,7 @@
 				"propertyName": "dt_shipfrom_lookup",
 				"propertyType": "dt_blankoptionset",
 				"importLocation": "../enums/dt_blankoptionset",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -2490,7 +2490,7 @@
 			"ApiType": {
 				"propertyName": "dt_shippingactualamount",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -2512,7 +2512,7 @@
 			"ApiType": {
 				"propertyName": "dt_shippingactualamount_base",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -2534,7 +2534,7 @@
 			"ApiType": {
 				"propertyName": "dt_shippingchargedamount",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -2556,7 +2556,7 @@
 			"ApiType": {
 				"propertyName": "dt_shippingchargedamount_base",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -2578,7 +2578,7 @@
 			"ApiType": {
 				"propertyName": "dt_shippingestimatedamount",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -2600,7 +2600,7 @@
 			"ApiType": {
 				"propertyName": "dt_shippingestimatedamount_base",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -2624,7 +2624,7 @@
 				"propertyName": "dt_shippingmethod",
 				"propertyType": "dt_shippingmethod",
 				"importLocation": "../enums/dt_shippingmethod",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -2667,7 +2667,7 @@
 				"propertyName": "dt_shippingvendor",
 				"propertyType": "dt_shippingvendor",
 				"importLocation": "../enums/dt_shippingvendor",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -2843,7 +2843,7 @@
 				"propertyName": "dt_shipto_lookup",
 				"propertyType": "dt_blankoptionset",
 				"importLocation": "../enums/dt_blankoptionset",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -2903,7 +2903,7 @@
 			"ApiType": {
 				"propertyName": "dt_substratemsiperorder",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -2925,7 +2925,7 @@
 			"ApiType": {
 				"propertyName": "dt_taskminutes_actual",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -2947,7 +2947,7 @@
 			"ApiType": {
 				"propertyName": "dt_taskminutes_estimate",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -2969,7 +2969,7 @@
 			"ApiType": {
 				"propertyName": "dt_taskminutes_remaining",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3010,7 +3010,7 @@
 			"ApiType": {
 				"propertyName": "dt_totalcost",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3032,7 +3032,7 @@
 			"ApiType": {
 				"propertyName": "dt_totalcost_art",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3054,7 +3054,7 @@
 			"ApiType": {
 				"propertyName": "dt_totalcost_art_base",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3076,7 +3076,7 @@
 			"ApiType": {
 				"propertyName": "dt_totalcost_base",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3098,7 +3098,7 @@
 			"ApiType": {
 				"propertyName": "dt_totalcost_estimate",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3120,7 +3120,7 @@
 			"ApiType": {
 				"propertyName": "dt_totalcost_estimate_base",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3142,7 +3142,7 @@
 			"ApiType": {
 				"propertyName": "dt_totalhours",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3164,7 +3164,7 @@
 			"ApiType": {
 				"propertyName": "dt_totalhours_estimate",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3186,7 +3186,7 @@
 			"ApiType": {
 				"propertyName": "dt_totallabels",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3208,7 +3208,7 @@
 			"ApiType": {
 				"propertyName": "dt_totalmargin",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3230,7 +3230,7 @@
 			"ApiType": {
 				"propertyName": "dt_totalmargin_base",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3252,7 +3252,7 @@
 			"ApiType": {
 				"propertyName": "dt_totalmargin_estimate",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3274,7 +3274,7 @@
 			"ApiType": {
 				"propertyName": "dt_totalmargin_estimate_base",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3296,7 +3296,7 @@
 			"ApiType": {
 				"propertyName": "dt_totalmarginpercent",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3318,7 +3318,7 @@
 			"ApiType": {
 				"propertyName": "dt_totalmarginpercent_estimate",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3340,7 +3340,7 @@
 			"ApiType": {
 				"propertyName": "dt_totalprice",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3362,7 +3362,7 @@
 			"ApiType": {
 				"propertyName": "dt_totalprice_base",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3384,7 +3384,7 @@
 			"ApiType": {
 				"propertyName": "dt_totalpricewithshipping_calcfield",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3406,7 +3406,7 @@
 			"ApiType": {
 				"propertyName": "dt_totalpricewithshipping_calcfield_base",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3428,7 +3428,7 @@
 			"ApiType": {
 				"propertyName": "dt_totalsheets",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3450,7 +3450,7 @@
 			"ApiType": {
 				"propertyName": "dt_totalsquareinches",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3472,7 +3472,7 @@
 			"ApiType": {
 				"propertyName": "dt_totaltime",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3494,7 +3494,7 @@
 			"ApiType": {
 				"propertyName": "dt_totaltime_art",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3516,7 +3516,7 @@
 			"ApiType": {
 				"propertyName": "dt_totaltime_estimate",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3557,7 +3557,7 @@
 			"ApiType": {
 				"propertyName": "dt_urethanelitersperorder",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3579,7 +3579,7 @@
 			"ApiType": {
 				"propertyName": "dt_weight_estimate",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3601,7 +3601,7 @@
 			"ApiType": {
 				"propertyName": "exchangerate",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3623,7 +3623,7 @@
 			"ApiType": {
 				"propertyName": "importsequencenumber",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3646,7 +3646,7 @@
 			"ApiType": {
 				"propertyName": "_modifiedby_value",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -3708,7 +3708,7 @@
 			"ApiType": {
 				"propertyName": "modifiedon",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3731,7 +3731,7 @@
 			"ApiType": {
 				"propertyName": "_modifiedonbehalfby_value",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -3793,7 +3793,7 @@
 			"ApiType": {
 				"propertyName": "overriddencreatedon",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -3816,7 +3816,7 @@
 			"ApiType": {
 				"propertyName": "_ownerid_value",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -3898,7 +3898,7 @@
 			"ApiType": {
 				"propertyName": "_owningbusinessunit_value",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -3942,7 +3942,7 @@
 			"ApiType": {
 				"propertyName": "_owningteam_value",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@Microsoft.Dynamics.CRM.lookuplogicalname"
 				]
 			}
@@ -3965,7 +3965,7 @@
 			"ApiType": {
 				"propertyName": "_owninguser_value",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@Microsoft.Dynamics.CRM.lookuplogicalname"
 				]
 			}
@@ -4029,7 +4029,7 @@
 				"propertyName": "statecode",
 				"propertyType": "dt_order_dt_order_statecode",
 				"importLocation": "../enums/dt_order_dt_order_statecode",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -4053,7 +4053,7 @@
 				"propertyName": "statuscode",
 				"propertyType": "dt_order_dt_order_statuscode",
 				"importLocation": "../enums/dt_order_dt_order_statuscode",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -4075,7 +4075,7 @@
 			"ApiType": {
 				"propertyName": "timezoneruleversionnumber",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -4098,7 +4098,7 @@
 			"ApiType": {
 				"propertyName": "_transactioncurrencyid_value",
 				"propertyType": "string",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -4160,7 +4160,7 @@
 			"ApiType": {
 				"propertyName": "utcconversiontimezonecode",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
@@ -4182,7 +4182,7 @@
 			"ApiType": {
 				"propertyName": "versionnumber",
 				"propertyType": "number",
-				"formatedValues": [
+				"formattedValues": [
 					"@OData.Community.Display.V1.FormattedValue"
 				]
 			}
