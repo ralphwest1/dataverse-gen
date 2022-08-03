@@ -178,6 +178,10 @@ export class TypescriptGenerator {
     this.outputFiles("entity.ejs", "entities", schema.EntityTypes as unknown[], this.schemaNameKey);
   }
 
+  outputApiTypes(schema: SchemaGenerator): void {
+    this.outputFiles("webapitype.ejs", "apitypes", schema.EntityTypes as unknown[], this.schemaNameKey);
+  }
+
   outputEnums(schema: SchemaGenerator): void {
     this.outputFiles("enum.ejs", "enums", schema.EnumTypes as unknown[], this.nameKey);
   }
@@ -221,8 +225,8 @@ export class TypescriptGenerator {
     // Create output directory
     const enumRootPath = path.join(outputRoot, outputDir);
     this.createDir(enumRootPath);
-    const webapiRootPath = path.join(outputRoot, "apitypes");
-    this.createDir(webapiRootPath);
+    // const webapiRootPath = path.join(outputRoot, "apitypes");
+    // this.createDir(webapiRootPath);
     const genMetadataDir = path.join(outputRoot, "genMetadata", outputDir);
     this.createDir(genMetadataDir);
 
@@ -232,11 +236,11 @@ export class TypescriptGenerator {
       this.options.output?.templateRoot as string,
       templateFileName,
     );
-    const projectTemplatePath_WebApi = path.join(
-      this.projectDir,
-      this.options.output?.templateRoot as string,
-      "webapitype.ejs",
-    );
+    // const projectTemplatePath_WebApi = path.join(
+    //   this.projectDir,
+    //   this.options.output?.templateRoot as string,
+    //   "webapitype.ejs",
+    // );
 
     let template: string;
     if (fs.existsSync(projectTemplatePath)) {
@@ -245,27 +249,27 @@ export class TypescriptGenerator {
       const packageTemplatePath = path.join(this.packageDir, "../_templates", templateFileName);
       template = fs.readFileSync(packageTemplatePath).toString();
     }
-    let webApiTemplate: string;
-    if (fs.existsSync(projectTemplatePath_WebApi)) {
-      webApiTemplate = fs.readFileSync(projectTemplatePath).toString();
-    } else {
-      // eslint-disable-next-line @typescript-eslint/camelcase
-      const packageTemplatePath_WebApi = path.join(this.packageDir, "../_templates", "webapitype.ejs");
-      webApiTemplate = fs.readFileSync(packageTemplatePath_WebApi).toString();
-    }
+    // let webApiTemplate: string;
+    // if (fs.existsSync(projectTemplatePath_WebApi)) {
+    //   webApiTemplate = fs.readFileSync(projectTemplatePath).toString();
+    // } else {
+    //   // eslint-disable-next-line @typescript-eslint/camelcase
+    //   const packageTemplatePath_WebApi = path.join(this.packageDir, "../_templates", "webapitype.ejs");
+    //   webApiTemplate = fs.readFileSync(packageTemplatePath_WebApi).toString();
+    // }
     for (const item of itemArray) {
       const fileName = getFileName(item);
       const outFile = path.join(enumRootPath, `${fileName}${this.options.output?.fileSuffix}`);
-      const outFile_WebApi = path.join(webapiRootPath, `${fileName}${this.options.output?.fileSuffix}`);
+      // const outFile_WebApi = path.join(webapiRootPath, `${fileName}${this.options.output?.fileSuffix}`);
       const outFileGenMetadata = path.join(genMetadataDir, `${fileName}.json`);
       let output = "";
       try {
         console.log("Generating: " + outFile);
         output = ejs.render(template, { ...this.options, ...item });
-        console.log("Generating: " + outFile);
-        const output_apitype = ejs.render(webApiTemplate, { ...this.options, ...item });
+        // console.log("Generating: " + outFile);
+        // const output_apitype = ejs.render(webApiTemplate, { ...this.options, ...item });
         fs.writeFileSync(outFile, output);
-        fs.writeFileSync(outFile_WebApi, output_apitype);
+        // fs.writeFileSync(outFile_WebApi, output_apitype);
         fs.writeFileSync(
           outFileGenMetadata,
           // eslint-disable-next-line @typescript-eslint/no-use-before-define
