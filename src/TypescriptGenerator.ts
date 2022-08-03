@@ -180,7 +180,7 @@ export class TypescriptGenerator {
   }
 
   outputApiTypes(schema: SchemaGenerator): void {
-    this.outputFiles("webapitype.ejs", "apitypes", schema.EntityTypes as unknown[], v => this.nameKey(v) + "_apitype"));
+    this.outputFiles("webapitype.ejs", "apitypes", schema.EntityTypes as unknown[], v => this.nameKey(v) + "_apitype");
   }
 
   outputEnums(schema: SchemaGenerator): void {
