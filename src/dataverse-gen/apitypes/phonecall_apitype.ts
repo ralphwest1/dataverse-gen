@@ -54,11 +54,7 @@ export interface PhoneCall_apitype {
   // Call Outcome dt_calloutcome
   dt_calloutcome?: import("../enums/dt_calloutcome").dt_calloutcome | null;
   "dt_calloutcome@OData.Community.Display.V1.FormattedValue"?: string | null;
-  // Call Type dt_calltype Orignating Sales
-  * An orignating call to a customer or a prospect with the purpose of generating a sales
-Customer Service
-  * A call dealing with order details
-  * clarifying order quantites or art
+  // Call Type dt_calltype Orignating Sales  * An orignating call to a customer or a prospect with the purpose of generating a salesCustomer Service  * A call dealing with order details  * clarifying order quantites or art
   dt_calltype?: import("../enums/dt_calltype").dt_calltype | null;
   "dt_calltype@OData.Community.Display.V1.FormattedValue"?: string | null;
   // Set Activity Status dt_setactivitystatus
