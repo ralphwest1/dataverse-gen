@@ -61,6 +61,7 @@ export class TypescriptGenerator {
     // console.log(JSON.stringify(schema, null, 2));
     // this.outputJsonFile("dev", "SchemaGenerator", schema.getData());
     this.outputEntities(schema);
+    this.outputApiTypes(schema);
     this.outputEnums(schema);
     this.outputActions(schema);
     this.outputFunctions(schema);
