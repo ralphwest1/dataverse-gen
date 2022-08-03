@@ -597,7 +597,7 @@ export class SchemaGenerator {
         break;
       case "Edm.DateTimeOffset":
       case "DateTimeType":
-        propertyType = "Date";
+        propertyType = "string";
         formatedValues.push("@OData.Community.Display.V1.FormattedValue");
         break;
       case "LookupType":
@@ -630,25 +630,6 @@ export class SchemaGenerator {
         break;
     }
 
-    // // Check if it is an enum
-    // const enumType = this.EnumTypes.find(e => e.Name == type);
-    // if (enumType) {
-    //   property.IsEnum = true;
-    // }
-
-    // // E.g. Special case because we don't want an interface called 'Object'
-    // type = this.mapTypeName(type);
-    // let outputType = property.IsEnum ? TypeScriptTypes.enumType : TypeScriptTypes.primitive;
-    // Check if it is an entity type
-    // const entityType = this.EntityTypes.find(e => e.SchemaName == type);
-    // if (entityType) {
-    //   outputType = TypeScriptTypes.entityType;
-    // }
-    // const complexType = this.ComplexTypes.find(e => e.Name == type);
-    // if (complexType) {
-    //   outputType = TypeScriptTypes.complexType;
-    // }
-    // Add array
     if (isCollection || isMultiSelect) {
       propertyType = propertyType + "[]";
     }
@@ -656,13 +637,13 @@ export class SchemaGenerator {
       formatedValues.push("@OData.Community.Display.V1.FormattedValue");
     }
     const mappedType = {
-      referencedType,
-      typeName,
+      // referencedType,
+      // typeName,
       propertyName,
       propertyType,
       importLocation: property.IsEnum ? property.TypescriptType?.importLocation : undefined,
       formatedValues: formatedValues.length > 0 ? formatedValues : undefined,
-    } as TypeScriptType;
+    };
     return mappedType;
   }
 

@@ -34,9 +34,6 @@
 				"formatedValues": [
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
-					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
-					"@OData.Community.Display.V1.FormattedValue",
-					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
 				]
 			}
@@ -130,9 +127,6 @@
 				"formatedValues": [
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
-					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
-					"@OData.Community.Display.V1.FormattedValue",
-					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
 				]
 			}
@@ -224,9 +218,6 @@
 				"propertyName": "_dt_account_value",
 				"propertyType": "string",
 				"formatedValues": [
-					"@OData.Community.Display.V1.FormattedValue",
-					"@Microsoft.Dynamics.CRM.lookuplogicalname",
-					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -835,9 +826,6 @@
 				"formatedValues": [
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
-					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
-					"@OData.Community.Display.V1.FormattedValue",
-					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
 				]
 			}
@@ -884,9 +872,6 @@
 				"propertyName": "_dt_designlayout_value",
 				"propertyType": "string",
 				"formatedValues": [
-					"@OData.Community.Display.V1.FormattedValue",
-					"@Microsoft.Dynamics.CRM.lookuplogicalname",
-					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -1042,7 +1027,10 @@
 				"typeName": "dt_dispensetype",
 				"propertyName": "dt_dispensetype",
 				"propertyType": "dt_dispensetype",
-				"importLocation": "../enums/dt_dispensetype"
+				"importLocation": "../enums/dt_dispensetype",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1185,7 +1173,10 @@
 				"typeName": "dt_labelsperdispensetype",
 				"propertyName": "dt_labelsperdispensetype",
 				"propertyType": "dt_labelsperdispensetype",
-				"importLocation": "../enums/dt_labelsperdispensetype"
+				"importLocation": "../enums/dt_labelsperdispensetype",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1257,9 +1248,6 @@
 				"propertyName": "_dt_order_value",
 				"propertyType": "string",
 				"formatedValues": [
-					"@OData.Community.Display.V1.FormattedValue",
-					"@Microsoft.Dynamics.CRM.lookuplogicalname",
-					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -1449,7 +1437,10 @@
 				"typeName": "dt_orderlinetype",
 				"propertyName": "dt_orderlinetype",
 				"propertyType": "dt_orderlinetype",
-				"importLocation": "../enums/dt_orderlinetype"
+				"importLocation": "../enums/dt_orderlinetype",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1493,7 +1484,10 @@
 				"typeName": "dt_orderpriority",
 				"propertyName": "dt_orderpriority",
 				"propertyType": "dt_orderpriority",
-				"importLocation": "../enums/dt_orderpriority"
+				"importLocation": "../enums/dt_orderpriority",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1536,8 +1530,11 @@
 				"referencedType": "dt_ordertasktype2",
 				"typeName": "dt_ordertasktype2",
 				"propertyName": "dt_ordertasklist",
-				"propertyType": "dt_ordertasktype2",
-				"importLocation": "../enums/dt_ordertasktype2"
+				"propertyType": "dt_ordertasktype2[]",
+				"importLocation": "../enums/dt_ordertasktype2",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -1776,7 +1773,10 @@
 				"typeName": "dt_overagetype",
 				"propertyName": "dt_overagetype",
 				"propertyType": "dt_overagetype",
-				"importLocation": "../enums/dt_overagetype"
+				"importLocation": "../enums/dt_overagetype",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -2057,7 +2057,10 @@
 				"typeName": "dt_priceadjustmenttype",
 				"propertyName": "dt_priceadjustmenttype",
 				"propertyType": "dt_priceadjustmenttype",
-				"importLocation": "../enums/dt_priceadjustmenttype"
+				"importLocation": "../enums/dt_priceadjustmenttype",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -2413,7 +2416,10 @@
 				"typeName": "dt_pricingtype",
 				"propertyName": "dt_pricingtype",
 				"propertyType": "dt_pricingtype",
-				"importLocation": "../enums/dt_pricingtype"
+				"importLocation": "../enums/dt_pricingtype",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -3644,9 +3650,6 @@
 				"formatedValues": [
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
-					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
-					"@OData.Community.Display.V1.FormattedValue",
-					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
 				]
 			}
@@ -3738,9 +3741,6 @@
 				"propertyName": "_modifiedonbehalfby_value",
 				"propertyType": "string",
 				"formatedValues": [
-					"@OData.Community.Display.V1.FormattedValue",
-					"@Microsoft.Dynamics.CRM.lookuplogicalname",
-					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -3836,9 +3836,6 @@
 				"formatedValues": [
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
-					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
-					"@OData.Community.Display.V1.FormattedValue",
-					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
 				]
 			}
@@ -3929,9 +3926,6 @@
 				"formatedValues": [
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
-					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
-					"@OData.Community.Display.V1.FormattedValue",
-					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
 				]
 			}
@@ -3978,9 +3972,6 @@
 				"propertyName": "_owningteam_value",
 				"propertyType": "string",
 				"formatedValues": [
-					"@OData.Community.Display.V1.FormattedValue",
-					"@Microsoft.Dynamics.CRM.lookuplogicalname",
-					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname"
 				]
 			}
@@ -4006,9 +3997,6 @@
 				"propertyName": "_owninguser_value",
 				"propertyType": "string",
 				"formatedValues": [
-					"@OData.Community.Display.V1.FormattedValue",
-					"@Microsoft.Dynamics.CRM.lookuplogicalname",
-					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname"
 				]
 			}
@@ -4033,7 +4021,10 @@
 				"typeName": "dt_orderline_dt_orderline_statecode",
 				"propertyName": "statecode",
 				"propertyType": "dt_orderline_dt_orderline_statecode",
-				"importLocation": "../enums/dt_orderline_dt_orderline_statecode"
+				"importLocation": "../enums/dt_orderline_dt_orderline_statecode",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -4056,7 +4047,10 @@
 				"typeName": "dt_orderline_dt_orderline_statuscode",
 				"propertyName": "statuscode",
 				"propertyType": "dt_orderline_dt_orderline_statuscode",
-				"importLocation": "../enums/dt_orderline_dt_orderline_statuscode"
+				"importLocation": "../enums/dt_orderline_dt_orderline_statuscode",
+				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
 			}
 		},
 		{
@@ -4104,9 +4098,6 @@
 				"propertyName": "_transactioncurrencyid_value",
 				"propertyType": "string",
 				"formatedValues": [
-					"@OData.Community.Display.V1.FormattedValue",
-					"@Microsoft.Dynamics.CRM.lookuplogicalname",
-					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"

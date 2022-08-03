@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import { DataverseGenOptions, defaultOptions } from "./MetadataGeneratorConfig";
 import _merge = require("lodash.merge");
 import ejs = require("ejs");
@@ -220,6 +221,8 @@ export class TypescriptGenerator {
     // Create output directory
     const enumRootPath = path.join(outputRoot, outputDir);
     this.createDir(enumRootPath);
+    const webapiRootPath = path.join(outputRoot, "apitypes");
+    this.createDir(webapiRootPath);
     const genMetadataDir = path.join(outputRoot, "genMetadata", outputDir);
     this.createDir(genMetadataDir);
 
@@ -229,32 +232,49 @@ export class TypescriptGenerator {
       this.options.output?.templateRoot as string,
       templateFileName,
     );
-    const packageTemplatePath = path.join(this.packageDir, "../_templates", templateFileName);
+    const projectTemplatePath_WebApi = path.join(
+      this.projectDir,
+      this.options.output?.templateRoot as string,
+      "webapitype.ejs",
+    );
 
     let template: string;
     if (fs.existsSync(projectTemplatePath)) {
       template = fs.readFileSync(projectTemplatePath).toString();
     } else {
+      const packageTemplatePath = path.join(this.packageDir, "../_templates", templateFileName);
       template = fs.readFileSync(packageTemplatePath).toString();
+    }
+    let webApiTemplate: string;
+    if (fs.existsSync(projectTemplatePath_WebApi)) {
+      webApiTemplate = fs.readFileSync(projectTemplatePath).toString();
+    } else {
+      // eslint-disable-next-line @typescript-eslint/camelcase
+      const packageTemplatePath_WebApi = path.join(this.packageDir, "../_templates", "webapitype.ejs");
+      webApiTemplate = fs.readFileSync(packageTemplatePath_WebApi).toString();
     }
     for (const item of itemArray) {
       const fileName = getFileName(item);
       const outFile = path.join(enumRootPath, `${fileName}${this.options.output?.fileSuffix}`);
+      const outFile_WebApi = path.join(webapiRootPath, `${fileName}${this.options.output?.fileSuffix}`);
       const outFileGenMetadata = path.join(genMetadataDir, `${fileName}.json`);
       let output = "";
       try {
         console.log("Generating: " + outFile);
         output = ejs.render(template, { ...this.options, ...item });
+        console.log("Generating: " + outFile);
+        const output_apitype = ejs.render(webApiTemplate, { ...this.options, ...item });
+        fs.writeFileSync(outFile, output);
+        fs.writeFileSync(outFile_WebApi, output_apitype);
+        fs.writeFileSync(
+          outFileGenMetadata,
+          // eslint-disable-next-line @typescript-eslint/no-use-before-define
+          JSON.stringify(item, getCircularReplacer(), "\t"),
+        );
       } catch (ex) {
         output = ex.message;
         console.error(ex.message);
       }
-      fs.writeFileSync(outFile, output);
-      fs.writeFileSync(
-        outFileGenMetadata,
-        // eslint-disable-next-line @typescript-eslint/no-use-before-define
-        JSON.stringify(item, getCircularReplacer(), "\t"),
-      );
     }
   }
   // outputJsonFile(outputDir: string, fileName: string, data: any): void {
