@@ -1,0 +1,25 @@
+{
+	"Name": "activitypointer_activitypointer_instancetypecode",
+	"Members": [
+		{
+			"Name": "NotRecurring",
+			"Value": "0"
+		},
+		{
+			"Name": "RecurringMaster",
+			"Value": "1"
+		},
+		{
+			"Name": "RecurringInstance",
+			"Value": "2"
+		},
+		{
+			"Name": "RecurringException",
+			"Value": "3"
+		},
+		{
+			"Name": "RecurringFutureException",
+			"Value": "4"
+		}
+	]
+}

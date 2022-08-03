@@ -1,13 +1,14 @@
 {
     "entities": [
-        "dt_order",
-        "dt_orderline",
+        "activitypointer",
         "dt_design",
         "dt_dometagconfig",
         "dt_dometaglog",
-        "dt_order",
         "dt_employee",
-        "dt_qbaccount"
+        "dt_order",
+        "dt_orderline",
+        "dt_qbaccount",
+        "phonecall"
     ],
     "actions": [],
     "functions": [

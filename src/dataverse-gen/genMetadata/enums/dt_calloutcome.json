@@ -1,0 +1,17 @@
+{
+	"Name": "dt_calloutcome",
+	"Members": [
+		{
+			"Name": "Reached",
+			"Value": "206500000"
+		},
+		{
+			"Name": "LeftMessage",
+			"Value": "206500001"
+		},
+		{
+			"Name": "NoContact",
+			"Value": "206500002"
+		}
+	]
+}

@@ -1,0 +1,69 @@
+{
+	"Name": "socialprofile_community",
+	"Members": [
+		{
+			"Name": "Cortana",
+			"Value": "5"
+		},
+		{
+			"Name": "DirectLine",
+			"Value": "6"
+		},
+		{
+			"Name": "MicrosoftTeams",
+			"Value": "7"
+		},
+		{
+			"Name": "DirectLineSpeech",
+			"Value": "8"
+		},
+		{
+			"Name": "Email",
+			"Value": "9"
+		},
+		{
+			"Name": "GroupMe",
+			"Value": "10"
+		},
+		{
+			"Name": "Kik",
+			"Value": "11"
+		},
+		{
+			"Name": "Telegram",
+			"Value": "12"
+		},
+		{
+			"Name": "Skype",
+			"Value": "13"
+		},
+		{
+			"Name": "Slack",
+			"Value": "14"
+		},
+		{
+			"Name": "WhatsApp",
+			"Value": "15"
+		},
+		{
+			"Name": "Line",
+			"Value": "3"
+		},
+		{
+			"Name": "Wechat",
+			"Value": "4"
+		},
+		{
+			"Name": "Facebook",
+			"Value": "1"
+		},
+		{
+			"Name": "Twitter",
+			"Value": "2"
+		},
+		{
+			"Name": "Other",
+			"Value": "0"
+		}
+	]
+}

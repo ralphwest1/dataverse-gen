@@ -1,0 +1,2130 @@
+{
+	"Name": "activitypointer",
+	"BaseType": "mscrm.crmbaseentity",
+	"Key": {
+		"PropertyRef": {
+			"_attributes": {
+				"Name": "activityid"
+			}
+		}
+	},
+	"KeyName": "activityid",
+	"Abstract": true,
+	"Properties": [
+		{
+			"Type": "MemoType",
+			"Name": "activityadditionalparams",
+			"SchemaName": "ActivityAdditionalParams",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Additional information provided by the external application as JSON. For internal use only.",
+			"DisplayName": "Activity Additional Parameters",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "activityadditionalparams",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "UniqueidentifierType",
+			"Name": "activityid",
+			"SchemaName": "ActivityId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the activity.",
+			"DisplayName": "Activity",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Guid",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "activityid",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "EntityNameType",
+			"Name": "activitytypecode",
+			"SchemaName": "ActivityTypeCode",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Type of activity.",
+			"DisplayName": "Activity Type",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "activitytypecode",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "actualdurationminutes",
+			"SchemaName": "ActualDurationMinutes",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Actual duration of the activity in minutes.",
+			"DisplayName": "Actual Duration",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "actualdurationminutes",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "actualend",
+			"SchemaName": "ActualEnd",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Actual end time of the activity.",
+			"DisplayName": "Actual End",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "actualend",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "actualstart",
+			"SchemaName": "ActualStart",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Actual start time of the activity.",
+			"DisplayName": "Actual Start",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "actualstart",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "PartyListType",
+			"Name": "allparties",
+			"SchemaName": "allparties",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "All activity parties associated with this activity.",
+			"DisplayName": "All Activity Parties",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "ActivityParty[]",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "allparties",
+				"propertyType": "any[]"
+			}
+		},
+		{
+			"Type": "socialprofile_community",
+			"Name": "community",
+			"SchemaName": "Community",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "Shows how contact about the social activity originated, such as from Twitter or Facebook. This field is read-only.",
+			"DisplayName": "Social Channel",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "socialprofile_community",
+				"outputType": 0,
+				"importLocation": "../enums/socialprofile_community"
+			},
+			"ApiType": {
+				"propertyName": "community",
+				"propertyType": "socialprofile_community",
+				"importLocation": "../enums/socialprofile_community",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "createdby",
+			"SchemaName": "CreatedBy",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the user who created the activity.",
+			"DisplayName": "Created By",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_createdby_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "createdbyname",
+			"SchemaName": "CreatedByName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "createdbyname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "createdbyyominame",
+			"SchemaName": "CreatedByYomiName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "createdbyyominame",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "createdon",
+			"SchemaName": "CreatedOn",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Date and time when the activity was created.",
+			"DisplayName": "Date Created",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "createdon",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "createdonbehalfby",
+			"SchemaName": "CreatedOnBehalfBy",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the delegate user who created the activitypointer.",
+			"DisplayName": "Created By (Delegate)",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_createdonbehalfby_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "createdonbehalfbyname",
+			"SchemaName": "CreatedOnBehalfByName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "createdonbehalfbyname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "createdonbehalfbyyominame",
+			"SchemaName": "CreatedOnBehalfByYomiName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "createdonbehalfbyyominame",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "deliverylastattemptedon",
+			"SchemaName": "DeliveryLastAttemptedOn",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Date and time when the delivery of the activity was last attempted.",
+			"DisplayName": "Date Delivery Last Attempted",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "deliverylastattemptedon",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "activitypointer_deliveryprioritycode",
+			"Name": "deliveryprioritycode",
+			"SchemaName": "DeliveryPriorityCode",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "Priority of delivery of the activity to the email server.",
+			"DisplayName": "Delivery Priority",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "activitypointer_deliveryprioritycode",
+				"outputType": 0,
+				"importLocation": "../enums/activitypointer_deliveryprioritycode"
+			},
+			"ApiType": {
+				"propertyName": "deliveryprioritycode",
+				"propertyType": "activitypointer_deliveryprioritycode",
+				"importLocation": "../enums/activitypointer_deliveryprioritycode",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "MemoType",
+			"Name": "description",
+			"SchemaName": "Description",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Description of the activity.",
+			"DisplayName": "Description",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "description",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "FileType",
+			"Name": "descriptionblobid",
+			"SchemaName": "DescriptionBlobId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "File that contains description content.",
+			"DisplayName": "Description File Id",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "FileType",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "descriptionblobid",
+				"propertyType": "FileType"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "descriptionblobid_name",
+			"SchemaName": "DescriptionBlobId_Name",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "descriptionblobid_name",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "exchangeitemid",
+			"SchemaName": "ExchangeItemId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "The message id of activity which is returned from Exchange Server.",
+			"DisplayName": "Exchange Item ID",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "exchangeitemid",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "DecimalType",
+			"Name": "exchangerate",
+			"SchemaName": "ExchangeRate",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Exchange rate for the currency associated with the activitypointer with respect to the base currency.",
+			"DisplayName": "Exchange Rate",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "exchangerate",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "exchangeweblink",
+			"SchemaName": "ExchangeWebLink",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Shows the web link of Activity of type email.",
+			"DisplayName": "Exchange WebLink",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "exchangeweblink",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "activitypointer_activitypointer_instancetypecode",
+			"Name": "instancetypecode",
+			"SchemaName": "InstanceTypeCode",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "Type of instance of a recurring series.",
+			"DisplayName": "Recurring Instance Type",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "activitypointer_activitypointer_instancetypecode",
+				"outputType": 0,
+				"importLocation": "../enums/activitypointer_activitypointer_instancetypecode"
+			},
+			"ApiType": {
+				"propertyName": "instancetypecode",
+				"propertyType": "activitypointer_activitypointer_instancetypecode",
+				"importLocation": "../enums/activitypointer_activitypointer_instancetypecode",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "BooleanType",
+			"Name": "isbilled",
+			"SchemaName": "IsBilled",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Information regarding whether the activity was billed as part of resolving a case.",
+			"DisplayName": "Is Billed",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "boolean",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "isbilled",
+				"propertyType": "boolean",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "BooleanType",
+			"Name": "ismapiprivate",
+			"SchemaName": "IsMapiPrivate",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "For internal use only.",
+			"DisplayName": "Is Private",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "boolean",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "ismapiprivate",
+				"propertyType": "boolean",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "BooleanType",
+			"Name": "isregularactivity",
+			"SchemaName": "IsRegularActivity",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Information regarding whether the activity is a regular activity type or event type.",
+			"DisplayName": "Is Regular Activity",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "boolean",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "isregularactivity",
+				"propertyType": "boolean",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "BooleanType",
+			"Name": "isworkflowcreated",
+			"SchemaName": "IsWorkflowCreated",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Information regarding whether the activity was created from a workflow rule.",
+			"DisplayName": "Is Workflow Created",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "boolean",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "isworkflowcreated",
+				"propertyType": "boolean",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "lastonholdtime",
+			"SchemaName": "LastOnHoldTime",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Contains the date and time stamp of the last on hold time.",
+			"DisplayName": "Last On Hold Time",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "lastonholdtime",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "BooleanType",
+			"Name": "leftvoicemail",
+			"SchemaName": "LeftVoiceMail",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Left the voice mail",
+			"DisplayName": "Left Voice Mail",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "boolean",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "leftvoicemail",
+				"propertyType": "boolean",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "modifiedby",
+			"SchemaName": "ModifiedBy",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of user who last modified the activity.",
+			"DisplayName": "Modified By",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_modifiedby_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "modifiedbyname",
+			"SchemaName": "ModifiedByName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "modifiedbyname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "modifiedbyyominame",
+			"SchemaName": "ModifiedByYomiName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "modifiedbyyominame",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "modifiedon",
+			"SchemaName": "ModifiedOn",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Date and time when activity was last modified.",
+			"DisplayName": "Last Updated",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "modifiedon",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "modifiedonbehalfby",
+			"SchemaName": "ModifiedOnBehalfBy",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the delegate user who last modified the activitypointer.",
+			"DisplayName": "Modified By (Delegate)",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_modifiedonbehalfby_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "modifiedonbehalfbyname",
+			"SchemaName": "ModifiedOnBehalfByName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "modifiedonbehalfbyname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "modifiedonbehalfbyyominame",
+			"SchemaName": "ModifiedOnBehalfByYomiName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "modifiedonbehalfbyyominame",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "onholdtime",
+			"SchemaName": "OnHoldTime",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Shows how long, in minutes, that the record was on hold.",
+			"DisplayName": "On Hold Time (Minutes)",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "onholdtime",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "OwnerType",
+			"Name": "ownerid",
+			"SchemaName": "OwnerId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the user or team who owns the activity.",
+			"DisplayName": "Owner",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_ownerid_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "owneridname",
+			"SchemaName": "OwnerIdName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "owneridname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "EntityNameType",
+			"Name": "owneridtype",
+			"SchemaName": "OwnerIdType",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "owneridtype",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "owneridyominame",
+			"SchemaName": "OwnerIdYomiName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "owneridyominame",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "owningbusinessunit",
+			"SchemaName": "OwningBusinessUnit",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the business unit that owns the activity.",
+			"DisplayName": "Owning Business Unit",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_owningbusinessunit_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "owningbusinessunitname",
+			"SchemaName": "OwningBusinessUnitName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "owningbusinessunitname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "owningteam",
+			"SchemaName": "OwningTeam",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the team that owns the activity.",
+			"DisplayName": "Owning Team",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_owningteam_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@Microsoft.Dynamics.CRM.lookuplogicalname"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "owninguser",
+			"SchemaName": "OwningUser",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the user that owns the activity.",
+			"DisplayName": "Owning User",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_owninguser_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@Microsoft.Dynamics.CRM.lookuplogicalname"
+				]
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "postponeactivityprocessinguntil",
+			"SchemaName": "PostponeActivityProcessingUntil",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "For internal use only.",
+			"DisplayName": "Delay activity processing until",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "postponeactivityprocessinguntil",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "activitypointer_activitypointer_prioritycode",
+			"Name": "prioritycode",
+			"SchemaName": "PriorityCode",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "Priority of the activity.",
+			"DisplayName": "Priority",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "activitypointer_activitypointer_prioritycode",
+				"outputType": 0,
+				"importLocation": "../enums/activitypointer_activitypointer_prioritycode"
+			},
+			"ApiType": {
+				"propertyName": "prioritycode",
+				"propertyType": "activitypointer_activitypointer_prioritycode",
+				"importLocation": "../enums/activitypointer_activitypointer_prioritycode",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "UniqueidentifierType",
+			"Name": "processid",
+			"SchemaName": "ProcessId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the Process.",
+			"DisplayName": "Process",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Guid",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "processid",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "regardingobjectid",
+			"SchemaName": "RegardingObjectId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the object with which the activity is associated.",
+			"DisplayName": "Regarding",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_regardingobjectid_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "regardingobjectidname",
+			"SchemaName": "RegardingObjectIdName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "regardingobjectidname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "regardingobjectidyominame",
+			"SchemaName": "RegardingObjectIdYomiName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "regardingobjectidyominame",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "EntityNameType",
+			"Name": "regardingobjecttypecode",
+			"SchemaName": "RegardingObjectTypeCode",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "regardingobjecttypecode",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "scheduleddurationminutes",
+			"SchemaName": "ScheduledDurationMinutes",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Scheduled duration of the activity, specified in minutes.",
+			"DisplayName": "Scheduled Duration",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "scheduleddurationminutes",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "scheduledend",
+			"SchemaName": "ScheduledEnd",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Scheduled end time of the activity.",
+			"DisplayName": "Due Date",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "scheduledend",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "scheduledstart",
+			"SchemaName": "ScheduledStart",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Scheduled start time of the activity.",
+			"DisplayName": "Start Date",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "scheduledstart",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "sendermailboxid",
+			"SchemaName": "SenderMailboxId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the mailbox associated with the sender of the email message.",
+			"DisplayName": "Sender's Mailbox",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_sendermailboxid_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "sendermailboxidname",
+			"SchemaName": "SenderMailboxIdName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "sendermailboxidname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "senton",
+			"SchemaName": "SentOn",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Date and time when the activity was sent.",
+			"DisplayName": "Date Sent",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "senton",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "UniqueidentifierType",
+			"Name": "seriesid",
+			"SchemaName": "SeriesId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Uniqueidentifier specifying the id of recurring series of an instance.",
+			"DisplayName": "Series Id",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Guid",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "seriesid",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "serviceid",
+			"SchemaName": "ServiceId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of an associated service.",
+			"DisplayName": "Service",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_serviceid_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "serviceidname",
+			"SchemaName": "ServiceIdName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "serviceidname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "slaid",
+			"SchemaName": "SLAId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Choose the service level agreement (SLA) that you want to apply to the case record.",
+			"DisplayName": "SLA",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_slaid_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "slainvokedid",
+			"SchemaName": "SLAInvokedId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Last SLA that was applied to this case. This field is for internal use only.",
+			"DisplayName": "Last SLA applied",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_slainvokedid_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "slainvokedidname",
+			"SchemaName": "SLAInvokedIdName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "slainvokedidname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "slaname",
+			"SchemaName": "SLAName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "slaname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "sortdate",
+			"SchemaName": "SortDate",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Shows the date and time by which the activities are sorted.",
+			"DisplayName": "Sort Date",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "sortdate",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "UniqueidentifierType",
+			"Name": "stageid",
+			"SchemaName": "StageId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the Stage.",
+			"DisplayName": "(Deprecated) Process Stage",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Guid",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "stageid",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "activitypointer_activitypointer_statecode",
+			"Name": "statecode",
+			"SchemaName": "StateCode",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "Status of the activity.",
+			"DisplayName": "Activity Status",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "activitypointer_activitypointer_statecode",
+				"outputType": 0,
+				"importLocation": "../enums/activitypointer_activitypointer_statecode"
+			},
+			"ApiType": {
+				"propertyName": "statecode",
+				"propertyType": "activitypointer_activitypointer_statecode",
+				"importLocation": "../enums/activitypointer_activitypointer_statecode",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "activitypointer_activitypointer_statuscode",
+			"Name": "statuscode",
+			"SchemaName": "StatusCode",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "Reason for the status of the activity.",
+			"DisplayName": "Status Reason",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "activitypointer_activitypointer_statuscode",
+				"outputType": 0,
+				"importLocation": "../enums/activitypointer_activitypointer_statuscode"
+			},
+			"ApiType": {
+				"propertyName": "statuscode",
+				"propertyType": "activitypointer_activitypointer_statuscode",
+				"importLocation": "../enums/activitypointer_activitypointer_statuscode",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "subject",
+			"SchemaName": "Subject",
+			"IsRequired": true,
+			"IsEnum": false,
+			"Description": "Subject associated with the activity.",
+			"DisplayName": "Subject",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "subject",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "timezoneruleversionnumber",
+			"SchemaName": "TimeZoneRuleVersionNumber",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "For internal use only.",
+			"DisplayName": "Time Zone Rule Version Number",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "timezoneruleversionnumber",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "transactioncurrencyid",
+			"SchemaName": "TransactionCurrencyId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the currency associated with the activitypointer.",
+			"DisplayName": "Currency",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_transactioncurrencyid_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "transactioncurrencyidname",
+			"SchemaName": "TransactionCurrencyIdName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "transactioncurrencyidname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "traversedpath",
+			"SchemaName": "TraversedPath",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "For internal use only.",
+			"DisplayName": "(Deprecated) Traversed Path",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "traversedpath",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "utcconversiontimezonecode",
+			"SchemaName": "UTCConversionTimeZoneCode",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Time zone code that was in use when the record was created.",
+			"DisplayName": "UTC Conversion Time Zone Code",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "utcconversiontimezonecode",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "BigIntType",
+			"Name": "versionnumber",
+			"SchemaName": "VersionNumber",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Version number of the activity.",
+			"DisplayName": "Version Number",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "versionnumber",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		}
+	],
+	"OpenType": false,
+	"NavigationProperties": [
+		{
+			"Name": "transactioncurrencyid",
+			"FullName": "transactioncurrencyid",
+			"IsCollection": false,
+			"Type": "mscrm.transactioncurrency",
+			"ReferencedProperty": "transactioncurrencyid",
+			"ReferentialConstraint": "_transactioncurrencyid_value",
+			"LogicalName": "transactioncurrency"
+		},
+		{
+			"Name": "slakpiinstance_activitypointer",
+			"FullName": "slakpiinstance_activitypointer",
+			"IsCollection": true,
+			"Type": "mscrm.slakpiinstance",
+			"LogicalName": "slakpiinstance"
+		},
+		{
+			"Name": "sla_activitypointer_sla",
+			"FullName": "sla_activitypointer_sla",
+			"IsCollection": false,
+			"Type": "mscrm.sla",
+			"ReferencedProperty": "slaid",
+			"ReferentialConstraint": "_slaid_value",
+			"LogicalName": "sla"
+		},
+		{
+			"Name": "serviceid",
+			"FullName": "serviceid",
+			"IsCollection": false,
+			"Type": "mscrm.service",
+			"ReferencedProperty": "serviceid",
+			"ReferentialConstraint": "_serviceid_value",
+			"LogicalName": "service"
+		},
+		{
+			"Name": "sendermailboxid",
+			"FullName": "sendermailboxid",
+			"IsCollection": false,
+			"Type": "mscrm.mailbox",
+			"ReferencedProperty": "mailboxid",
+			"ReferentialConstraint": "_sendermailboxid_value",
+			"LogicalName": "mailbox"
+		},
+		{
+			"Name": "owninguser",
+			"FullName": "owninguser",
+			"IsCollection": false,
+			"Type": "mscrm.systemuser",
+			"ReferencedProperty": "systemuserid",
+			"ReferentialConstraint": "_owninguser_value",
+			"LogicalName": "systemuser"
+		},
+		{
+			"Name": "owningteam",
+			"FullName": "owningteam",
+			"IsCollection": false,
+			"Type": "mscrm.team",
+			"ReferencedProperty": "teamid",
+			"ReferentialConstraint": "_owningteam_value",
+			"LogicalName": "team"
+		},
+		{
+			"Name": "owningbusinessunit",
+			"FullName": "owningbusinessunit",
+			"IsCollection": false,
+			"Type": "mscrm.businessunit",
+			"ReferencedProperty": "businessunitid",
+			"ReferentialConstraint": "_owningbusinessunit_value",
+			"LogicalName": "businessunit"
+		},
+		{
+			"Name": "ownerid",
+			"FullName": "ownerid",
+			"IsCollection": false,
+			"Type": "mscrm.principal",
+			"ReferencedProperty": "ownerid",
+			"ReferentialConstraint": "_ownerid_value",
+			"LogicalName": "principal"
+		},
+		{
+			"Name": "modifiedonbehalfby",
+			"FullName": "modifiedonbehalfby",
+			"IsCollection": false,
+			"Type": "mscrm.systemuser",
+			"ReferencedProperty": "systemuserid",
+			"ReferentialConstraint": "_modifiedonbehalfby_value",
+			"LogicalName": "systemuser"
+		},
+		{
+			"Name": "modifiedby",
+			"FullName": "modifiedby",
+			"IsCollection": false,
+			"Type": "mscrm.systemuser",
+			"ReferencedProperty": "systemuserid",
+			"ReferentialConstraint": "_modifiedby_value",
+			"LogicalName": "systemuser"
+		},
+		{
+			"Name": "createdonbehalfby",
+			"FullName": "createdonbehalfby",
+			"IsCollection": false,
+			"Type": "mscrm.systemuser",
+			"ReferencedProperty": "systemuserid",
+			"ReferentialConstraint": "_createdonbehalfby_value",
+			"LogicalName": "systemuser"
+		},
+		{
+			"Name": "createdby",
+			"FullName": "createdby",
+			"IsCollection": false,
+			"Type": "mscrm.systemuser",
+			"ReferencedProperty": "systemuserid",
+			"ReferentialConstraint": "_createdby_value",
+			"LogicalName": "systemuser"
+		},
+		{
+			"Name": "activitypointer_connections2",
+			"FullName": "activitypointer_connections2",
+			"IsCollection": true,
+			"Type": "mscrm.connection",
+			"LogicalName": "connection"
+		},
+		{
+			"Name": "activitypointer_connections1",
+			"FullName": "activitypointer_connections1",
+			"IsCollection": true,
+			"Type": "mscrm.connection",
+			"LogicalName": "connection"
+		},
+		{
+			"Name": "activitypointer_activity_parties",
+			"FullName": "activitypointer_activity_parties",
+			"IsCollection": true,
+			"Type": "mscrm.activityparty",
+			"LogicalName": "activityparty"
+		},
+		{
+			"Name": "activitypointer_FileAttachments",
+			"FullName": "activitypointer_FileAttachments",
+			"IsCollection": true,
+			"Type": "mscrm.fileattachment",
+			"LogicalName": "fileattachment"
+		},
+		{
+			"Name": "activity_pointer_task",
+			"FullName": "activity_pointer_task",
+			"IsCollection": true,
+			"Type": "mscrm.task",
+			"LogicalName": "task"
+		},
+		{
+			"Name": "activity_pointer_socialactivity",
+			"FullName": "activity_pointer_socialactivity",
+			"IsCollection": true,
+			"Type": "mscrm.socialactivity",
+			"LogicalName": "socialactivity"
+		},
+		{
+			"Name": "activity_pointer_service_appointment",
+			"FullName": "activity_pointer_service_appointment",
+			"IsCollection": true,
+			"Type": "mscrm.serviceappointment",
+			"LogicalName": "serviceappointment"
+		},
+		{
+			"Name": "activity_pointer_recurringappointmentmaster",
+			"FullName": "activity_pointer_recurringappointmentmaster",
+			"IsCollection": true,
+			"Type": "mscrm.recurringappointmentmaster",
+			"LogicalName": "recurringappointmentmaster"
+		},
+		{
+			"Name": "activity_pointer_recurrencerule",
+			"FullName": "activity_pointer_recurrencerule",
+			"IsCollection": true,
+			"Type": "mscrm.recurrencerule",
+			"LogicalName": "recurrencerule"
+		},
+		{
+			"Name": "activity_pointer_rc_conversation",
+			"FullName": "activity_pointer_rc_conversation",
+			"IsCollection": true,
+			"Type": "mscrm.rc_conversation",
+			"LogicalName": "rc_conversation"
+		},
+		{
+			"Name": "activity_pointer_quote_close",
+			"FullName": "activity_pointer_quote_close",
+			"IsCollection": true,
+			"Type": "mscrm.quoteclose",
+			"LogicalName": "quoteclose"
+		},
+		{
+			"Name": "activity_pointer_powf_webformactivity",
+			"FullName": "activity_pointer_powf_webformactivity",
+			"IsCollection": true,
+			"Type": "mscrm.powf_webformactivity",
+			"LogicalName": "powf_webformactivity"
+		},
+		{
+			"Name": "activity_pointer_po_creditcardtransaction",
+			"FullName": "activity_pointer_po_creditcardtransaction",
+			"IsCollection": true,
+			"Type": "mscrm.po_creditcardtransaction",
+			"LogicalName": "po_creditcardtransaction"
+		},
+		{
+			"Name": "activity_pointer_po_achtransaction",
+			"FullName": "activity_pointer_po_achtransaction",
+			"IsCollection": true,
+			"Type": "mscrm.po_achtransaction",
+			"LogicalName": "po_achtransaction"
+		},
+		{
+			"Name": "activity_pointer_phonecall",
+			"FullName": "activity_pointer_phonecall",
+			"IsCollection": true,
+			"Type": "mscrm.phonecall",
+			"LogicalName": "phonecall"
+		},
+		{
+			"Name": "activity_pointer_order_close",
+			"FullName": "activity_pointer_order_close",
+			"IsCollection": true,
+			"Type": "mscrm.orderclose",
+			"LogicalName": "orderclose"
+		},
+		{
+			"Name": "activity_pointer_opportunity_close",
+			"FullName": "activity_pointer_opportunity_close",
+			"IsCollection": true,
+			"Type": "mscrm.opportunityclose",
+			"LogicalName": "opportunityclose"
+		},
+		{
+			"Name": "activity_pointer_msfp_surveyresponse",
+			"FullName": "activity_pointer_msfp_surveyresponse",
+			"IsCollection": true,
+			"Type": "mscrm.msfp_surveyresponse",
+			"LogicalName": "msfp_surveyresponse"
+		},
+		{
+			"Name": "activity_pointer_msfp_surveyinvite",
+			"FullName": "activity_pointer_msfp_surveyinvite",
+			"IsCollection": true,
+			"Type": "mscrm.msfp_surveyinvite",
+			"LogicalName": "msfp_surveyinvite"
+		},
+		{
+			"Name": "activity_pointer_msfp_alert",
+			"FullName": "activity_pointer_msfp_alert",
+			"IsCollection": true,
+			"Type": "mscrm.msfp_alert",
+			"LogicalName": "msfp_alert"
+		},
+		{
+			"Name": "activity_pointer_msdyn_ocsession",
+			"FullName": "activity_pointer_msdyn_ocsession",
+			"IsCollection": true,
+			"Type": "mscrm.msdyn_ocsession",
+			"LogicalName": "msdyn_ocsession"
+		},
+		{
+			"Name": "activity_pointer_msdyn_ocliveworkitem",
+			"FullName": "activity_pointer_msdyn_ocliveworkitem",
+			"IsCollection": true,
+			"Type": "mscrm.msdyn_ocliveworkitem",
+			"LogicalName": "msdyn_ocliveworkitem"
+		},
+		{
+			"Name": "activity_pointer_msdyn_bookingalert",
+			"FullName": "activity_pointer_msdyn_bookingalert",
+			"IsCollection": true,
+			"Type": "mscrm.msdyn_bookingalert",
+			"LogicalName": "msdyn_bookingalert"
+		},
+		{
+			"Name": "activity_pointer_li_pointdrivepresentationviewed",
+			"FullName": "activity_pointer_li_pointdrivepresentationviewed",
+			"IsCollection": true,
+			"Type": "mscrm.li_pointdrivepresentationviewed",
+			"LogicalName": "li_pointdrivepresentationviewed"
+		},
+		{
+			"Name": "activity_pointer_li_message",
+			"FullName": "activity_pointer_li_message",
+			"IsCollection": true,
+			"Type": "mscrm.li_message",
+			"LogicalName": "li_message"
+		},
+		{
+			"Name": "activity_pointer_li_inmail",
+			"FullName": "activity_pointer_li_inmail",
+			"IsCollection": true,
+			"Type": "mscrm.li_inmail",
+			"LogicalName": "li_inmail"
+		},
+		{
+			"Name": "activity_pointer_letter",
+			"FullName": "activity_pointer_letter",
+			"IsCollection": true,
+			"Type": "mscrm.letter",
+			"LogicalName": "letter"
+		},
+		{
+			"Name": "activity_pointer_incident_resolution",
+			"FullName": "activity_pointer_incident_resolution",
+			"IsCollection": true,
+			"Type": "mscrm.incidentresolution",
+			"LogicalName": "incidentresolution"
+		},
+		{
+			"Name": "activity_pointer_fax",
+			"FullName": "activity_pointer_fax",
+			"IsCollection": true,
+			"Type": "mscrm.fax",
+			"LogicalName": "fax"
+		},
+		{
+			"Name": "activity_pointer_email",
+			"FullName": "activity_pointer_email",
+			"IsCollection": true,
+			"Type": "mscrm.email",
+			"LogicalName": "email"
+		},
+		{
+			"Name": "activity_pointer_dt_WebFormActivity",
+			"FullName": "activity_pointer_dt_WebFormActivity",
+			"IsCollection": true,
+			"Type": "mscrm.dt_webformactivity",
+			"LogicalName": "dt_webformactivity"
+		},
+		{
+			"Name": "activity_pointer_dt_Update",
+			"FullName": "activity_pointer_dt_Update",
+			"IsCollection": true,
+			"Type": "mscrm.dt_update",
+			"LogicalName": "dt_update"
+		},
+		{
+			"Name": "activity_pointer_dt_Note",
+			"FullName": "activity_pointer_dt_Note",
+			"IsCollection": true,
+			"Type": "mscrm.dt_note",
+			"LogicalName": "dt_note"
+		},
+		{
+			"Name": "activity_pointer_dt_GenericSamples",
+			"FullName": "activity_pointer_dt_GenericSamples",
+			"IsCollection": true,
+			"Type": "mscrm.dt_genericsamples",
+			"LogicalName": "dt_genericsamples"
+		},
+		{
+			"Name": "activity_pointer_chat",
+			"FullName": "activity_pointer_chat",
+			"IsCollection": true,
+			"Type": "mscrm.chat",
+			"LogicalName": "chat"
+		},
+		{
+			"Name": "activity_pointer_campaignresponse",
+			"FullName": "activity_pointer_campaignresponse",
+			"IsCollection": true,
+			"Type": "mscrm.campaignresponse",
+			"LogicalName": "campaignresponse"
+		},
+		{
+			"Name": "activity_pointer_campaignactivity",
+			"FullName": "activity_pointer_campaignactivity",
+			"IsCollection": true,
+			"Type": "mscrm.campaignactivity",
+			"LogicalName": "campaignactivity"
+		},
+		{
+			"Name": "activity_pointer_appointment",
+			"FullName": "activity_pointer_appointment",
+			"IsCollection": true,
+			"Type": "mscrm.appointment",
+			"LogicalName": "appointment"
+		},
+		{
+			"Name": "activity_pointer_activity_mime_attachment",
+			"FullName": "activity_pointer_activity_mime_attachment",
+			"IsCollection": true,
+			"Type": "mscrm.activitymimeattachment",
+			"LogicalName": "activitymimeattachment"
+		},
+		{
+			"Name": "activity_pointer_BulkOperation_logs",
+			"FullName": "activity_pointer_BulkOperation_logs",
+			"IsCollection": true,
+			"Type": "mscrm.bulkoperationlog",
+			"LogicalName": "bulkoperationlog"
+		},
+		{
+			"Name": "activity_pointer_BulkOperation",
+			"FullName": "activity_pointer_BulkOperation",
+			"IsCollection": true,
+			"Type": "mscrm.bulkoperation",
+			"LogicalName": "bulkoperation"
+		},
+		{
+			"Name": "activity_campaignresponse",
+			"FullName": "activity_campaignresponse",
+			"IsCollection": true,
+			"Type": "mscrm.campaignresponse",
+			"LogicalName": "campaignresponse"
+		},
+		{
+			"Name": "CreatedActivity_BulkOperationLogs",
+			"FullName": "CreatedActivity_BulkOperationLogs",
+			"IsCollection": true,
+			"Type": "mscrm.bulkoperationlog",
+			"LogicalName": "bulkoperationlog"
+		},
+		{
+			"Name": "ActivityPointer_QueueItem",
+			"FullName": "ActivityPointer_QueueItem",
+			"IsCollection": true,
+			"Type": "mscrm.queueitem",
+			"LogicalName": "queueitem"
+		},
+		{
+			"Name": "ActivityPointer_CampaignActivityItems",
+			"FullName": "ActivityPointer_CampaignActivityItems",
+			"IsCollection": true,
+			"Type": "mscrm.campaignactivityitem",
+			"LogicalName": "campaignactivityitem"
+		},
+		{
+			"Name": "ActivityPointer_BulkDeleteFailures",
+			"FullName": "ActivityPointer_BulkDeleteFailures",
+			"IsCollection": true,
+			"Type": "mscrm.bulkdeletefailure",
+			"LogicalName": "bulkdeletefailure"
+		},
+		{
+			"Name": "ActivityPointer_AsyncOperations",
+			"FullName": "ActivityPointer_AsyncOperations",
+			"IsCollection": true,
+			"Type": "mscrm.asyncoperation",
+			"LogicalName": "asyncoperation"
+		},
+		{
+			"Name": "regardingobjectid",
+			"FullName": "regardingobjectid",
+			"IsCollection": false,
+			"Type": "account,bookableresourcebooking,bookableresourcebookingheader,bulkoperation,campaign,campaignactivity,contact,contract,dt_artrequest,dt_canidate,dt_change,dt_design,dt_fixedasset,dt_incident,dt_order,dt_project,dt_purchaseorder,dt_todo,entitlement,entitlementtemplate,incident,interactionforemail,invoice,knowledgearticle,knowledgebaserecord,lead,msdyncrm_contentsettings,msdyncrm_customerjourney,msdyncrm_leadscoremodel,msdyncrm_linkedinaccount,msdyncrm_linkedinactivity,msdyncrm_linkedinfieldmapping,msdyncrm_linkedinform,msdyncrm_linkedinformanswer,msdyncrm_linkedinformquestion,msdyncrm_linkedinformsubmission,msdyncrm_linkedinleadmatchingstrategy,msdyncrm_linkedinuserprofile,msdyncrm_marketingdynamiccontentmetadata,msdyncrm_marketingemaildynamiccontentmetadata,msdyncrm_marketingemailtestsend,msdyncrm_migration,msdyncrm_uicconfig,msdyn_bookingalertstatus,msdyn_bookingrule,msdyn_customerasset,msdyn_playbookinstance,msdyn_postalbum,msdyn_resourceterritory,msdyn_salessuggestion,msdyn_systemuserschedulersetting,msdyn_timegroup,msdyn_timegroupdetail,msevtmgt_checkin,msevtmgt_event,msevtmgt_eventpurchase,msevtmgt_eventpurchaseattendee,msevtmgt_eventpurchasepass,msevtmgt_eventregistration,msevtmgt_hotel,msevtmgt_hotelroomallocation,msevtmgt_hotelroomreservation,msevtmgt_layout,msevtmgt_room,msevtmgt_session,msevtmgt_sessionregistration,msevtmgt_sessiontrack,msevtmgt_speaker,msevtmgt_speakerengagement,msevtmgt_sponsorablearticle,msevtmgt_sponsorship,msevtmgt_venue,msevtmgt_webinarconfiguration,msevtmgt_webinarprovider,opportunity,oss_notification,powf_doubleoptin,po_achaccount,po_creditcard,ptm_automergeworkingitems,quote,salesorder,site",
+			"ReferencedProperty": "siteid",
+			"ReferentialConstraint": "_regardingobjectid_value",
+			"LogicalName": "site"
+		},
+		{
+			"Name": "slainvokedid",
+			"FullName": "slainvokedid",
+			"IsCollection": false,
+			"Type": "sla",
+			"ReferencedProperty": "slaid",
+			"ReferentialConstraint": "_slainvokedid_value",
+			"LogicalName": "sla"
+		}
+	],
+	"ReferencedBy": [],
+	"SchemaName": "ActivityPointer",
+	"EntitySetName": "activitypointers"
+}

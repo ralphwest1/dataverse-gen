@@ -1,0 +1,17 @@
+{
+	"Name": "dt_calltype",
+	"Members": [
+		{
+			"Name": "OriginatingSale",
+			"Value": "692420000"
+		},
+		{
+			"Name": "CustomerService",
+			"Value": "692420001"
+		},
+		{
+			"Name": "Other",
+			"Value": "692420002"
+		}
+	]
+}

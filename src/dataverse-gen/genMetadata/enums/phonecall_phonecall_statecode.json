@@ -1,0 +1,17 @@
+{
+	"Name": "phonecall_phonecall_statecode",
+	"Members": [
+		{
+			"Name": "Open",
+			"Value": "0"
+		},
+		{
+			"Name": "Completed",
+			"Value": "1"
+		},
+		{
+			"Name": "Canceled",
+			"Value": "2"
+		}
+	]
+}

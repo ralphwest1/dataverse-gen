@@ -1,0 +1,21 @@
+{
+	"Name": "activitypointer_activitypointer_statuscode",
+	"Members": [
+		{
+			"Name": "Open",
+			"Value": "1"
+		},
+		{
+			"Name": "Completed",
+			"Value": "2"
+		},
+		{
+			"Name": "Canceled",
+			"Value": "3"
+		},
+		{
+			"Name": "Scheduled",
+			"Value": "4"
+		}
+	]
+}

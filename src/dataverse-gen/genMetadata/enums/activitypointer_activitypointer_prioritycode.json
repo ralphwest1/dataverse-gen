@@ -1,0 +1,17 @@
+{
+	"Name": "activitypointer_activitypointer_prioritycode",
+	"Members": [
+		{
+			"Name": "Low",
+			"Value": "0"
+		},
+		{
+			"Name": "Normal",
+			"Value": "1"
+		},
+		{
+			"Name": "High",
+			"Value": "2"
+		}
+	]
+}

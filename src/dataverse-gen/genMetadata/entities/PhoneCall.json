@@ -1,0 +1,2070 @@
+{
+	"Name": "phonecall",
+	"BaseType": "mscrm.activitypointer",
+	"Key": {
+		"PropertyRef": {
+			"_attributes": {
+				"Name": "activityid"
+			}
+		}
+	},
+	"KeyName": "activityid",
+	"Abstract": false,
+	"Properties": [
+		{
+			"Type": "MemoType",
+			"Name": "activityadditionalparams",
+			"SchemaName": "ActivityAdditionalParams",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "For internal use only.",
+			"DisplayName": "Additional Parameters",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "activityadditionalparams",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "UniqueidentifierType",
+			"Name": "activityid",
+			"SchemaName": "ActivityId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the phone call activity.",
+			"DisplayName": "Phone Call",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Guid",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "activityid",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "EntityNameType",
+			"Name": "activitytypecode",
+			"SchemaName": "ActivityTypeCode",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Shows the type of activity.",
+			"DisplayName": "Activity Type",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "activitytypecode",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "actualdurationminutes",
+			"SchemaName": "ActualDurationMinutes",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Type the number of minutes spent on the phone call. The duration is used in reporting.",
+			"DisplayName": "Duration",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "actualdurationminutes",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "actualend",
+			"SchemaName": "ActualEnd",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Enter the actual end date and time of the phone call. By default, it displays the date and time when the activity was completed or canceled, but can be edited to capture the actual duration of the phone call.",
+			"DisplayName": "Actual End",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "actualend",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "actualstart",
+			"SchemaName": "ActualStart",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Enter the actual start date and time for the phone call. By default, it displays the date and time when the activity was created, but can be edited to capture the actual duration of the phone call.",
+			"DisplayName": "Actual Start",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "actualstart",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "category",
+			"SchemaName": "Category",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Type a category to identify the phone call type, such as lead gathering or customer follow-up, to tie the phone call to a business group or function.",
+			"DisplayName": "Category",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "category",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "createdby",
+			"SchemaName": "CreatedBy",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Shows who created the record.",
+			"DisplayName": "Created By",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_createdby_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "createdbyname",
+			"SchemaName": "CreatedByName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "createdbyname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "createdbyyominame",
+			"SchemaName": "CreatedByYomiName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "createdbyyominame",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "createdon",
+			"SchemaName": "CreatedOn",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.",
+			"DisplayName": "Created On",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "createdon",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "createdonbehalfby",
+			"SchemaName": "CreatedOnBehalfBy",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Shows who created the record on behalf of another user.",
+			"DisplayName": "Created By (Delegate)",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_createdonbehalfby_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "createdonbehalfbyname",
+			"SchemaName": "CreatedOnBehalfByName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "createdonbehalfbyname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "createdonbehalfbyyominame",
+			"SchemaName": "CreatedOnBehalfByYomiName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "createdonbehalfbyyominame",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "MemoType",
+			"Name": "description",
+			"SchemaName": "Description",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Type additional information to describe the phone call, such as the primary message or the products and services discussed.",
+			"DisplayName": "Description",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "description",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "BooleanType",
+			"Name": "directioncode",
+			"SchemaName": "DirectionCode",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Select the direction of the phone call as incoming or outbound.",
+			"DisplayName": "Direction",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "boolean",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "directioncode",
+				"propertyType": "boolean",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "BooleanType",
+			"Name": "dnbs_bit",
+			"SchemaName": "dnbs_bit",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "bit",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "boolean",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dnbs_bit",
+				"propertyType": "boolean",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "dnbs_overriddencreatedon",
+			"SchemaName": "dnbs_overriddencreatedon",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "overriddencreatedon",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dnbs_overriddencreatedon",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "dt_calloutcome",
+			"Name": "dt_calloutcome",
+			"SchemaName": "dt_CallOutcome",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "",
+			"DisplayName": "Call Outcome",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "dt_calloutcome",
+				"outputType": 0,
+				"importLocation": "../enums/dt_calloutcome"
+			},
+			"ApiType": {
+				"propertyName": "dt_calloutcome",
+				"propertyType": "dt_calloutcome",
+				"importLocation": "../enums/dt_calloutcome",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "dt_calltype",
+			"Name": "dt_calltype",
+			"SchemaName": "dt_CallType",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "\nOrignating Sales\n  * An orignating call to a customer or a prospect with the purpose of generating a sales\nCustomer Service\n  * A call dealing with order details\n  * clarifying order quantites or art",
+			"DisplayName": "Call Type",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "dt_calltype",
+				"outputType": 0,
+				"importLocation": "../enums/dt_calltype"
+			},
+			"ApiType": {
+				"propertyName": "dt_calltype",
+				"propertyType": "dt_calltype",
+				"importLocation": "../enums/dt_calltype",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "dt_setactivitystatus",
+			"Name": "dt_setactivitystatus",
+			"SchemaName": "dt_SetActivityStatus",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "",
+			"DisplayName": "Set Activity Status",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "dt_setactivitystatus",
+				"outputType": 0,
+				"importLocation": "../enums/dt_setactivitystatus"
+			},
+			"ApiType": {
+				"propertyName": "dt_setactivitystatus",
+				"propertyType": "dt_setactivitystatus",
+				"importLocation": "../enums/dt_setactivitystatus",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "BooleanType",
+			"Name": "dt_setendtime",
+			"SchemaName": "dt_SetEndTime",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Set End Time",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "boolean",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_setendtime",
+				"propertyType": "boolean",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "BooleanType",
+			"Name": "dt_setstarttime",
+			"SchemaName": "dt_SetStartTime",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Set Start Time",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "boolean",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_setstarttime",
+				"propertyType": "boolean",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "dt_zohoid",
+			"SchemaName": "dt_ZohoID",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "Zoho ID",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "dt_zohoid",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "DecimalType",
+			"Name": "exchangerate",
+			"SchemaName": "ExchangeRate",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency.",
+			"DisplayName": "Exchange Rate",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "exchangerate",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "PartyListType",
+			"Name": "from",
+			"SchemaName": "from",
+			"IsRequired": true,
+			"IsEnum": false,
+			"Description": "Enter the account, contact, lead, or user who made the phone call.",
+			"DisplayName": "Call From",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "ActivityParty[]",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "from",
+				"propertyType": "any[]"
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "importsequencenumber",
+			"SchemaName": "ImportSequenceNumber",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the data import or data migration that created this record.",
+			"DisplayName": "Import Sequence Number",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "importsequencenumber",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "BooleanType",
+			"Name": "isbilled",
+			"SchemaName": "IsBilled",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Information which specifies whether the phone call activity was billed as part of resolving a case.",
+			"DisplayName": "Is Billed",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "boolean",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "isbilled",
+				"propertyType": "boolean",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "BooleanType",
+			"Name": "isregularactivity",
+			"SchemaName": "IsRegularActivity",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Information regarding whether the activity is a regular activity type or event type.",
+			"DisplayName": "Is Regular Activity",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "boolean",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "isregularactivity",
+				"propertyType": "boolean",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "BooleanType",
+			"Name": "isworkflowcreated",
+			"SchemaName": "IsWorkflowCreated",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Indication which specifies if the phone call activity was created by a workflow rule.",
+			"DisplayName": "Is Workflow Created",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "boolean",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "isworkflowcreated",
+				"propertyType": "boolean",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "lastonholdtime",
+			"SchemaName": "LastOnHoldTime",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Contains the date and time stamp of the last on hold time.",
+			"DisplayName": "Last On Hold Time",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "lastonholdtime",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "BooleanType",
+			"Name": "leftvoicemail",
+			"SchemaName": "LeftVoiceMail",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Select whether a voice mail was left for the person.",
+			"DisplayName": "Left Voice Mail",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "boolean",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "leftvoicemail",
+				"propertyType": "boolean",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "modifiedby",
+			"SchemaName": "ModifiedBy",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Shows who last updated the record.",
+			"DisplayName": "Modified By",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_modifiedby_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "modifiedbyname",
+			"SchemaName": "ModifiedByName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "modifiedbyname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "modifiedbyyominame",
+			"SchemaName": "ModifiedByYomiName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "modifiedbyyominame",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "modifiedon",
+			"SchemaName": "ModifiedOn",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.",
+			"DisplayName": "Modified On",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "modifiedon",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "modifiedonbehalfby",
+			"SchemaName": "ModifiedOnBehalfBy",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Shows who last updated the record on behalf of another user.",
+			"DisplayName": "Modified By (Delegate)",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_modifiedonbehalfby_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "modifiedonbehalfbyname",
+			"SchemaName": "ModifiedOnBehalfByName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "modifiedonbehalfbyname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "modifiedonbehalfbyyominame",
+			"SchemaName": "ModifiedOnBehalfByYomiName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "modifiedonbehalfbyyominame",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "msdyncrm_activityid",
+			"SchemaName": "msdyncrm_ActivityId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "ActivityId",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "msdyncrm_activityid",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "msdyncrm_associatedcustomerjourneyiteration",
+			"SchemaName": "msdyncrm_associatedcustomerjourneyiteration",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Customer journey iteration",
+			"DisplayName": "Customer journey iteration",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_msdyncrm_associatedcustomerjourneyiteration_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "msdyncrm_associatedcustomerjourneyiterationname",
+			"SchemaName": "msdyncrm_associatedcustomerjourneyiterationName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "msdyncrm_associatedcustomerjourneyiterationname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "onholdtime",
+			"SchemaName": "OnHoldTime",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Shows how long, in minutes, that the record was on hold.",
+			"DisplayName": "On Hold Time (Minutes)",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "onholdtime",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "overriddencreatedon",
+			"SchemaName": "OverriddenCreatedOn",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Date and time that the record was migrated.",
+			"DisplayName": "Record Created On",
+			"Format": "DateOnly:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "overriddencreatedon",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "OwnerType",
+			"Name": "ownerid",
+			"SchemaName": "OwnerId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Enter the user or team who is assigned to manage the record. This field is updated every time the record is assigned to a different user.",
+			"DisplayName": "Owner",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_ownerid_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "owneridname",
+			"SchemaName": "OwnerIdName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "owneridname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "EntityNameType",
+			"Name": "owneridtype",
+			"SchemaName": "OwnerIdType",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "owneridtype",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "owneridyominame",
+			"SchemaName": "OwnerIdYomiName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "owneridyominame",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "owningbusinessunit",
+			"SchemaName": "OwningBusinessUnit",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the business unit that owns the phone call activity.",
+			"DisplayName": "Owning Business Unit",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_owningbusinessunit_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "owningbusinessunitname",
+			"SchemaName": "OwningBusinessUnitName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "owningbusinessunitname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "owningteam",
+			"SchemaName": "OwningTeam",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the team that owns the phone call activity.",
+			"DisplayName": "Owning Team",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_owningteam_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@Microsoft.Dynamics.CRM.lookuplogicalname"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "owninguser",
+			"SchemaName": "OwningUser",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier of the user that owns the phone call activity.",
+			"DisplayName": "Owning User",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_owninguser_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@Microsoft.Dynamics.CRM.lookuplogicalname"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "phonenumber",
+			"SchemaName": "PhoneNumber",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Type the phone number.",
+			"DisplayName": "Phone Number",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "phonenumber",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "phonecall_phonecall_prioritycode",
+			"Name": "prioritycode",
+			"SchemaName": "PriorityCode",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "Select the priority so that preferred customers or critical issues are handled quickly.",
+			"DisplayName": "Priority",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "phonecall_phonecall_prioritycode",
+				"outputType": 0,
+				"importLocation": "../enums/phonecall_phonecall_prioritycode"
+			},
+			"ApiType": {
+				"propertyName": "prioritycode",
+				"propertyType": "phonecall_phonecall_prioritycode",
+				"importLocation": "../enums/phonecall_phonecall_prioritycode",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "UniqueidentifierType",
+			"Name": "processid",
+			"SchemaName": "ProcessId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Shows the ID of the process.",
+			"DisplayName": "Process",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Guid",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "processid",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "rc_callduration",
+			"SchemaName": "rc_CallDuration",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Custom field for call duraction",
+			"DisplayName": "Call Duration",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "rc_callduration",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "rc_callrecording",
+			"SchemaName": "rc_callrecording",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Custom field for call recording",
+			"DisplayName": "Call Recording",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "rc_callrecording",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "rc_callstatus",
+			"SchemaName": "rc_CallStatus",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Custom field for call status",
+			"DisplayName": "Call Status",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "rc_callstatus",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "regardingobjectid",
+			"SchemaName": "RegardingObjectId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Choose the record that the phone call relates to.",
+			"DisplayName": "Regarding",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_regardingobjectid_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "regardingobjectidname",
+			"SchemaName": "RegardingObjectIdName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "regardingobjectidname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "regardingobjectidyominame",
+			"SchemaName": "RegardingObjectIdYomiName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "regardingobjectidyominame",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "EntityNameType",
+			"Name": "regardingobjecttypecode",
+			"SchemaName": "RegardingObjectTypeCode",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "regardingobjecttypecode",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "scheduleddurationminutes",
+			"SchemaName": "ScheduledDurationMinutes",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Scheduled duration of the phone call activity, specified in minutes.",
+			"DisplayName": "Scheduled Duration",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "scheduleddurationminutes",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "scheduledend",
+			"SchemaName": "ScheduledEnd",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Enter the expected due date and time.",
+			"DisplayName": "Due Date",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "scheduledend",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "scheduledstart",
+			"SchemaName": "ScheduledStart",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Enter the expected due date and time.",
+			"DisplayName": "Start Date",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "scheduledstart",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "serviceid",
+			"SchemaName": "ServiceId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Unique identifier for an associated service.",
+			"DisplayName": "Service",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_serviceid_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "serviceidname",
+			"SchemaName": "ServiceIdName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "serviceidname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "slaid",
+			"SchemaName": "SLAId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Choose the service level agreement (SLA) that you want to apply to the Phone Call record.",
+			"DisplayName": "SLA",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_slaid_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "slainvokedid",
+			"SchemaName": "SLAInvokedId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Last SLA that was applied to this Phone Call. This field is for internal use only.",
+			"DisplayName": "Last SLA applied",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_slainvokedid_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "slainvokedidname",
+			"SchemaName": "SLAInvokedIdName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "slainvokedidname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "slaname",
+			"SchemaName": "SLAName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "slaname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "DateTimeType",
+			"Name": "sortdate",
+			"SchemaName": "SortDate",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Shows the date and time by which the activities are sorted.",
+			"DisplayName": "Sort Date",
+			"Format": "DateAndTime:UserLocal",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Date",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "sortdate",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "UniqueidentifierType",
+			"Name": "stageid",
+			"SchemaName": "StageId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Shows the ID of the stage.",
+			"DisplayName": "(Deprecated) Process Stage",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Guid",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "stageid",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "phonecall_phonecall_statecode",
+			"Name": "statecode",
+			"SchemaName": "StateCode",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "Shows whether the phone call is open, completed, or canceled. Completed and canceled phone calls are read-only and can't be edited.",
+			"DisplayName": "Activity Status",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "phonecall_phonecall_statecode",
+				"outputType": 0,
+				"importLocation": "../enums/phonecall_phonecall_statecode"
+			},
+			"ApiType": {
+				"propertyName": "statecode",
+				"propertyType": "phonecall_phonecall_statecode",
+				"importLocation": "../enums/phonecall_phonecall_statecode",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "phonecall_phonecall_statuscode",
+			"Name": "statuscode",
+			"SchemaName": "StatusCode",
+			"IsRequired": false,
+			"IsEnum": true,
+			"Description": "Select the phone call's status.",
+			"DisplayName": "Status Reason",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "phonecall_phonecall_statuscode",
+				"outputType": 0,
+				"importLocation": "../enums/phonecall_phonecall_statuscode"
+			},
+			"ApiType": {
+				"propertyName": "statuscode",
+				"propertyType": "phonecall_phonecall_statuscode",
+				"importLocation": "../enums/phonecall_phonecall_statuscode",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "subcategory",
+			"SchemaName": "Subcategory",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Type a subcategory to identify the phone call type and relate the activity to a specific product, sales region, business group, or other function.",
+			"DisplayName": "Sub-Category",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "subcategory",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "subject",
+			"SchemaName": "Subject",
+			"IsRequired": true,
+			"IsEnum": false,
+			"Description": "Type a short description about the objective or primary topic of the phone call.",
+			"DisplayName": "Subject",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "subject",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "UniqueidentifierType",
+			"Name": "subscriptionid",
+			"SchemaName": "SubscriptionId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "For internal use only.",
+			"DisplayName": "Subscription",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "Guid",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "subscriptionid",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "timezoneruleversionnumber",
+			"SchemaName": "TimeZoneRuleVersionNumber",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "For internal use only.",
+			"DisplayName": "Time Zone Rule Version Number",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "timezoneruleversionnumber",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "PartyListType",
+			"Name": "to",
+			"SchemaName": "to",
+			"IsRequired": true,
+			"IsEnum": false,
+			"Description": "Enter the account, contact, lead, or user recipients of the phone call.",
+			"DisplayName": "Call To",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "ActivityParty[]",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "to",
+				"propertyType": "any[]"
+			}
+		},
+		{
+			"Type": "LookupType",
+			"Name": "transactioncurrencyid",
+			"SchemaName": "TransactionCurrencyId",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Choose the local currency for the record to make sure budgets are reported in the correct currency.",
+			"DisplayName": "Currency",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "EntityReference",
+				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"propertyName": "_transactioncurrencyid_value",
+				"propertyType": "string",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+				]
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "transactioncurrencyidname",
+			"SchemaName": "TransactionCurrencyIdName",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "",
+			"DisplayName": "",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "transactioncurrencyidname",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "StringType",
+			"Name": "traversedpath",
+			"SchemaName": "TraversedPath",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "For internal use only.",
+			"DisplayName": "(Deprecated) Traversed Path",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "string",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "traversedpath",
+				"propertyType": "string"
+			}
+		},
+		{
+			"Type": "IntegerType",
+			"Name": "utcconversiontimezonecode",
+			"SchemaName": "UTCConversionTimeZoneCode",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Time zone code that was in use when the record was created.",
+			"DisplayName": "UTC Conversion Time Zone Code",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "utcconversiontimezonecode",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		},
+		{
+			"Type": "BigIntType",
+			"Name": "versionnumber",
+			"SchemaName": "VersionNumber",
+			"IsRequired": false,
+			"IsEnum": false,
+			"Description": "Version number of the phone call activity.",
+			"DisplayName": "Version Number",
+			"Format": "",
+			"IsMultiSelect": false,
+			"TypescriptType": {
+				"name": "number",
+				"outputType": 3
+			},
+			"ApiType": {
+				"propertyName": "versionnumber",
+				"propertyType": "number",
+				"formattedValues": [
+					"@OData.Community.Display.V1.FormattedValue"
+				]
+			}
+		}
+	],
+	"OpenType": false,
+	"NavigationProperties": [
+		{
+			"Name": "stageid_processstage",
+			"FullName": "stageid_processstage",
+			"IsCollection": false,
+			"Type": "mscrm.processstage",
+			"LogicalName": "processstage"
+		},
+		{
+			"Name": "slakpiinstance_phonecall",
+			"FullName": "slakpiinstance_phonecall",
+			"IsCollection": true,
+			"Type": "mscrm.slakpiinstance",
+			"LogicalName": "slakpiinstance"
+		},
+		{
+			"Name": "sla_phonecall_sla",
+			"FullName": "sla_phonecall_sla",
+			"IsCollection": false,
+			"Type": "mscrm.sla",
+			"LogicalName": "sla"
+		},
+		{
+			"Name": "phonecall_principalobjectattributeaccess",
+			"FullName": "phonecall_principalobjectattributeaccess",
+			"IsCollection": true,
+			"Type": "mscrm.principalobjectattributeaccess",
+			"LogicalName": "principalobjectattributeaccess"
+		},
+		{
+			"Name": "phonecall_connections2",
+			"FullName": "phonecall_connections2",
+			"IsCollection": true,
+			"Type": "mscrm.connection",
+			"LogicalName": "connection"
+		},
+		{
+			"Name": "phonecall_connections1",
+			"FullName": "phonecall_connections1",
+			"IsCollection": true,
+			"Type": "mscrm.connection",
+			"LogicalName": "connection"
+		},
+		{
+			"Name": "phonecall_campaignresponse",
+			"FullName": "phonecall_campaignresponse",
+			"IsCollection": true,
+			"Type": "mscrm.campaignresponse",
+			"LogicalName": "campaignresponse"
+		},
+		{
+			"Name": "phonecall_activity_parties",
+			"FullName": "phonecall_activity_parties",
+			"IsCollection": true,
+			"Type": "mscrm.activityparty",
+			"LogicalName": "activityparty"
+		},
+		{
+			"Name": "phonecall_actioncard",
+			"FullName": "phonecall_actioncard",
+			"IsCollection": true,
+			"Type": "mscrm.actioncard",
+			"LogicalName": "actioncard"
+		},
+		{
+			"Name": "phonecall_PostRegardings",
+			"FullName": "phonecall_PostRegardings",
+			"IsCollection": true,
+			"Type": "mscrm.postregarding",
+			"LogicalName": "postregarding"
+		},
+		{
+			"Name": "phonecall_PostFollows",
+			"FullName": "phonecall_PostFollows",
+			"IsCollection": true,
+			"Type": "mscrm.postfollow",
+			"LogicalName": "postfollow"
+		},
+		{
+			"Name": "ownerid_phonecall",
+			"FullName": "ownerid_phonecall",
+			"IsCollection": false,
+			"Type": "mscrm.principal",
+			"LogicalName": "principal"
+		},
+		{
+			"Name": "msdyn_phonecall_msdyn_recording_phone_call_activity",
+			"FullName": "msdyn_phonecall_msdyn_recording_phone_call_activity",
+			"IsCollection": true,
+			"Type": "mscrm.msdyn_recording",
+			"LogicalName": "msdyn_recording"
+		},
+		{
+			"Name": "activityid_activitypointer",
+			"FullName": "activityid_activitypointer",
+			"IsCollection": false,
+			"Type": "mscrm.activitypointer",
+			"LogicalName": "activitypointer"
+		},
+		{
+			"Name": "PhoneCall_SyncErrors",
+			"FullName": "PhoneCall_SyncErrors",
+			"IsCollection": true,
+			"Type": "mscrm.syncerror",
+			"LogicalName": "syncerror"
+		},
+		{
+			"Name": "PhoneCall_QueueItem",
+			"FullName": "PhoneCall_QueueItem",
+			"IsCollection": true,
+			"Type": "mscrm.queueitem",
+			"LogicalName": "queueitem"
+		},
+		{
+			"Name": "PhoneCall_ProcessSessions",
+			"FullName": "PhoneCall_ProcessSessions",
+			"IsCollection": true,
+			"Type": "mscrm.processsession",
+			"LogicalName": "processsession"
+		},
+		{
+			"Name": "PhoneCall_DuplicateMatchingRecord",
+			"FullName": "PhoneCall_DuplicateMatchingRecord",
+			"IsCollection": true,
+			"Type": "mscrm.duplicaterecord",
+			"LogicalName": "duplicaterecord"
+		},
+		{
+			"Name": "PhoneCall_DuplicateBaseRecord",
+			"FullName": "PhoneCall_DuplicateBaseRecord",
+			"IsCollection": true,
+			"Type": "mscrm.duplicaterecord",
+			"LogicalName": "duplicaterecord"
+		},
+		{
+			"Name": "PhoneCall_BulkDeleteFailures",
+			"FullName": "PhoneCall_BulkDeleteFailures",
+			"IsCollection": true,
+			"Type": "mscrm.bulkdeletefailure",
+			"LogicalName": "bulkdeletefailure"
+		},
+		{
+			"Name": "PhoneCall_AsyncOperations",
+			"FullName": "PhoneCall_AsyncOperations",
+			"IsCollection": true,
+			"Type": "mscrm.asyncoperation",
+			"LogicalName": "asyncoperation"
+		},
+		{
+			"Name": "PhoneCall_Annotation",
+			"FullName": "PhoneCall_Annotation",
+			"IsCollection": true,
+			"Type": "mscrm.annotation",
+			"LogicalName": "annotation"
+		},
+		{
+			"Name": "createdby",
+			"FullName": "createdby",
+			"IsCollection": false,
+			"Type": "systemuser",
+			"LogicalName": "systemuser"
+		},
+		{
+			"Name": "createdonbehalfby",
+			"FullName": "createdonbehalfby",
+			"IsCollection": false,
+			"Type": "systemuser",
+			"LogicalName": "systemuser"
+		},
+		{
+			"Name": "modifiedby",
+			"FullName": "modifiedby",
+			"IsCollection": false,
+			"Type": "systemuser",
+			"LogicalName": "systemuser"
+		},
+		{
+			"Name": "modifiedonbehalfby",
+			"FullName": "modifiedonbehalfby",
+			"IsCollection": false,
+			"Type": "systemuser",
+			"LogicalName": "systemuser"
+		},
+		{
+			"Name": "msdyncrm_associatedcustomerjourneyiteration",
+			"FullName": "msdyncrm_associatedcustomerjourneyiteration",
+			"IsCollection": false,
+			"Type": "msdyncrm_customerjourneyiteration",
+			"ReferencedProperty": "msdyncrm_customerjourneyiterationid",
+			"ReferentialConstraint": "_msdyncrm_associatedcustomerjourneyiteration_value",
+			"LogicalName": "msdyncrm_customerjourneyiteration"
+		},
+		{
+			"Name": "owningbusinessunit",
+			"FullName": "owningbusinessunit",
+			"IsCollection": false,
+			"Type": "businessunit",
+			"LogicalName": "businessunit"
+		},
+		{
+			"Name": "owningteam",
+			"FullName": "owningteam",
+			"IsCollection": false,
+			"Type": "team",
+			"LogicalName": "team"
+		},
+		{
+			"Name": "owninguser",
+			"FullName": "owninguser",
+			"IsCollection": false,
+			"Type": "systemuser",
+			"LogicalName": "systemuser"
+		},
+		{
+			"Name": "regardingobjectid",
+			"FullName": "regardingobjectid",
+			"IsCollection": false,
+			"Type": "account,bookableresourcebooking,bookableresourcebookingheader,bulkoperation,campaign,campaignactivity,contact,contract,dt_artrequest,dt_canidate,dt_change,dt_design,dt_fixedasset,dt_incident,dt_order,dt_project,dt_purchaseorder,dt_todo,entitlement,entitlementtemplate,incident,invoice,knowledgearticle,knowledgebaserecord,lead,msdyncrm_contentsettings,msdyncrm_customerjourney,msdyncrm_leadscoremodel,msdyncrm_linkedinaccount,msdyncrm_linkedinactivity,msdyncrm_linkedinfieldmapping,msdyncrm_linkedinform,msdyncrm_linkedinformanswer,msdyncrm_linkedinformquestion,msdyncrm_linkedinformsubmission,msdyncrm_linkedinleadmatchingstrategy,msdyncrm_linkedinuserprofile,msdyncrm_marketingdynamiccontentmetadata,msdyncrm_marketingemaildynamiccontentmetadata,msdyncrm_marketingemailtestsend,msdyncrm_migration,msdyncrm_uicconfig,msdyn_bookingalertstatus,msdyn_bookingrule,msdyn_customerasset,msdyn_playbookinstance,msdyn_postalbum,msdyn_resourceterritory,msdyn_salessuggestion,msdyn_systemuserschedulersetting,msdyn_timegroup,msdyn_timegroupdetail,msevtmgt_checkin,msevtmgt_event,msevtmgt_eventpurchase,msevtmgt_eventpurchaseattendee,msevtmgt_eventpurchasepass,msevtmgt_eventregistration,msevtmgt_hotel,msevtmgt_hotelroomallocation,msevtmgt_hotelroomreservation,msevtmgt_layout,msevtmgt_room,msevtmgt_session,msevtmgt_sessionregistration,msevtmgt_sessiontrack,msevtmgt_speaker,msevtmgt_speakerengagement,msevtmgt_sponsorablearticle,msevtmgt_sponsorship,msevtmgt_venue,msevtmgt_webinarconfiguration,msevtmgt_webinarprovider,opportunity,oss_notification,powf_doubleoptin,po_achaccount,po_creditcard,ptm_automergeworkingitems,quote,salesorder,site",
+			"LogicalName": "site"
+		},
+		{
+			"Name": "serviceid",
+			"FullName": "serviceid",
+			"IsCollection": false,
+			"Type": "service",
+			"LogicalName": "service"
+		},
+		{
+			"Name": "slainvokedid",
+			"FullName": "slainvokedid",
+			"IsCollection": false,
+			"Type": "sla",
+			"LogicalName": "sla"
+		},
+		{
+			"Name": "transactioncurrencyid",
+			"FullName": "transactioncurrencyid",
+			"IsCollection": false,
+			"Type": "transactioncurrency",
+			"LogicalName": "transactioncurrency"
+		}
+	],
+	"ReferencedBy": [],
+	"EntitySetName": "phonecalls",
+	"SchemaName": "PhoneCall"
+}

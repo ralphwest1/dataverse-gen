@@ -1,0 +1,25 @@
+{
+	"Name": "phonecall_phonecall_statuscode",
+	"Members": [
+		{
+			"Name": "InProgress",
+			"Value": "1"
+		},
+		{
+			"Name": "Completed",
+			"Value": "2"
+		},
+		{
+			"Name": "Received",
+			"Value": "4"
+		},
+		{
+			"Name": "Canceled",
+			"Value": "3"
+		},
+		{
+			"Name": "Scheduled",
+			"Value": "0"
+		}
+	]
+}

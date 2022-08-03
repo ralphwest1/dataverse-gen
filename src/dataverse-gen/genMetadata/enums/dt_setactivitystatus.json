@@ -1,0 +1,17 @@
+{
+	"Name": "dt_setactivitystatus",
+	"Members": [
+		{
+			"Name": "Completed",
+			"Value": "2"
+		},
+		{
+			"Name": "InProgress",
+			"Value": "1"
+		},
+		{
+			"Name": "Scheduled",
+			"Value": "0"
+		}
+	]
+}
