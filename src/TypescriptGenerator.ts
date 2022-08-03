@@ -255,7 +255,6 @@ export class TypescriptGenerator {
         // eslint-disable-next-line @typescript-eslint/no-use-before-define
         JSON.stringify(item, getCircularReplacer(), "\t"),
       );
-      console.table(item.Properties);
     }
   }
   // outputJsonFile(outputDir: string, fileName: string, data: any): void {

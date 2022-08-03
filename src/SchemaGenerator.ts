@@ -517,12 +517,13 @@ export class SchemaGenerator {
     } as TypeScriptType;
     return mappedType;
   }
-  getApiType(property: EntityTypeProperty): TypeScriptType {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  getApiType(property: EntityTypeProperty): any {
+    if (property.DisplayName?.length < 0) return undefined;
     const referencedType = property.Type;
     const isMultiSelect = property.IsMultiSelect;
     const isCollection = this.isCollection(referencedType);
     const typeName = this.removeCollection(referencedType);
-    let type = "any";
     const formatedValues: string[] = [];
     let propertyName = property.Name;
     let propertyType = "any";
@@ -599,14 +600,19 @@ export class SchemaGenerator {
         propertyType = "Date";
         formatedValues.push("@OData.Community.Display.V1.FormattedValue");
         break;
-      case "CustomerType":
       case "LookupType":
+      case "CustomerType":
       case "OwnerType":
-        propertyType = "EntityReference";
-        propertyName = `_${propertyName}_value`;
-        formatedValues.push("@OData.Community.Display.V1.FormattedValue");
-        formatedValues.push("@Microsoft.Dynamics.CRM.lookuplogicalname");
-        formatedValues.push("@Microsoft.Dynamics.CRM.associatednavigationproperty");
+        propertyType = "string";
+        propertyName = `_${property.Name}_value`;
+        if (property.Name === "owningteam" || property.Name === "owninguser") {
+          formatedValues.push("@Microsoft.Dynamics.CRM.lookuplogicalname");
+        } else {
+          formatedValues.push("@OData.Community.Display.V1.FormattedValue");
+          formatedValues.push("@Microsoft.Dynamics.CRM.lookuplogicalname");
+          formatedValues.push("@Microsoft.Dynamics.CRM.associatednavigationproperty");
+        }
+
         break;
       case "PartyListType":
         // type = "ActivityParty[]";
@@ -644,14 +650,17 @@ export class SchemaGenerator {
     // }
     // Add array
     if (isCollection || isMultiSelect) {
-      type = type + "[]";
+      propertyType = propertyType + "[]";
+    }
+    if (property.IsEnum) {
+      formatedValues.push("@OData.Community.Display.V1.FormattedValue");
     }
     const mappedType = {
       referencedType,
       typeName,
       propertyName,
       propertyType,
-      importLocation: property.TypescriptType?.importLocation,
+      importLocation: property.IsEnum ? property.TypescriptType?.importLocation : undefined,
       formatedValues: formatedValues.length > 0 ? formatedValues : undefined,
     } as TypeScriptType;
     return mappedType;

@@ -30,9 +30,11 @@
 				"referencedType": "LookupType",
 				"typeName": "LookupType",
 				"propertyName": "_createdby_value",
-				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify",
+				"propertyType": "string",
 				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -124,9 +126,11 @@
 				"referencedType": "LookupType",
 				"typeName": "LookupType",
 				"propertyName": "_createdonbehalfby_value",
-				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify",
+				"propertyType": "string",
 				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -218,9 +222,11 @@
 				"referencedType": "LookupType",
 				"typeName": "LookupType",
 				"propertyName": "_dt_account_value",
-				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify",
+				"propertyType": "string",
 				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -825,9 +831,11 @@
 				"referencedType": "LookupType",
 				"typeName": "LookupType",
 				"propertyName": "_dt_design_value",
-				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify",
+				"propertyType": "string",
 				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -874,9 +882,11 @@
 				"referencedType": "LookupType",
 				"typeName": "LookupType",
 				"propertyName": "_dt_designlayout_value",
-				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify",
+				"propertyType": "string",
 				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -1245,9 +1255,11 @@
 				"referencedType": "LookupType",
 				"typeName": "LookupType",
 				"propertyName": "_dt_order_value",
-				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify",
+				"propertyType": "string",
 				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -1414,8 +1426,7 @@
 				"referencedType": "UniqueidentifierType",
 				"typeName": "UniqueidentifierType",
 				"propertyName": "dt_orderlineid",
-				"propertyType": "string",
-				"importLocation": "dataverse-ify"
+				"propertyType": "string"
 			}
 		},
 		{
@@ -2490,8 +2501,7 @@
 				"referencedType": "UniqueidentifierType",
 				"typeName": "UniqueidentifierType",
 				"propertyName": "dt_primaryimageid",
-				"propertyType": "string",
-				"importLocation": "dataverse-ify"
+				"propertyType": "string"
 			}
 		},
 		{
@@ -3560,8 +3570,7 @@
 				"referencedType": "UniqueidentifierType",
 				"typeName": "UniqueidentifierType",
 				"propertyName": "entityimageid",
-				"propertyType": "string",
-				"importLocation": "dataverse-ify"
+				"propertyType": "string"
 			}
 		},
 		{
@@ -3631,9 +3640,11 @@
 				"referencedType": "LookupType",
 				"typeName": "LookupType",
 				"propertyName": "_modifiedby_value",
-				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify",
+				"propertyType": "string",
 				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -3725,9 +3736,11 @@
 				"referencedType": "LookupType",
 				"typeName": "LookupType",
 				"propertyName": "_modifiedonbehalfby_value",
-				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify",
+				"propertyType": "string",
 				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -3819,9 +3832,11 @@
 				"referencedType": "OwnerType",
 				"typeName": "OwnerType",
 				"propertyName": "_ownerid_value",
-				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify",
+				"propertyType": "string",
 				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -3910,9 +3925,11 @@
 				"referencedType": "LookupType",
 				"typeName": "LookupType",
 				"propertyName": "_owningbusinessunit_value",
-				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify",
+				"propertyType": "string",
 				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
@@ -3959,12 +3976,12 @@
 				"referencedType": "LookupType",
 				"typeName": "LookupType",
 				"propertyName": "_owningteam_value",
-				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify",
+				"propertyType": "string",
 				"formatedValues": [
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
-					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname"
 				]
 			}
 		},
@@ -3987,12 +4004,12 @@
 				"referencedType": "LookupType",
 				"typeName": "LookupType",
 				"propertyName": "_owninguser_value",
-				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify",
+				"propertyType": "string",
 				"formatedValues": [
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
-					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname"
 				]
 			}
 		},
@@ -4085,9 +4102,11 @@
 				"referencedType": "LookupType",
 				"typeName": "LookupType",
 				"propertyName": "_transactioncurrencyid_value",
-				"propertyType": "EntityReference",
-				"importLocation": "dataverse-ify",
+				"propertyType": "string",
 				"formatedValues": [
+					"@OData.Community.Display.V1.FormattedValue",
+					"@Microsoft.Dynamics.CRM.lookuplogicalname",
+					"@Microsoft.Dynamics.CRM.associatednavigationproperty",
 					"@OData.Community.Display.V1.FormattedValue",
 					"@Microsoft.Dynamics.CRM.lookuplogicalname",
 					"@Microsoft.Dynamics.CRM.associatednavigationproperty"
