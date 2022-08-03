@@ -658,14 +658,6 @@
 			}
 		},
 		{
-			"Name": "IsArchivalEnabled",
-			"Type": "Edm.Boolean",
-			"TypescriptType": {
-				"name": "boolean",
-				"outputType": 3
-			}
-		},
-		{
 			"Name": "IsActivityParty",
 			"Type": "Edm.Boolean",
 			"TypescriptType": {

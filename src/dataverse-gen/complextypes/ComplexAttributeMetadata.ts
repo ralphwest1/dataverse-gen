@@ -8,7 +8,6 @@ export interface ComplexAttributeMetadata {
   MetadataId?: import("dataverse-ify").Guid;
   LogicalName?: string;
   LinkedAttributeId?: import("dataverse-ify").Guid;
-  IsValidODataAttribute?: boolean;
   IsValidForUpdate?: boolean;
   IsValidForRead?: boolean;
   IsValidForGrid?: boolean;
