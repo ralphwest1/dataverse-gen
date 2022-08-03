@@ -178,7 +178,6 @@ export interface dt_Order_D365Api {
   dt_overagesquareinches_estimate?: number | null;
   // Payment Method dt_paymentmethod
   dt_paymentmethod?: import("../enums/dt_paymentmethod").dt_paymentmethod | null;
-  "dt_paymentmethod@api"?: import("../enums/dt_paymentmethod").dt_paymentmethod | null;
   // Payment Terms dt_paymentterms
   dt_paymentterms?: import("../enums/dt_paymentterms").dt_paymentterms | null;
   // Order PID StringType
