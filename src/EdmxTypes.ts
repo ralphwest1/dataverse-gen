@@ -9,6 +9,8 @@ export interface EdmxBase {
 }
 
 export interface EntityTypeProperty {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  ApiType?: any;
   TypescriptType?: TypeScriptType;
   IsMultiSelect: boolean;
   Name: string;

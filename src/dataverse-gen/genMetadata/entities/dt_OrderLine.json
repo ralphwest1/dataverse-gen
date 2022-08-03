@@ -25,6 +25,13 @@
 				"name": "EntityReference",
 				"outputType": 3,
 				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"referencedType": "LookupType",
+				"typeName": "LookupType",
+				"propertyName": "_createdby_value",
+				"propertyType": "EntityReference",
+				"importLocation": "dataverse-ify"
 			}
 		},
 		{
@@ -40,6 +47,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "createdbyname",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -55,6 +68,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "createdbyyominame",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -70,6 +89,12 @@
 			"TypescriptType": {
 				"name": "Date",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DateTimeType",
+				"typeName": "DateTimeType",
+				"propertyName": "createdon",
+				"propertyType": "Date"
 			}
 		},
 		{
@@ -86,6 +111,13 @@
 				"name": "EntityReference",
 				"outputType": 3,
 				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"referencedType": "LookupType",
+				"typeName": "LookupType",
+				"propertyName": "_createdonbehalfby_value",
+				"propertyType": "EntityReference",
+				"importLocation": "dataverse-ify"
 			}
 		},
 		{
@@ -101,6 +133,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "createdonbehalfbyname",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -116,6 +154,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "createdonbehalfbyyominame",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -131,6 +175,12 @@
 			"TypescriptType": {
 				"name": "Date",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DateTimeType",
+				"typeName": "DateTimeType",
+				"propertyName": "dnbs_overriddencreatedon",
+				"propertyType": "Date"
 			}
 		},
 		{
@@ -147,6 +197,13 @@
 				"name": "EntityReference",
 				"outputType": 3,
 				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"referencedType": "LookupType",
+				"typeName": "LookupType",
+				"propertyName": "_dt_account_value",
+				"propertyType": "EntityReference",
+				"importLocation": "dataverse-ify"
 			}
 		},
 		{
@@ -162,6 +219,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "dt_accountname",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -177,6 +240,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "dt_accountyominame",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -192,6 +261,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "dt_adminnotes",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -207,6 +282,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "dt_autonumber",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -222,6 +303,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "dt_autonumber_prefixed",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -237,6 +324,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_boxes_estimate",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -252,6 +345,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "dt_costmessage",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -267,6 +366,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_costperlabel",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -282,6 +387,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_costperlabel_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -297,6 +408,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_costperlabel_estimate",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -312,6 +429,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_costperlabel_estimate_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -327,6 +450,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_costpersquareinch",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -342,6 +471,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_costpersquareinch_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -357,6 +492,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_costpersquareinch_estimate",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -372,6 +513,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_costpersquareinch_estimate_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -387,6 +534,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "dt_createdbyexternalparty",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -402,6 +555,12 @@
 			"TypescriptType": {
 				"name": "Date",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DateTimeType",
+				"typeName": "DateTimeType",
+				"propertyName": "dt_datefulfilled_flow",
+				"propertyType": "Date"
 			}
 		},
 		{
@@ -417,6 +576,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_defaulthourlyrate",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -432,6 +597,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_defaulthourlyrate_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -447,6 +618,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_defect_cost",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -462,6 +639,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_defect_cost_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -477,6 +660,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "IntegerType",
+				"typeName": "IntegerType",
+				"propertyName": "dt_defect_labels",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -492,6 +681,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_defect_percent",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -507,6 +702,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "IntegerType",
+				"typeName": "IntegerType",
+				"propertyName": "dt_defect_squareinches",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -522,6 +723,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_defect_squareinchesinspected",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -538,6 +745,13 @@
 				"name": "EntityReference",
 				"outputType": 3,
 				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"referencedType": "LookupType",
+				"typeName": "LookupType",
+				"propertyName": "_dt_design_value",
+				"propertyType": "EntityReference",
+				"importLocation": "dataverse-ify"
 			}
 		},
 		{
@@ -553,6 +767,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "dt_design_summary",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -569,6 +789,13 @@
 				"name": "EntityReference",
 				"outputType": 3,
 				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"referencedType": "LookupType",
+				"typeName": "LookupType",
+				"propertyName": "_dt_designlayout_value",
+				"propertyType": "EntityReference",
+				"importLocation": "dataverse-ify"
 			}
 		},
 		{
@@ -584,6 +811,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "dt_designlayout_summary",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -599,6 +832,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "dt_designlayoutname",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -614,6 +853,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "dt_designname",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -629,6 +874,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "dt_designspecifications_summary",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -644,6 +895,12 @@
 			"TypescriptType": {
 				"name": "boolean",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "BooleanType",
+				"typeName": "BooleanType",
+				"propertyName": "dt_dispenseisregistered",
+				"propertyType": "boolean"
 			}
 		},
 		{
@@ -659,6 +916,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "dt_dispensepattern",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -675,6 +938,13 @@
 				"name": "dt_dispensetype",
 				"outputType": 0,
 				"importLocation": "../enums/dt_dispensetype"
+			},
+			"ApiType": {
+				"referencedType": "dt_dispensetype",
+				"typeName": "dt_dispensetype",
+				"propertyName": "dt_dispensetype",
+				"propertyType": "dt_dispensetype",
+				"importLocation": "../enums/dt_dispensetype"
 			}
 		},
 		{
@@ -690,6 +960,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_inkmillilitersperorder",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -705,6 +981,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_inkmilliliterspersheet",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -720,6 +1002,12 @@
 			"TypescriptType": {
 				"name": "boolean",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "BooleanType",
+				"typeName": "BooleanType",
+				"propertyName": "dt_isadjustedproductionspecifications",
+				"propertyType": "boolean"
 			}
 		},
 		{
@@ -735,6 +1023,12 @@
 			"TypescriptType": {
 				"name": "boolean",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "BooleanType",
+				"typeName": "BooleanType",
+				"propertyName": "dt_islockedprice",
+				"propertyType": "boolean"
 			}
 		},
 		{
@@ -750,6 +1044,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "IntegerType",
+				"typeName": "IntegerType",
+				"propertyName": "dt_labelsperdispense",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -766,6 +1066,13 @@
 				"name": "dt_labelsperdispensetype",
 				"outputType": 0,
 				"importLocation": "../enums/dt_labelsperdispensetype"
+			},
+			"ApiType": {
+				"referencedType": "dt_labelsperdispensetype",
+				"typeName": "dt_labelsperdispensetype",
+				"propertyName": "dt_labelsperdispensetype",
+				"propertyType": "dt_labelsperdispensetype",
+				"importLocation": "../enums/dt_labelsperdispensetype"
 			}
 		},
 		{
@@ -781,6 +1088,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "IntegerType",
+				"typeName": "IntegerType",
+				"propertyName": "dt_labelspersheet",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -796,6 +1109,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_labelsquareinchespersheet",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -812,6 +1131,13 @@
 				"name": "EntityReference",
 				"outputType": 3,
 				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"referencedType": "LookupType",
+				"typeName": "LookupType",
+				"propertyName": "_dt_order_value",
+				"propertyType": "EntityReference",
+				"importLocation": "dataverse-ify"
 			}
 		},
 		{
@@ -827,6 +1153,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "dt_order_summary",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -842,6 +1174,12 @@
 			"TypescriptType": {
 				"name": "Date",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DateTimeType",
+				"typeName": "DateTimeType",
+				"propertyName": "dt_orderduedate",
+				"propertyType": "Date"
 			}
 		},
 		{
@@ -857,6 +1195,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_orderedlabels",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -872,6 +1216,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_orderedsheets",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -887,6 +1237,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_orderedsquareinches",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -902,6 +1258,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "IntegerType",
+				"typeName": "IntegerType",
+				"propertyName": "dt_orderlinecount",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -917,6 +1279,13 @@
 			"TypescriptType": {
 				"name": "Guid",
 				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"referencedType": "UniqueidentifierType",
+				"typeName": "UniqueidentifierType",
+				"propertyName": "dt_orderlineid",
+				"propertyType": "string",
 				"importLocation": "dataverse-ify"
 			}
 		},
@@ -934,6 +1303,13 @@
 				"name": "dt_orderlinetype",
 				"outputType": 0,
 				"importLocation": "../enums/dt_orderlinetype"
+			},
+			"ApiType": {
+				"referencedType": "dt_orderlinetype",
+				"typeName": "dt_orderlinetype",
+				"propertyName": "dt_orderlinetype",
+				"propertyType": "dt_orderlinetype",
+				"importLocation": "../enums/dt_orderlinetype"
 			}
 		},
 		{
@@ -949,6 +1325,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "dt_ordername",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -965,6 +1347,13 @@
 				"name": "dt_orderpriority",
 				"outputType": 0,
 				"importLocation": "../enums/dt_orderpriority"
+			},
+			"ApiType": {
+				"referencedType": "dt_orderpriority",
+				"typeName": "dt_orderpriority",
+				"propertyName": "dt_orderpriority",
+				"propertyType": "dt_orderpriority",
+				"importLocation": "../enums/dt_orderpriority"
 			}
 		},
 		{
@@ -980,6 +1369,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "dt_orderstatus",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -996,6 +1391,13 @@
 				"name": "dt_ordertasktype2[]",
 				"outputType": 0,
 				"importLocation": "../enums/dt_ordertasktype2"
+			},
+			"ApiType": {
+				"referencedType": "dt_ordertasktype2",
+				"typeName": "dt_ordertasktype2",
+				"propertyName": "dt_ordertasklist",
+				"propertyType": "dt_ordertasktype2",
+				"importLocation": "../enums/dt_ordertasktype2"
 			}
 		},
 		{
@@ -1011,6 +1413,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_overagelabels",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1026,6 +1434,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_overagelabels_estimate",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1041,6 +1455,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_overagepercent",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1056,6 +1476,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_overagepercent_estimate",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1071,6 +1497,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_overagepercent_minimum",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1086,6 +1518,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_overagesheets",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1101,6 +1539,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_overagesheets_estimate",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1116,6 +1560,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_overagesquareinches",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1131,6 +1581,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_overagesquareinches_estimate",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1147,6 +1603,13 @@
 				"name": "dt_overagetype",
 				"outputType": 0,
 				"importLocation": "../enums/dt_overagetype"
+			},
+			"ApiType": {
+				"referencedType": "dt_overagetype",
+				"typeName": "dt_overagetype",
+				"propertyName": "dt_overagetype",
+				"propertyType": "dt_overagetype",
+				"importLocation": "../enums/dt_overagetype"
 			}
 		},
 		{
@@ -1162,6 +1625,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "dt_pid",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -1177,6 +1646,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_price_override",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1192,6 +1667,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_price_override_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1207,6 +1688,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_priceadjustment_bypercent",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1222,6 +1709,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_priceadjustment_bytotal",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1237,6 +1730,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_priceadjustment_bytotal_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1252,6 +1751,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_priceadjustment_perlabel",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1267,6 +1772,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_priceadjustment_perlabel_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1282,6 +1793,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_priceadjustment_persquareinch",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1297,6 +1814,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_priceadjustment_persquareinch_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1312,6 +1835,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "dt_priceadjustmentnote",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -1328,6 +1857,13 @@
 				"name": "dt_priceadjustmenttype",
 				"outputType": 0,
 				"importLocation": "../enums/dt_priceadjustmenttype"
+			},
+			"ApiType": {
+				"referencedType": "dt_priceadjustmenttype",
+				"typeName": "dt_priceadjustmenttype",
+				"propertyName": "dt_priceadjustmenttype",
+				"propertyType": "dt_priceadjustmenttype",
+				"importLocation": "../enums/dt_priceadjustmenttype"
 			}
 		},
 		{
@@ -1343,6 +1879,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "dt_pricemessage",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -1358,6 +1900,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_pricepersquareinch",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1373,6 +1921,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_pricepersquareinch_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1388,6 +1942,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_priceperunit",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1403,6 +1963,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_priceperunit_adjustments",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1418,6 +1984,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_priceperunit_adjustments_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1433,6 +2005,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_priceperunit_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1448,6 +2026,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_priceperunit_baseprice",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1463,6 +2047,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_priceperunit_baseprice_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1478,6 +2068,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_priceperunit_calcfd",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1493,6 +2089,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_priceperunit_calcfd_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1508,6 +2110,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_priceperunit_default",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1523,6 +2131,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_priceperunit_options",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1538,6 +2152,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_priceperunit_options_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1554,6 +2174,13 @@
 				"name": "dt_pricingtype",
 				"outputType": 0,
 				"importLocation": "../enums/dt_pricingtype"
+			},
+			"ApiType": {
+				"referencedType": "dt_pricingtype",
+				"typeName": "dt_pricingtype",
+				"propertyName": "dt_pricingtype",
+				"propertyType": "dt_pricingtype",
+				"importLocation": "../enums/dt_pricingtype"
 			}
 		},
 		{
@@ -1569,6 +2196,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "ImageType",
+				"typeName": "ImageType",
+				"propertyName": "dt_primaryimage",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -1584,6 +2217,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "BigIntType",
+				"typeName": "BigIntType",
+				"propertyName": "dt_primaryimage_timestamp",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1599,6 +2238,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "dt_primaryimage_url",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -1615,6 +2260,13 @@
 				"name": "Guid",
 				"outputType": 3,
 				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"referencedType": "UniqueidentifierType",
+				"typeName": "UniqueidentifierType",
+				"propertyName": "dt_primaryimageid",
+				"propertyType": "string",
+				"importLocation": "dataverse-ify"
 			}
 		},
 		{
@@ -1630,6 +2282,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_quantityoverage",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1645,6 +2303,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_quantityshipped",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1660,6 +2324,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "IntegerType",
+				"typeName": "IntegerType",
+				"propertyName": "dt_sheetsperboard",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1675,6 +2345,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_squareinchesperlabel",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1690,6 +2366,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_substratemsiperorder",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1705,6 +2387,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_substratesquareinchespersheet",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1720,6 +2408,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "dt_taskassignedto",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -1735,6 +2429,12 @@
 			"TypescriptType": {
 				"name": "Date",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DateTimeType",
+				"typeName": "DateTimeType",
+				"propertyName": "dt_taskcompletetime",
+				"propertyType": "Date"
 			}
 		},
 		{
@@ -1750,6 +2450,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "IntegerType",
+				"typeName": "IntegerType",
+				"propertyName": "dt_taskminutes_actual",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1765,6 +2471,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "IntegerType",
+				"typeName": "IntegerType",
+				"propertyName": "dt_taskminutes_estimate",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1780,6 +2492,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "IntegerType",
+				"typeName": "IntegerType",
+				"propertyName": "dt_taskminutes_remaining",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1795,6 +2513,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_totalcost",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1810,6 +2534,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_totalcost_art",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1825,6 +2555,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_totalcost_art_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1840,6 +2576,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_totalcost_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1855,6 +2597,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_totalcost_estimate",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1870,6 +2618,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_totalcost_estimate_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1885,6 +2639,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_totalhours",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1900,6 +2660,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_totalhours_estimate",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1915,6 +2681,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_totallabels",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1930,6 +2702,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_totalmargin",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1945,6 +2723,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_totalmargin_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1960,6 +2744,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_totalmargin_estimate",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1975,6 +2765,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_totalmargin_estimate_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -1990,6 +2786,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_totalmarginpercent",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -2005,6 +2807,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_totalmarginpercent_estimate",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -2020,6 +2828,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_totalprice",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -2035,6 +2849,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_totalprice_adjustmentpercent",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -2050,6 +2870,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_totalprice_adjustments",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -2065,6 +2891,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_totalprice_adjustments_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -2080,6 +2912,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_totalprice_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -2095,6 +2933,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_totalprice_calcfd",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -2110,6 +2954,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "MoneyType",
+				"typeName": "MoneyType",
+				"propertyName": "dt_totalprice_calcfd_base",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -2125,6 +2975,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_totalprice_default",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -2140,6 +2996,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_totalsheets",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -2155,6 +3017,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_totalsquareinches",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -2170,6 +3038,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "IntegerType",
+				"typeName": "IntegerType",
+				"propertyName": "dt_totaltime",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -2185,6 +3059,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "IntegerType",
+				"typeName": "IntegerType",
+				"propertyName": "dt_totaltime_art",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -2200,6 +3080,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "IntegerType",
+				"typeName": "IntegerType",
+				"propertyName": "dt_totaltime_estimate",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -2215,6 +3101,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_urethanelitersperorder",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -2230,6 +3122,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "dt_weight_estimate",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -2245,6 +3143,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "ImageType",
+				"typeName": "ImageType",
+				"propertyName": "entityimage",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -2260,6 +3164,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "BigIntType",
+				"typeName": "BigIntType",
+				"propertyName": "entityimage_timestamp",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -2275,6 +3185,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "entityimage_url",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -2291,6 +3207,13 @@
 				"name": "Guid",
 				"outputType": 3,
 				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"referencedType": "UniqueidentifierType",
+				"typeName": "UniqueidentifierType",
+				"propertyName": "entityimageid",
+				"propertyType": "string",
+				"importLocation": "dataverse-ify"
 			}
 		},
 		{
@@ -2306,6 +3229,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DecimalType",
+				"typeName": "DecimalType",
+				"propertyName": "exchangerate",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -2321,6 +3250,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "IntegerType",
+				"typeName": "IntegerType",
+				"propertyName": "importsequencenumber",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -2337,6 +3272,13 @@
 				"name": "EntityReference",
 				"outputType": 3,
 				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"referencedType": "LookupType",
+				"typeName": "LookupType",
+				"propertyName": "_modifiedby_value",
+				"propertyType": "EntityReference",
+				"importLocation": "dataverse-ify"
 			}
 		},
 		{
@@ -2352,6 +3294,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "modifiedbyname",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -2367,6 +3315,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "modifiedbyyominame",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -2382,6 +3336,12 @@
 			"TypescriptType": {
 				"name": "Date",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DateTimeType",
+				"typeName": "DateTimeType",
+				"propertyName": "modifiedon",
+				"propertyType": "Date"
 			}
 		},
 		{
@@ -2398,6 +3358,13 @@
 				"name": "EntityReference",
 				"outputType": 3,
 				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"referencedType": "LookupType",
+				"typeName": "LookupType",
+				"propertyName": "_modifiedonbehalfby_value",
+				"propertyType": "EntityReference",
+				"importLocation": "dataverse-ify"
 			}
 		},
 		{
@@ -2413,6 +3380,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "modifiedonbehalfbyname",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -2428,6 +3401,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "modifiedonbehalfbyyominame",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -2443,6 +3422,12 @@
 			"TypescriptType": {
 				"name": "Date",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "DateTimeType",
+				"typeName": "DateTimeType",
+				"propertyName": "overriddencreatedon",
+				"propertyType": "Date"
 			}
 		},
 		{
@@ -2459,6 +3444,13 @@
 				"name": "EntityReference",
 				"outputType": 3,
 				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"referencedType": "OwnerType",
+				"typeName": "OwnerType",
+				"propertyName": "_ownerid_value",
+				"propertyType": "EntityReference",
+				"importLocation": "dataverse-ify"
 			}
 		},
 		{
@@ -2474,6 +3466,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "owneridname",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -2489,6 +3487,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "EntityNameType",
+				"typeName": "EntityNameType",
+				"propertyName": "owneridtype",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -2504,6 +3508,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "owneridyominame",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -2520,6 +3530,13 @@
 				"name": "EntityReference",
 				"outputType": 3,
 				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"referencedType": "LookupType",
+				"typeName": "LookupType",
+				"propertyName": "_owningbusinessunit_value",
+				"propertyType": "EntityReference",
+				"importLocation": "dataverse-ify"
 			}
 		},
 		{
@@ -2535,6 +3552,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "owningbusinessunitname",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -2550,6 +3573,13 @@
 			"TypescriptType": {
 				"name": "EntityReference",
 				"outputType": 3,
+				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"referencedType": "LookupType",
+				"typeName": "LookupType",
+				"propertyName": "_owningteam_value",
+				"propertyType": "EntityReference",
 				"importLocation": "dataverse-ify"
 			}
 		},
@@ -2567,6 +3597,13 @@
 				"name": "EntityReference",
 				"outputType": 3,
 				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"referencedType": "LookupType",
+				"typeName": "LookupType",
+				"propertyName": "_owninguser_value",
+				"propertyType": "EntityReference",
+				"importLocation": "dataverse-ify"
 			}
 		},
 		{
@@ -2582,6 +3619,13 @@
 			"TypescriptType": {
 				"name": "dt_orderline_dt_orderline_statecode",
 				"outputType": 0,
+				"importLocation": "../enums/dt_orderline_dt_orderline_statecode"
+			},
+			"ApiType": {
+				"referencedType": "dt_orderline_dt_orderline_statecode",
+				"typeName": "dt_orderline_dt_orderline_statecode",
+				"propertyName": "statecode",
+				"propertyType": "dt_orderline_dt_orderline_statecode",
 				"importLocation": "../enums/dt_orderline_dt_orderline_statecode"
 			}
 		},
@@ -2599,6 +3643,13 @@
 				"name": "dt_orderline_dt_orderline_statuscode",
 				"outputType": 0,
 				"importLocation": "../enums/dt_orderline_dt_orderline_statuscode"
+			},
+			"ApiType": {
+				"referencedType": "dt_orderline_dt_orderline_statuscode",
+				"typeName": "dt_orderline_dt_orderline_statuscode",
+				"propertyName": "statuscode",
+				"propertyType": "dt_orderline_dt_orderline_statuscode",
+				"importLocation": "../enums/dt_orderline_dt_orderline_statuscode"
 			}
 		},
 		{
@@ -2614,6 +3665,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "IntegerType",
+				"typeName": "IntegerType",
+				"propertyName": "timezoneruleversionnumber",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -2630,6 +3687,13 @@
 				"name": "EntityReference",
 				"outputType": 3,
 				"importLocation": "dataverse-ify"
+			},
+			"ApiType": {
+				"referencedType": "LookupType",
+				"typeName": "LookupType",
+				"propertyName": "_transactioncurrencyid_value",
+				"propertyType": "EntityReference",
+				"importLocation": "dataverse-ify"
 			}
 		},
 		{
@@ -2645,6 +3709,12 @@
 			"TypescriptType": {
 				"name": "string",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "StringType",
+				"typeName": "StringType",
+				"propertyName": "transactioncurrencyidname",
+				"propertyType": "string"
 			}
 		},
 		{
@@ -2660,6 +3730,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "IntegerType",
+				"typeName": "IntegerType",
+				"propertyName": "utcconversiontimezonecode",
+				"propertyType": "number"
 			}
 		},
 		{
@@ -2675,6 +3751,12 @@
 			"TypescriptType": {
 				"name": "number",
 				"outputType": 3
+			},
+			"ApiType": {
+				"referencedType": "BigIntType",
+				"typeName": "BigIntType",
+				"propertyName": "versionnumber",
+				"propertyType": "number"
 			}
 		}
 	],
