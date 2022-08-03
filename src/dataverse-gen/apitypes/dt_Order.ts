@@ -1,7 +1,7 @@
 /* eslint-disable*/
 
 // Early Bound Interface for WebApi
-export interface dt_Order_D365Api {
+export interface dt_Order_apitype {
   // Created By LookupType Unique identifier of the user who created the record.
   _createdby_value?: string | null;
   "_createdby_value@OData.Community.Display.V1.FormattedValue"?: string | null;
