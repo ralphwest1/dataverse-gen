@@ -8,7 +8,6 @@
         "RetrieveMetadataChanges"
     ],
     "output": {
-        "outputRoot": "./src/dataverse-gen",
-        "useCache": "true"
+        "outputRoot": "./src/dataverse-gen"
     }
 }

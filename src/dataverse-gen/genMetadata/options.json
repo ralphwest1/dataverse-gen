@@ -50,7 +50,7 @@
 		}
 	},
 	"output": {
-		"useCache": "true",
+		"useCache": false,
 		"outputRoot": "./src/dataverse-gen",
 		"templateRoot": "./_templates",
 		"fileSuffix": ".ts"
