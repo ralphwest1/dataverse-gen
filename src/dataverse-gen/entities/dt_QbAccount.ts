@@ -42,7 +42,7 @@ export const dt_qbaccountCollections = {
   dt_dt_QbAccount__dt_PurchaseOrderLine: ["mscrm.dt_purchaseorderline"],
   dt_dt_QbAccount__dt_PurchaseItem: ["mscrm.dt_purchaseitem"],
   dt_QbAccount_Parent_QbAccount: ["mscrm.dt_qbaccount"],
-},
+};
 
 // Attribute constants
 export const enum dt_QbAccountAttributes {

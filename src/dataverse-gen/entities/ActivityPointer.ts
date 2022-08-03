@@ -102,7 +102,7 @@ export const activitypointerCollections = {
   ActivityPointer_CampaignActivityItems: ["mscrm.campaignactivityitem"],
   ActivityPointer_BulkDeleteFailures: ["mscrm.bulkdeletefailure"],
   ActivityPointer_AsyncOperations: ["mscrm.asyncoperation"],
-},
+};
 
 // Attribute constants
 export const enum ActivityPointerAttributes {

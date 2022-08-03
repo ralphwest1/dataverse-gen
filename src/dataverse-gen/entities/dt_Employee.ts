@@ -81,7 +81,7 @@ export const dt_employeeCollections = {
   dt_EmployeeAbsence_Manager_dt_Employee: ["mscrm.dt_employeeabsence"],
   dt_EmployeeAbsence_Employee_dt_Employee: ["mscrm.dt_employeeabsence"],
   dt_BODComp_EmployeeID_dt_Employee: ["mscrm.dt_bodcomp"],
-},
+};
 
 // Attribute constants
 export const enum dt_EmployeeAttributes {

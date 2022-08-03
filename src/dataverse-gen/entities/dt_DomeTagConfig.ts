@@ -41,7 +41,7 @@ export const dt_dometagconfigCollections = {
   dt_dometagconfig_DuplicateBaseRecord: ["mscrm.duplicaterecord"],
   dt_dometagconfig_BulkDeleteFailures: ["mscrm.bulkdeletefailure"],
   dt_dometagconfig_AsyncOperations: ["mscrm.asyncoperation"],
-},
+};
 
 // Attribute constants
 export const enum dt_DomeTagConfigAttributes {

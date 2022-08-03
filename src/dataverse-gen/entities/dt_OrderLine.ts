@@ -165,7 +165,7 @@ export const dt_orderlineCollections = {
   dt_OrderLine_CostItemDetail: ["mscrm.dt_costitemdetail"],
   dt_OrderDefects_OrderLine_dt_OrderLine: ["mscrm.dt_orderdefects"],
   dt_BookableResourceBooking_dt_OrderLine_dt_O: ["mscrm.bookableresourcebooking"],
-},
+};
 
 // Attribute constants
 export const enum dt_OrderLineAttributes {

@@ -199,7 +199,7 @@ export const dt_orderCollections = {
   dt_Opportunity_Order_dt_Order: ["mscrm.opportunity"],
   dt_Incident_Order_dt_Order: ["mscrm.dt_incident"],
   bpf_dt_order_dt_orderprocess: ["mscrm.dt_orderprocess"],
-},
+};
 
 // Attribute constants
 export const enum dt_OrderAttributes {

@@ -38,7 +38,7 @@ export const dt_dometaglogCollections = {
   dt_dometaglog_MailboxTrackingFolders: ["mscrm.mailboxtrackingfolder"],
   dt_dometaglog_BulkDeleteFailures: ["mscrm.bulkdeletefailure"],
   dt_dometaglog_AsyncOperations: ["mscrm.asyncoperation"],
-},
+};
 
 // Attribute constants
 export const enum dt_DomeTagLogAttributes {

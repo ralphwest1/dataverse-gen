@@ -119,7 +119,7 @@ export const dt_designCollections = {
   dt_DesignProof_Design_dt_Design: ["mscrm.dt_designproof"],
   dt_DesignLayout_Design_dt_Design: ["mscrm.dt_designlayout"],
   dt_CartLine_Design: ["mscrm.dt_cartline"],
-},
+};
 
 // Attribute constants
 export const enum dt_DesignAttributes {
