@@ -3,357 +3,357 @@
 // Early Bound Interface for WebApi
 export interface dt_OrderLine_D365Api {
   // Created By LookupType Unique identifier of the user who created the record.
-  _createdby_value?: import("undefined")._createdby_value | null;
+  _createdby_value?: string | null;
   //  StringType
-  createdbyname?: createdbyname | null;
+  createdbyname?: string | null;
   //  StringType
-  createdbyyominame?: createdbyyominame | null;
+  createdbyyominame?: string | null;
   // Created On DateTimeType Date and time when the record was created. DateAndTime:UserLocal
-  createdon?: createdon | null;
+  createdon?: string | null;
   // Created By (Delegate) LookupType Unique identifier of the delegate user who created the record.
-  _createdonbehalfby_value?: import("undefined")._createdonbehalfby_value | null;
+  _createdonbehalfby_value?: string | null;
   //  StringType
-  createdonbehalfbyname?: createdonbehalfbyname | null;
+  createdonbehalfbyname?: string | null;
   //  StringType
-  createdonbehalfbyyominame?: createdonbehalfbyyominame | null;
+  createdonbehalfbyyominame?: string | null;
   // overriddencreatedon DateTimeType DateAndTime:UserLocal
-  dnbs_overriddencreatedon?: dnbs_overriddencreatedon | null;
+  dnbs_overriddencreatedon?: string | null;
   // Account LookupType
-  _dt_account_value?: import("undefined")._dt_account_value | null;
+  _dt_account_value?: string | null;
   //  StringType
-  dt_accountname?: dt_accountname | null;
+  dt_accountname?: string | null;
   //  StringType
-  dt_accountyominame?: dt_accountyominame | null;
+  dt_accountyominame?: string | null;
   // Admin Notes StringType
-  dt_adminnotes?: dt_adminnotes | null;
+  dt_adminnotes?: string | null;
   // Auto Number StringType
-  dt_autonumber?: dt_autonumber | null;
+  dt_autonumber?: string | null;
   // Auto Number - Prefixed StringType
-  dt_autonumber_prefixed?: dt_autonumber_prefixed | null;
+  dt_autonumber_prefixed?: string | null;
   // Boxes - Estimate DecimalType
-  dt_boxes_estimate?: dt_boxes_estimate | null;
+  dt_boxes_estimate?: number | null;
   // Cost Message StringType Options:
 mercuryfree;
 deleteink;
-  dt_costmessage?: dt_costmessage | null;
+  dt_costmessage?: string | null;
   // Cost Per Label MoneyType
-  dt_costperlabel?: dt_costperlabel | null;
+  dt_costperlabel?: number | null;
   // Cost Per Label (Base) MoneyType Value of the Cost Per Label in base currency.
-  dt_costperlabel_base?: dt_costperlabel_base | null;
+  dt_costperlabel_base?: number | null;
   // Cost Per Label - Estimate MoneyType
-  dt_costperlabel_estimate?: dt_costperlabel_estimate | null;
+  dt_costperlabel_estimate?: number | null;
   // Cost Per Label - Estimate (Base) MoneyType Value of the Cost Per Label - Estimate in base currency.
-  dt_costperlabel_estimate_base?: dt_costperlabel_estimate_base | null;
+  dt_costperlabel_estimate_base?: number | null;
   // Cost Per Square Inch MoneyType
-  dt_costpersquareinch?: dt_costpersquareinch | null;
+  dt_costpersquareinch?: number | null;
   // Cost Per Square Inch (Base) MoneyType Value of the Cost Per Square Inch in base currency.
-  dt_costpersquareinch_base?: dt_costpersquareinch_base | null;
+  dt_costpersquareinch_base?: number | null;
   // Cost Per Square Inch - Estimate MoneyType
-  dt_costpersquareinch_estimate?: dt_costpersquareinch_estimate | null;
+  dt_costpersquareinch_estimate?: number | null;
   // Cost Per Square Inch - Estimate (Base) MoneyType Value of the Cost Per Square Inch - Estimate in base currency.
-  dt_costpersquareinch_estimate_base?: dt_costpersquareinch_estimate_base | null;
+  dt_costpersquareinch_estimate_base?: number | null;
   // Created By External Party StringType
-  dt_createdbyexternalparty?: dt_createdbyexternalparty | null;
+  dt_createdbyexternalparty?: string | null;
   // Date Fulfilled DateTimeType DateOnly:UserLocal
-  dt_datefulfilled_flow?: dt_datefulfilled_flow | null;
+  dt_datefulfilled_flow?: string | null;
   // Default Hourly Rate [Required] MoneyType
-  dt_defaulthourlyrate?: dt_defaulthourlyrate;
+  dt_defaulthourlyrate?: number;
   // Default Hourly Rate (Base) MoneyType Value of the Default Hourly Rate in base currency.
-  dt_defaulthourlyrate_base?: dt_defaulthourlyrate_base | null;
+  dt_defaulthourlyrate_base?: number | null;
   // Defect - Cost MoneyType
-  dt_defect_cost?: dt_defect_cost | null;
+  dt_defect_cost?: number | null;
   // Defect - Cost (Base) MoneyType Value of the Defect_Cost in base currency.
-  dt_defect_cost_base?: dt_defect_cost_base | null;
+  dt_defect_cost_base?: number | null;
   // Defect - Labels IntegerType
-  dt_defect_labels?: dt_defect_labels | null;
+  dt_defect_labels?: number | null;
   // Defect - Percent DecimalType
-  dt_defect_percent?: dt_defect_percent | null;
+  dt_defect_percent?: number | null;
   // Defect - SquareInches IntegerType
-  dt_defect_squareinches?: dt_defect_squareinches | null;
+  dt_defect_squareinches?: number | null;
   // Defect - Square Inches Inspected DecimalType
-  dt_defect_squareinchesinspected?: dt_defect_squareinchesinspected | null;
+  dt_defect_squareinchesinspected?: number | null;
   // Design [Required] LookupType
-  _dt_design_value?: import("undefined")._dt_design_value;
+  _dt_design_value?: string;
   // Design - Summary StringType
-  dt_design_summary?: dt_design_summary | null;
+  dt_design_summary?: string | null;
   // Design Layout [Required] LookupType
-  _dt_designlayout_value?: import("undefined")._dt_designlayout_value;
+  _dt_designlayout_value?: string;
   // Design Layout - Summary StringType
-  dt_designlayout_summary?: dt_designlayout_summary | null;
+  dt_designlayout_summary?: string | null;
   //  StringType
-  dt_designlayoutname?: dt_designlayoutname | null;
+  dt_designlayoutname?: string | null;
   //  StringType
-  dt_designname?: dt_designname | null;
+  dt_designname?: string | null;
   // Design Specifications - Summary StringType
-  dt_designspecifications_summary?: dt_designspecifications_summary | null;
+  dt_designspecifications_summary?: string | null;
   // Dispense Is Registered BooleanType
-  dt_dispenseisregistered?: dt_dispenseisregistered | null;
+  dt_dispenseisregistered?: boolean | null;
   // Dispense Pattern StringType
-  dt_dispensepattern?: dt_dispensepattern | null;
+  dt_dispensepattern?: string | null;
   // Dispense Type dt_dispensetype
   dt_dispensetype?: import("../enums/dt_dispensetype").dt_dispensetype | null;
   // Ink Milliliters Per Order DecimalType
-  dt_inkmillilitersperorder?: dt_inkmillilitersperorder | null;
+  dt_inkmillilitersperorder?: number | null;
   // Ink Milliliters Per Sheet  DecimalType
-  dt_inkmilliliterspersheet?: dt_inkmilliliterspersheet | null;
+  dt_inkmilliliterspersheet?: number | null;
   // Is Adjusted Production Specifications BooleanType
-  dt_isadjustedproductionspecifications?: dt_isadjustedproductionspecifications | null;
+  dt_isadjustedproductionspecifications?: boolean | null;
   // Is Locked Price BooleanType
-  dt_islockedprice?: dt_islockedprice | null;
+  dt_islockedprice?: boolean | null;
   // Labels Per Dispense IntegerType
-  dt_labelsperdispense?: dt_labelsperdispense | null;
+  dt_labelsperdispense?: number | null;
   // Labels Per Dispense Type dt_labelsperdispensetype
   dt_labelsperdispensetype?: import("../enums/dt_labelsperdispensetype").dt_labelsperdispensetype | null;
   // Labels Per Sheet IntegerType
-  dt_labelspersheet?: dt_labelspersheet | null;
+  dt_labelspersheet?: number | null;
   // Label Square Inches Per Sheet DecimalType
-  dt_labelsquareinchespersheet?: dt_labelsquareinchespersheet | null;
+  dt_labelsquareinchespersheet?: number | null;
   // Order LookupType
-  _dt_order_value?: import("undefined")._dt_order_value | null;
+  _dt_order_value?: string | null;
   // Order - Summary StringType
-  dt_order_summary?: dt_order_summary | null;
+  dt_order_summary?: string | null;
   // Order Due Date DateTimeType DateOnly:UserLocal
-  dt_orderduedate?: dt_orderduedate | null;
+  dt_orderduedate?: string | null;
   // Ordered Labels [Required] DecimalType
-  dt_orderedlabels?: dt_orderedlabels;
+  dt_orderedlabels?: number;
   // Ordered Sheets DecimalType
-  dt_orderedsheets?: dt_orderedsheets | null;
+  dt_orderedsheets?: number | null;
   // Ordered Square Inches DecimalType
-  dt_orderedsquareinches?: dt_orderedsquareinches | null;
+  dt_orderedsquareinches?: number | null;
   // Order Line Count IntegerType
-  dt_orderlinecount?: dt_orderlinecount | null;
+  dt_orderlinecount?: number | null;
   // Order Line GUID UniqueidentifierType Unique identifier for entity instances
-  dt_orderlineid?: import("undefined").dt_orderlineid | null;
+  dt_orderlineid?: string | null;
   // Order Line Type dt_orderlinetype
   dt_orderlinetype?: import("../enums/dt_orderlinetype").dt_orderlinetype | null;
   //  StringType
-  dt_ordername?: dt_ordername | null;
+  dt_ordername?: string | null;
   // Order Priority dt_orderpriority
   dt_orderpriority?: import("../enums/dt_orderpriority").dt_orderpriority | null;
   // Order Status StringType
-  dt_orderstatus?: dt_orderstatus | null;
+  dt_orderstatus?: string | null;
   // Order Task List dt_ordertasktype2
-  dt_ordertasklist?: import("../enums/dt_ordertasktype2").dt_ordertasklist | null;
+  dt_ordertasklist?: import("../enums/dt_ordertasktype2").dt_ordertasktype2[] | null;
   // Overage Labels DecimalType
-  dt_overagelabels?: dt_overagelabels | null;
+  dt_overagelabels?: number | null;
   // Overage Labels - Estimate DecimalType
-  dt_overagelabels_estimate?: dt_overagelabels_estimate | null;
+  dt_overagelabels_estimate?: number | null;
   // Overage Percent DecimalType
-  dt_overagepercent?: dt_overagepercent | null;
+  dt_overagepercent?: number | null;
   // Overage Percent - Estimate DecimalType
-  dt_overagepercent_estimate?: dt_overagepercent_estimate | null;
+  dt_overagepercent_estimate?: number | null;
   // Overage Percent - Minimum [Required] DecimalType
-  dt_overagepercent_minimum?: dt_overagepercent_minimum;
+  dt_overagepercent_minimum?: number;
   // Overage Sheets DecimalType
-  dt_overagesheets?: dt_overagesheets | null;
+  dt_overagesheets?: number | null;
   // Overage Sheets - Estimate DecimalType
-  dt_overagesheets_estimate?: dt_overagesheets_estimate | null;
+  dt_overagesheets_estimate?: number | null;
   // Overage Square Inches DecimalType
-  dt_overagesquareinches?: dt_overagesquareinches | null;
+  dt_overagesquareinches?: number | null;
   // Overage Square Inches - Estimate DecimalType
-  dt_overagesquareinches_estimate?: dt_overagesquareinches_estimate | null;
+  dt_overagesquareinches_estimate?: number | null;
   // Overage Type dt_overagetype
   dt_overagetype?: import("../enums/dt_overagetype").dt_overagetype | null;
   // Order Line [Required] StringType Required name field
-  dt_pid?: dt_pid;
+  dt_pid?: string;
   // Price - Override MoneyType
-  dt_price_override?: dt_price_override | null;
+  dt_price_override?: number | null;
   // Price - Override (Base) MoneyType Value of the Price - Override in base currency.
-  dt_price_override_base?: dt_price_override_base | null;
+  dt_price_override_base?: number | null;
   // Price Adjustment - By Percent DecimalType
-  dt_priceadjustment_bypercent?: dt_priceadjustment_bypercent | null;
+  dt_priceadjustment_bypercent?: number | null;
   // Price Adjustment - By Total MoneyType
-  dt_priceadjustment_bytotal?: dt_priceadjustment_bytotal | null;
+  dt_priceadjustment_bytotal?: number | null;
   // Price Adjustment - By Total (Base) MoneyType Value of the Price Adjustment - By Total in base currency.
-  dt_priceadjustment_bytotal_base?: dt_priceadjustment_bytotal_base | null;
+  dt_priceadjustment_bytotal_base?: number | null;
   // Price Adjustment - Per Label MoneyType
-  dt_priceadjustment_perlabel?: dt_priceadjustment_perlabel | null;
+  dt_priceadjustment_perlabel?: number | null;
   // Price Adjustment - Per Label (Base) MoneyType Value of the Price Adjustment - Per Label in base currency.
-  dt_priceadjustment_perlabel_base?: dt_priceadjustment_perlabel_base | null;
+  dt_priceadjustment_perlabel_base?: number | null;
   // Price Adjustment - Per Square Inch MoneyType
-  dt_priceadjustment_persquareinch?: dt_priceadjustment_persquareinch | null;
+  dt_priceadjustment_persquareinch?: number | null;
   // Price Adjustment - Per Square Inch (Base) MoneyType Value of the Price Adjustment - Per Square Inch in base currency.
-  dt_priceadjustment_persquareinch_base?: dt_priceadjustment_persquareinch_base | null;
+  dt_priceadjustment_persquareinch_base?: number | null;
   // Price Adjustment Note StringType
-  dt_priceadjustmentnote?: dt_priceadjustmentnote | null;
+  dt_priceadjustmentnote?: string | null;
   // Price Adjustment Type dt_priceadjustmenttype
   dt_priceadjustmenttype?: import("../enums/dt_priceadjustmenttype").dt_priceadjustmenttype | null;
   // PriceMessage StringType
-  dt_pricemessage?: dt_pricemessage | null;
+  dt_pricemessage?: string | null;
   // Price Per Square Inch MoneyType
-  dt_pricepersquareinch?: dt_pricepersquareinch | null;
+  dt_pricepersquareinch?: number | null;
   // Price Per Square Inch (Base) MoneyType Value of the Price Per Square Inch in base currency.
-  dt_pricepersquareinch_base?: dt_pricepersquareinch_base | null;
+  dt_pricepersquareinch_base?: number | null;
   // Price MoneyType
-  dt_priceperunit?: dt_priceperunit | null;
+  dt_priceperunit?: number | null;
   // Price Per Unit - Adjustments MoneyType
-  dt_priceperunit_adjustments?: dt_priceperunit_adjustments | null;
+  dt_priceperunit_adjustments?: number | null;
   // Price Per Unit - Adjustments (Base) MoneyType Value of the Price Per Unit - Adjustments in base currency.
-  dt_priceperunit_adjustments_base?: dt_priceperunit_adjustments_base | null;
+  dt_priceperunit_adjustments_base?: number | null;
   // Price Per Unit (Base) MoneyType Value of the Price Per Unit in base currency.
-  dt_priceperunit_base?: dt_priceperunit_base | null;
+  dt_priceperunit_base?: number | null;
   // Price Per Unit - Base MoneyType
-  dt_priceperunit_baseprice?: dt_priceperunit_baseprice | null;
+  dt_priceperunit_baseprice?: number | null;
   // Price Per Unit - Base (Base) MoneyType Value of the Price Per Unit - Base in base currency.
-  dt_priceperunit_baseprice_base?: dt_priceperunit_baseprice_base | null;
+  dt_priceperunit_baseprice_base?: number | null;
   // Price. MoneyType
-  dt_priceperunit_calcfd?: dt_priceperunit_calcfd | null;
+  dt_priceperunit_calcfd?: number | null;
   // Price. (Base) MoneyType Value of the Price. in base currency.
-  dt_priceperunit_calcfd_base?: dt_priceperunit_calcfd_base | null;
+  dt_priceperunit_calcfd_base?: number | null;
   // Price Per Unit - Default DecimalType
-  dt_priceperunit_default?: dt_priceperunit_default | null;
+  dt_priceperunit_default?: number | null;
   // Price Per Unit - Options MoneyType
-  dt_priceperunit_options?: dt_priceperunit_options | null;
+  dt_priceperunit_options?: number | null;
   // Price Per Unit_Options (Base) MoneyType Value of the Price Per Unit_Options in base currency.
-  dt_priceperunit_options_base?: dt_priceperunit_options_base | null;
+  dt_priceperunit_options_base?: number | null;
   // Pricing Type dt_pricingtype
   dt_pricingtype?: import("../enums/dt_pricingtype").dt_pricingtype | null;
   // Primary Image ImageType
-  dt_primaryimage?: dt_primaryimage | null;
+  dt_primaryimage?: string | null;
   //  BigIntType
-  dt_primaryimage_timestamp?: dt_primaryimage_timestamp | null;
+  dt_primaryimage_timestamp?: number | null;
   //  StringType
-  dt_primaryimage_url?: dt_primaryimage_url | null;
+  dt_primaryimage_url?: string | null;
   //  UniqueidentifierType
-  dt_primaryimageid?: import("undefined").dt_primaryimageid | null;
+  dt_primaryimageid?: string | null;
   // Quantity Overage DecimalType
-  dt_quantityoverage?: dt_quantityoverage | null;
+  dt_quantityoverage?: number | null;
   // Quantity Shipped DecimalType
-  dt_quantityshipped?: dt_quantityshipped | null;
+  dt_quantityshipped?: number | null;
   // Sheets Per Board IntegerType
-  dt_sheetsperboard?: dt_sheetsperboard | null;
+  dt_sheetsperboard?: number | null;
   // Square Inches Per Label DecimalType
-  dt_squareinchesperlabel?: dt_squareinchesperlabel | null;
+  dt_squareinchesperlabel?: number | null;
   // Substrate MSI Per Order DecimalType
-  dt_substratemsiperorder?: dt_substratemsiperorder | null;
+  dt_substratemsiperorder?: number | null;
   // Substrate Square Inches Per Sheet DecimalType
-  dt_substratesquareinchespersheet?: dt_substratesquareinchespersheet | null;
+  dt_substratesquareinchespersheet?: number | null;
   // Task Assigned To StringType
-  dt_taskassignedto?: dt_taskassignedto | null;
+  dt_taskassignedto?: string | null;
   // Task Complete Time DateTimeType DateAndTime:UserLocal
-  dt_taskcompletetime?: dt_taskcompletetime | null;
+  dt_taskcompletetime?: string | null;
   // Task Time Actual IntegerType
-  dt_taskminutes_actual?: dt_taskminutes_actual | null;
+  dt_taskminutes_actual?: number | null;
   // Task Time Estimate IntegerType
-  dt_taskminutes_estimate?: dt_taskminutes_estimate | null;
+  dt_taskminutes_estimate?: number | null;
   // Task Time Remaining IntegerType
-  dt_taskminutes_remaining?: dt_taskminutes_remaining | null;
+  dt_taskminutes_remaining?: number | null;
   // Total Cost MoneyType
-  dt_totalcost?: dt_totalcost | null;
+  dt_totalcost?: number | null;
   // Total Cost - Art MoneyType
-  dt_totalcost_art?: dt_totalcost_art | null;
+  dt_totalcost_art?: number | null;
   // Total Cost - Art (Base) MoneyType Value of the Total Cost - Art in base currency.
-  dt_totalcost_art_base?: dt_totalcost_art_base | null;
+  dt_totalcost_art_base?: number | null;
   // Total Cost (Base) MoneyType Value of the Total Cost in base currency.
-  dt_totalcost_base?: dt_totalcost_base | null;
+  dt_totalcost_base?: number | null;
   // Total Cost - Estimate MoneyType
-  dt_totalcost_estimate?: dt_totalcost_estimate | null;
+  dt_totalcost_estimate?: number | null;
   // Total Cost - Estimate (Base) MoneyType Value of the Total Cost - Estimate in base currency.
-  dt_totalcost_estimate_base?: dt_totalcost_estimate_base | null;
+  dt_totalcost_estimate_base?: number | null;
   // Total Hours DecimalType
-  dt_totalhours?: dt_totalhours | null;
+  dt_totalhours?: number | null;
   // Total Hours - Estimate DecimalType
-  dt_totalhours_estimate?: dt_totalhours_estimate | null;
+  dt_totalhours_estimate?: number | null;
   // Total Labels DecimalType
-  dt_totallabels?: dt_totallabels | null;
+  dt_totallabels?: number | null;
   // Total Margin MoneyType
-  dt_totalmargin?: dt_totalmargin | null;
+  dt_totalmargin?: number | null;
   // Total Margin (Base) MoneyType Value of the Total Margin in base currency.
-  dt_totalmargin_base?: dt_totalmargin_base | null;
+  dt_totalmargin_base?: number | null;
   // Total Margin - Estimate MoneyType
-  dt_totalmargin_estimate?: dt_totalmargin_estimate | null;
+  dt_totalmargin_estimate?: number | null;
   // Total Margin - Estimate (Base) MoneyType Value of the Total Margin - Estimate in base currency.
-  dt_totalmargin_estimate_base?: dt_totalmargin_estimate_base | null;
+  dt_totalmargin_estimate_base?: number | null;
   // Total Margin Percent DecimalType
-  dt_totalmarginpercent?: dt_totalmarginpercent | null;
+  dt_totalmarginpercent?: number | null;
   // Total Margin Percent - Estimate DecimalType
-  dt_totalmarginpercent_estimate?: dt_totalmarginpercent_estimate | null;
+  dt_totalmarginpercent_estimate?: number | null;
   // Total Price MoneyType
-  dt_totalprice?: dt_totalprice | null;
+  dt_totalprice?: number | null;
   // Total Price Adjustment Percent DecimalType
-  dt_totalprice_adjustmentpercent?: dt_totalprice_adjustmentpercent | null;
+  dt_totalprice_adjustmentpercent?: number | null;
   // Total Price - Adjustments MoneyType
-  dt_totalprice_adjustments?: dt_totalprice_adjustments | null;
+  dt_totalprice_adjustments?: number | null;
   // Total Price - Adjustments (Base) MoneyType Value of the Total Price - Adjustments in base currency.
-  dt_totalprice_adjustments_base?: dt_totalprice_adjustments_base | null;
+  dt_totalprice_adjustments_base?: number | null;
   // Total Price (Base) MoneyType Value of the Total Price in base currency.
-  dt_totalprice_base?: dt_totalprice_base | null;
+  dt_totalprice_base?: number | null;
   // Total Price. MoneyType
-  dt_totalprice_calcfd?: dt_totalprice_calcfd | null;
+  dt_totalprice_calcfd?: number | null;
   // Total Price. (Base) MoneyType Value of the Total Price. in base currency.
-  dt_totalprice_calcfd_base?: dt_totalprice_calcfd_base | null;
+  dt_totalprice_calcfd_base?: number | null;
   // Total Price - Default DecimalType
-  dt_totalprice_default?: dt_totalprice_default | null;
+  dt_totalprice_default?: number | null;
   // Total Sheets DecimalType
-  dt_totalsheets?: dt_totalsheets | null;
+  dt_totalsheets?: number | null;
   // Total Square Inches DecimalType
-  dt_totalsquareinches?: dt_totalsquareinches | null;
+  dt_totalsquareinches?: number | null;
   // Total Time IntegerType
-  dt_totaltime?: dt_totaltime | null;
+  dt_totaltime?: number | null;
   // Total Time - Art IntegerType
-  dt_totaltime_art?: dt_totaltime_art | null;
+  dt_totaltime_art?: number | null;
   // Total Time - Estimate IntegerType
-  dt_totaltime_estimate?: dt_totaltime_estimate | null;
+  dt_totaltime_estimate?: number | null;
   // Urethane Liters Per Order DecimalType
-  dt_urethanelitersperorder?: dt_urethanelitersperorder | null;
+  dt_urethanelitersperorder?: number | null;
   // Weight - Estimate DecimalType
-  dt_weight_estimate?: dt_weight_estimate | null;
+  dt_weight_estimate?: number | null;
   // EntityImage ImageType
-  entityimage?: entityimage | null;
+  entityimage?: string | null;
   //  BigIntType
-  entityimage_timestamp?: entityimage_timestamp | null;
+  entityimage_timestamp?: number | null;
   //  StringType
-  entityimage_url?: entityimage_url | null;
+  entityimage_url?: string | null;
   //  UniqueidentifierType
-  entityimageid?: import("undefined").entityimageid | null;
+  entityimageid?: string | null;
   // Exchange Rate DecimalType Exchange rate for the currency associated with the entity with respect to the base currency.
-  exchangerate?: exchangerate | null;
+  exchangerate?: number | null;
   // Import Sequence Number IntegerType Sequence number of the import that created this record.
-  importsequencenumber?: importsequencenumber | null;
+  importsequencenumber?: number | null;
   // Modified By LookupType Unique identifier of the user who modified the record.
-  _modifiedby_value?: import("undefined")._modifiedby_value | null;
+  _modifiedby_value?: string | null;
   //  StringType
-  modifiedbyname?: modifiedbyname | null;
+  modifiedbyname?: string | null;
   //  StringType
-  modifiedbyyominame?: modifiedbyyominame | null;
+  modifiedbyyominame?: string | null;
   // Modified On DateTimeType Date and time when the record was modified. DateAndTime:UserLocal
-  modifiedon?: modifiedon | null;
+  modifiedon?: string | null;
   // Modified By (Delegate) LookupType Unique identifier of the delegate user who modified the record.
-  _modifiedonbehalfby_value?: import("undefined")._modifiedonbehalfby_value | null;
+  _modifiedonbehalfby_value?: string | null;
   //  StringType
-  modifiedonbehalfbyname?: modifiedonbehalfbyname | null;
+  modifiedonbehalfbyname?: string | null;
   //  StringType
-  modifiedonbehalfbyyominame?: modifiedonbehalfbyyominame | null;
+  modifiedonbehalfbyyominame?: string | null;
   // Record Created On DateTimeType Date and time that the record was migrated. DateOnly:UserLocal
-  overriddencreatedon?: overriddencreatedon | null;
+  overriddencreatedon?: string | null;
   // Owner OwnerType Owner Id
-  _ownerid_value?: import("undefined")._ownerid_value | null;
+  _ownerid_value?: string | null;
   //  StringType Name of the owner
-  owneridname?: owneridname | null;
+  owneridname?: string | null;
   //  EntityNameType Owner Id Type
-  owneridtype?: owneridtype | null;
+  owneridtype?: string | null;
   //  StringType Yomi name of the owner
-  owneridyominame?: owneridyominame | null;
+  owneridyominame?: string | null;
   // Owning Business Unit LookupType Unique identifier for the business unit that owns the record
-  _owningbusinessunit_value?: import("undefined")._owningbusinessunit_value | null;
+  _owningbusinessunit_value?: string | null;
   //  StringType
-  owningbusinessunitname?: owningbusinessunitname | null;
+  owningbusinessunitname?: string | null;
   // Owning Team LookupType Unique identifier for the team that owns the record.
-  _owningteam_value?: import("undefined")._owningteam_value | null;
+  _owningteam_value?: string | null;
   // Owning User LookupType Unique identifier for the user that owns the record.
-  _owninguser_value?: import("undefined")._owninguser_value | null;
+  _owninguser_value?: string | null;
   // Status dt_orderline_dt_orderline_statecode Status of the Order Line
-  statecode?: import("../enums/dt_orderline_dt_orderline_statecode").statecode | null;
+  statecode?: import("../enums/dt_orderline_dt_orderline_statecode").dt_orderline_dt_orderline_statecode | null;
   // Status Reason dt_orderline_dt_orderline_statuscode Reason for the status of the Order Line
-  statuscode?: import("../enums/dt_orderline_dt_orderline_statuscode").statuscode | null;
+  statuscode?: import("../enums/dt_orderline_dt_orderline_statuscode").dt_orderline_dt_orderline_statuscode | null;
   // Time Zone Rule Version Number IntegerType For internal use only.
-  timezoneruleversionnumber?: timezoneruleversionnumber | null;
+  timezoneruleversionnumber?: number | null;
   // Currency LookupType Unique identifier of the currency associated with the entity.
-  _transactioncurrencyid_value?: import("undefined")._transactioncurrencyid_value | null;
+  _transactioncurrencyid_value?: string | null;
   //  StringType
-  transactioncurrencyidname?: transactioncurrencyidname | null;
+  transactioncurrencyidname?: string | null;
   // UTC Conversion Time Zone Code IntegerType Time zone code that was in use when the record was created.
-  utcconversiontimezonecode?: utcconversiontimezonecode | null;
+  utcconversiontimezonecode?: number | null;
   // Version Number BigIntType Version Number
-  versionnumber?: versionnumber | null;
+  versionnumber?: number | null;
 }
