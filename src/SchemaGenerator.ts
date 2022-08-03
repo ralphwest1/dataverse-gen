@@ -115,6 +115,7 @@ export class SchemaGenerator {
     for (const item of this.EntityTypes) {
       for (const property of item.Properties) {
         property.TypescriptType = this.getTypeScriptType(property);
+        property.ApiType = this.getApiType(property);
       }
     }
   }
@@ -513,6 +514,144 @@ export class SchemaGenerator {
       name: type,
       outputType: outputType,
       importLocation: this.resolveTypeToImportLocation(type, outputType),
+    } as TypeScriptType;
+    return mappedType;
+  }
+  getApiType(property: EntityTypeProperty): TypeScriptType {
+    const referencedType = property.Type;
+    const isMultiSelect = property.IsMultiSelect;
+    const isCollection = this.isCollection(referencedType);
+    const typeName = this.removeCollection(referencedType);
+    let type = "any";
+    const formatedValues: string[] = [];
+    let propertyName = property.Name;
+    let propertyType = "any";
+    /*
+      BigIntType
+      BooleanType
+      CalendarRulesType
+      CustomerType
+      DateTimeType
+      DecimalType
+      DoubleType
+      EntityNameType
+      ImageType
+      IntegerType
+      LookupType
+      ManagedPropertyType
+      MemoType
+      MoneyType
+      MultiSelectPicklistType
+      OwnerType
+      PartyListType
+      PicklistType
+      StateType
+      StatusType
+      StringType
+      UniqueidentifierType
+      VirtualType
+    */
+
+    switch (typeName) {
+      case "MultiSelectPicklistType":
+        propertyType = "number[]";
+        formatedValues.push("@OData.Community.Display.V1.FormattedValue");
+        break;
+      case "PicklistType":
+      case "StateType":
+      case "StatusType":
+        propertyType = "number";
+        formatedValues.push("@OData.Community.Display.V1.FormattedValue");
+        break;
+      case "Edm.Guid":
+      case "UniqueidentifierType":
+        propertyType = "string";
+        break;
+      case "ImageType":
+      case "Edm.String":
+      case "StringType":
+      case "Edm.Duration":
+      case "Edm.Binary":
+      case "MemoType":
+      case "EntityNameType":
+        propertyType = "string";
+        break;
+      case "Edm.Int16":
+      case "Edm.Int32":
+      case "BigIntType":
+      case "IntegerType":
+      case "Edm.Int64":
+      case "Edm.Double":
+      case "DoubleType":
+      case "Edm.Decimal":
+      case "DecimalType":
+      case "MoneyType":
+        propertyType = "number";
+        formatedValues.push("@OData.Community.Display.V1.FormattedValue");
+        break;
+      case "Edm.Boolean":
+      case "BooleanType":
+        propertyType = "boolean";
+        formatedValues.push("@OData.Community.Display.V1.FormattedValue");
+        break;
+      case "Edm.DateTimeOffset":
+      case "DateTimeType":
+        propertyType = "Date";
+        formatedValues.push("@OData.Community.Display.V1.FormattedValue");
+        break;
+      case "CustomerType":
+      case "LookupType":
+      case "OwnerType":
+        propertyType = "EntityReference";
+        propertyName = `_${propertyName}_value`;
+        formatedValues.push("@OData.Community.Display.V1.FormattedValue");
+        formatedValues.push("@Microsoft.Dynamics.CRM.lookuplogicalname");
+        formatedValues.push("@Microsoft.Dynamics.CRM.associatednavigationproperty");
+        break;
+      case "PartyListType":
+        // type = "ActivityParty[]";
+        propertyType = "any[]";
+        break;
+      case "ManagedPropertyType":
+        propertyType = "number";
+        formatedValues.push("@OData.Community.Display.V1.FormattedValue");
+        break;
+      default:
+        {
+          propertyType =
+            typeName.indexOf(".") > -1 ? this.lastValue(typeName.split(".").filter(a => a && a != "")) : typeName;
+        }
+        break;
+    }
+
+    // // Check if it is an enum
+    // const enumType = this.EnumTypes.find(e => e.Name == type);
+    // if (enumType) {
+    //   property.IsEnum = true;
+    // }
+
+    // // E.g. Special case because we don't want an interface called 'Object'
+    // type = this.mapTypeName(type);
+    // let outputType = property.IsEnum ? TypeScriptTypes.enumType : TypeScriptTypes.primitive;
+    // Check if it is an entity type
+    // const entityType = this.EntityTypes.find(e => e.SchemaName == type);
+    // if (entityType) {
+    //   outputType = TypeScriptTypes.entityType;
+    // }
+    // const complexType = this.ComplexTypes.find(e => e.Name == type);
+    // if (complexType) {
+    //   outputType = TypeScriptTypes.complexType;
+    // }
+    // Add array
+    if (isCollection || isMultiSelect) {
+      type = type + "[]";
+    }
+    const mappedType = {
+      referencedType,
+      typeName,
+      propertyName,
+      propertyType,
+      importLocation: property.TypescriptType?.importLocation,
     } as TypeScriptType;
     return mappedType;
   }
