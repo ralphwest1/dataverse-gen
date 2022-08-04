@@ -58,7 +58,7 @@
 	},
 	"output": {
 		"useCache": "true",
-		"outputRoot": "./src/dataverse-gen",
+		"outputRoot": "./src/dataverse-gen-dt",
 		"templateRoot": "./_templates",
 		"fileSuffix": ".ts"
 	}

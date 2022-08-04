@@ -15,7 +15,7 @@
         "RetrieveMetadataChanges"
     ],
     "output": {
-        "outputRoot": "./src/dataverse-gen",
+        "outputRoot": "./src/dataverse-gen-dt",
         "useCache": "true"
     }
 }
