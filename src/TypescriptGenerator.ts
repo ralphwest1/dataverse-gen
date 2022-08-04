@@ -274,7 +274,7 @@ export class TypescriptGenerator {
         fs.writeFileSync(
           outFileGenMetadata,
           // eslint-disable-next-line @typescript-eslint/no-use-before-define
-          JSON.stringify(item, getCircularReplacer(), "\t"),
+          JSON.stringify(item, getCircularReplacer, "\t"),
         );
       } catch (ex) {
         output = ex.message;
@@ -315,9 +315,9 @@ export class TypescriptGenerator {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const getCircularReplacer = (): any => {
+const getCircularReplacer: (key: any, value: any) => any = (): any => {
   const seen = new WeakSet();
-  return (key, value) => {
+  return (_: any, value: any): any => {
     if (typeof value === "object" && value !== null) {
       if (seen.has(value)) {
         return;

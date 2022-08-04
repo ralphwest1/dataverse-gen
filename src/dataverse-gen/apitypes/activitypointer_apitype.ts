@@ -47,12 +47,14 @@ export interface ActivityPointer_apitype {
   deliverylastattemptedon?: string | null;
   "deliverylastattemptedon@OData.Community.Display.V1.FormattedValue"?: string | null;
   // Delivery Priority activitypointer_deliveryprioritycode Priority of delivery of the activity to the email server.
-  deliveryprioritycode?: import("../enums/activitypointer_deliveryprioritycode").activitypointer_deliveryprioritycode | null;
+  deliveryprioritycode?:
+    | import("../enums/activitypointer_deliveryprioritycode").activitypointer_deliveryprioritycode
+    | null;
   "deliveryprioritycode@OData.Community.Display.V1.FormattedValue"?: string | null;
   // Description MemoType Description of the activity.
   description?: string | null;
   // Description File Id FileType File that contains description content.
-  descriptionblobid?: FileType | null;
+  descriptionblobid?: any | null;
   //  StringType
   descriptionblobid_name?: string | null;
   // Exchange Item ID StringType The message id of activity which is returned from Exchange Server.
@@ -63,7 +65,9 @@ export interface ActivityPointer_apitype {
   // Exchange WebLink StringType Shows the web link of Activity of type email.
   exchangeweblink?: string | null;
   // Recurring Instance Type activitypointer_activitypointer_instancetypecode Type of instance of a recurring series.
-  instancetypecode?: import("../enums/activitypointer_activitypointer_instancetypecode").activitypointer_activitypointer_instancetypecode | null;
+  instancetypecode?:
+    | import("../enums/activitypointer_activitypointer_instancetypecode").activitypointer_activitypointer_instancetypecode
+    | null;
   "instancetypecode@OData.Community.Display.V1.FormattedValue"?: string | null;
   // Is Billed BooleanType Information regarding whether the activity was billed as part of resolving a case.
   isbilled?: boolean | null;
@@ -135,7 +139,9 @@ export interface ActivityPointer_apitype {
   postponeactivityprocessinguntil?: string | null;
   "postponeactivityprocessinguntil@OData.Community.Display.V1.FormattedValue"?: string | null;
   // Priority activitypointer_activitypointer_prioritycode Priority of the activity.
-  prioritycode?: import("../enums/activitypointer_activitypointer_prioritycode").activitypointer_activitypointer_prioritycode | null;
+  prioritycode?:
+    | import("../enums/activitypointer_activitypointer_prioritycode").activitypointer_activitypointer_prioritycode
+    | null;
   "prioritycode@OData.Community.Display.V1.FormattedValue"?: string | null;
   // Process UniqueidentifierType Unique identifier of the Process.
   processid?: string | null;
@@ -198,10 +204,14 @@ export interface ActivityPointer_apitype {
   // (Deprecated) Process Stage UniqueidentifierType Unique identifier of the Stage.
   stageid?: string | null;
   // Activity Status activitypointer_activitypointer_statecode Status of the activity.
-  statecode?: import("../enums/activitypointer_activitypointer_statecode").activitypointer_activitypointer_statecode | null;
+  statecode?:
+    | import("../enums/activitypointer_activitypointer_statecode").activitypointer_activitypointer_statecode
+    | null;
   "statecode@OData.Community.Display.V1.FormattedValue"?: string | null;
   // Status Reason activitypointer_activitypointer_statuscode Reason for the status of the activity.
-  statuscode?: import("../enums/activitypointer_activitypointer_statuscode").activitypointer_activitypointer_statuscode | null;
+  statuscode?:
+    | import("../enums/activitypointer_activitypointer_statuscode").activitypointer_activitypointer_statuscode
+    | null;
   "statuscode@OData.Community.Display.V1.FormattedValue"?: string | null;
   // Subject [Required] StringType Subject associated with the activity.
   subject?: string;

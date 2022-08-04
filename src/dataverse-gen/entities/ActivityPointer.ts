@@ -48,7 +48,91 @@ export const activitypointerMetadata = {
     modifiedby: ["mscrm.systemuser"],
     createdonbehalfby: ["mscrm.systemuser"],
     createdby: ["mscrm.systemuser"],
-    regardingobjectid: ["account","bookableresourcebooking","bookableresourcebookingheader","bulkoperation","campaign","campaignactivity","contact","contract","dt_artrequest","dt_canidate","dt_change","dt_design","dt_fixedasset","dt_incident","dt_order","dt_project","dt_purchaseorder","dt_todo","entitlement","entitlementtemplate","incident","interactionforemail","invoice","knowledgearticle","knowledgebaserecord","lead","msdyncrm_contentsettings","msdyncrm_customerjourney","msdyncrm_leadscoremodel","msdyncrm_linkedinaccount","msdyncrm_linkedinactivity","msdyncrm_linkedinfieldmapping","msdyncrm_linkedinform","msdyncrm_linkedinformanswer","msdyncrm_linkedinformquestion","msdyncrm_linkedinformsubmission","msdyncrm_linkedinleadmatchingstrategy","msdyncrm_linkedinuserprofile","msdyncrm_marketingdynamiccontentmetadata","msdyncrm_marketingemaildynamiccontentmetadata","msdyncrm_marketingemailtestsend","msdyncrm_migration","msdyncrm_uicconfig","msdyn_bookingalertstatus","msdyn_bookingrule","msdyn_customerasset","msdyn_playbookinstance","msdyn_postalbum","msdyn_resourceterritory","msdyn_salessuggestion","msdyn_systemuserschedulersetting","msdyn_timegroup","msdyn_timegroupdetail","msevtmgt_checkin","msevtmgt_event","msevtmgt_eventpurchase","msevtmgt_eventpurchaseattendee","msevtmgt_eventpurchasepass","msevtmgt_eventregistration","msevtmgt_hotel","msevtmgt_hotelroomallocation","msevtmgt_hotelroomreservation","msevtmgt_layout","msevtmgt_room","msevtmgt_session","msevtmgt_sessionregistration","msevtmgt_sessiontrack","msevtmgt_speaker","msevtmgt_speakerengagement","msevtmgt_sponsorablearticle","msevtmgt_sponsorship","msevtmgt_venue","msevtmgt_webinarconfiguration","msevtmgt_webinarprovider","opportunity","oss_notification","powf_doubleoptin","po_achaccount","po_creditcard","ptm_automergeworkingitems","quote","salesorder","site"],
+    regardingobjectid: [
+      "account",
+      "bookableresourcebooking",
+      "bookableresourcebookingheader",
+      "bulkoperation",
+      "campaign",
+      "campaignactivity",
+      "contact",
+      "contract",
+      "dt_artrequest",
+      "dt_canidate",
+      "dt_change",
+      "dt_design",
+      "dt_fixedasset",
+      "dt_incident",
+      "dt_order",
+      "dt_project",
+      "dt_purchaseorder",
+      "dt_todo",
+      "entitlement",
+      "entitlementtemplate",
+      "incident",
+      "interactionforemail",
+      "invoice",
+      "knowledgearticle",
+      "knowledgebaserecord",
+      "lead",
+      "msdyncrm_contentsettings",
+      "msdyncrm_customerjourney",
+      "msdyncrm_leadscoremodel",
+      "msdyncrm_linkedinaccount",
+      "msdyncrm_linkedinactivity",
+      "msdyncrm_linkedinfieldmapping",
+      "msdyncrm_linkedinform",
+      "msdyncrm_linkedinformanswer",
+      "msdyncrm_linkedinformquestion",
+      "msdyncrm_linkedinformsubmission",
+      "msdyncrm_linkedinleadmatchingstrategy",
+      "msdyncrm_linkedinuserprofile",
+      "msdyncrm_marketingdynamiccontentmetadata",
+      "msdyncrm_marketingemaildynamiccontentmetadata",
+      "msdyncrm_marketingemailtestsend",
+      "msdyncrm_migration",
+      "msdyncrm_uicconfig",
+      "msdyn_bookingalertstatus",
+      "msdyn_bookingrule",
+      "msdyn_customerasset",
+      "msdyn_playbookinstance",
+      "msdyn_postalbum",
+      "msdyn_resourceterritory",
+      "msdyn_salessuggestion",
+      "msdyn_systemuserschedulersetting",
+      "msdyn_timegroup",
+      "msdyn_timegroupdetail",
+      "msevtmgt_checkin",
+      "msevtmgt_event",
+      "msevtmgt_eventpurchase",
+      "msevtmgt_eventpurchaseattendee",
+      "msevtmgt_eventpurchasepass",
+      "msevtmgt_eventregistration",
+      "msevtmgt_hotel",
+      "msevtmgt_hotelroomallocation",
+      "msevtmgt_hotelroomreservation",
+      "msevtmgt_layout",
+      "msevtmgt_room",
+      "msevtmgt_session",
+      "msevtmgt_sessionregistration",
+      "msevtmgt_sessiontrack",
+      "msevtmgt_speaker",
+      "msevtmgt_speakerengagement",
+      "msevtmgt_sponsorablearticle",
+      "msevtmgt_sponsorship",
+      "msevtmgt_venue",
+      "msevtmgt_webinarconfiguration",
+      "msevtmgt_webinarprovider",
+      "opportunity",
+      "oss_notification",
+      "powf_doubleoptin",
+      "po_achaccount",
+      "po_creditcard",
+      "ptm_automergeworkingitems",
+      "quote",
+      "salesorder",
+      "site",
+    ],
     slainvokedid: ["sla"],
   },
 };
@@ -220,11 +304,13 @@ export interface ActivityPointer extends IEntity {
   // Date Delivery Last Attempted DateTimeType Date and time when the delivery of the activity was last attempted. DateAndTime:UserLocal
   deliverylastattemptedon?: Date | null;
   // Delivery Priority activitypointer_deliveryprioritycode Priority of delivery of the activity to the email server.
-  deliveryprioritycode?: import("../enums/activitypointer_deliveryprioritycode").activitypointer_deliveryprioritycode | null;
+  deliveryprioritycode?:
+    | import("../enums/activitypointer_deliveryprioritycode").activitypointer_deliveryprioritycode
+    | null;
   // Description MemoType Description of the activity.
   description?: string | null;
   // Description File Id FileType File that contains description content.
-  descriptionblobid?: FileType | null;
+  descriptionblobid?: any | null;
   //  StringType
   descriptionblobid_name?: string | null;
   // Exchange Item ID StringType The message id of activity which is returned from Exchange Server.
@@ -234,7 +320,9 @@ export interface ActivityPointer extends IEntity {
   // Exchange WebLink StringType Shows the web link of Activity of type email.
   exchangeweblink?: string | null;
   // Recurring Instance Type activitypointer_activitypointer_instancetypecode Type of instance of a recurring series.
-  instancetypecode?: import("../enums/activitypointer_activitypointer_instancetypecode").activitypointer_activitypointer_instancetypecode | null;
+  instancetypecode?:
+    | import("../enums/activitypointer_activitypointer_instancetypecode").activitypointer_activitypointer_instancetypecode
+    | null;
   // Is Billed BooleanType Information regarding whether the activity was billed as part of resolving a case.
   isbilled?: boolean | null;
   // Is Private BooleanType For internal use only.
@@ -282,7 +370,9 @@ export interface ActivityPointer extends IEntity {
   // Delay activity processing until DateTimeType For internal use only. DateAndTime:UserLocal
   postponeactivityprocessinguntil?: Date | null;
   // Priority activitypointer_activitypointer_prioritycode Priority of the activity.
-  prioritycode?: import("../enums/activitypointer_activitypointer_prioritycode").activitypointer_activitypointer_prioritycode | null;
+  prioritycode?:
+    | import("../enums/activitypointer_activitypointer_prioritycode").activitypointer_activitypointer_prioritycode
+    | null;
   // Process UniqueidentifierType Unique identifier of the Process.
   processid?: import("dataverse-ify").Guid | null;
   // Regarding LookupType Unique identifier of the object with which the activity is associated.
@@ -324,9 +414,13 @@ export interface ActivityPointer extends IEntity {
   // (Deprecated) Process Stage UniqueidentifierType Unique identifier of the Stage.
   stageid?: import("dataverse-ify").Guid | null;
   // Activity Status activitypointer_activitypointer_statecode Status of the activity.
-  statecode?: import("../enums/activitypointer_activitypointer_statecode").activitypointer_activitypointer_statecode | null;
+  statecode?:
+    | import("../enums/activitypointer_activitypointer_statecode").activitypointer_activitypointer_statecode
+    | null;
   // Status Reason activitypointer_activitypointer_statuscode Reason for the status of the activity.
-  statuscode?: import("../enums/activitypointer_activitypointer_statuscode").activitypointer_activitypointer_statuscode | null;
+  statuscode?:
+    | import("../enums/activitypointer_activitypointer_statuscode").activitypointer_activitypointer_statuscode
+    | null;
   // Subject [Required] StringType Subject associated with the activity.
   subject?: string;
   // Time Zone Rule Version Number IntegerType For internal use only.
